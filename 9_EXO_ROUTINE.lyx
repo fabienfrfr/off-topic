@@ -1,0 +1,11034 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+
+ %Configuration de la feuille 
+ 
+\usepackage{enumerate}\usepackage{graphicx}\usepackage{pgf}\usepackage{tikz}\usepackage{fancyhdr}\usetikzlibrary{arrows}
+\usepackage{tabvar}
+
+\lfoot{\bfseries http://www.bibmath.net}
+\rfoot{\bfseries\thepage}
+\cfoot{}
+\renewcommand{\footrulewidth}{0.5pt} %Filet en bas de page
+
+ %Macros utilisées dans la base de données d'exercices 
+
+\newcommand{\mtn}{\mathbb{N}}
+\newcommand{\mtns}{\mathbb{N}^*}
+\newcommand{\mtz}{\mathbb{Z}}
+\newcommand{\mtr}{\mathbb{R}}
+\newcommand{\mtk}{\mathbb{K}}
+\newcommand{\mtq}{\mathbb{Q}}
+\newcommand{\mtc}{\mathbb{C}}
+\newcommand{\mch}{\mathcal{H}}
+\newcommand{\mcp}{\mathcal{P}}
+\newcommand{\mcb}{\mathcal{B}}
+\newcommand{\mcl}{\mathcal{L}}
+\newcommand{\mcm}{\mathcal{M}}
+\newcommand{\mcc}{\mathcal{C}}
+\newcommand{\mcmn}{\mathcal{M}}
+\newcommand{\mcmnr}{\mathcal{M}_n(\mtr)}
+\newcommand{\mcmnk}{\mathcal{M}_n(\mtk)}
+\newcommand{\mcsn}{\mathcal{S}_n}
+\newcommand{\mcs}{\mathcal{S}}
+\newcommand{\mcd}{\mathcal{D}}
+\newcommand{\mcsns}{\mathcal{S}_n^{++}}
+\newcommand{\glnk}{GL_n(\mtk)}
+\newcommand{\mnr}{\mathcal{M}_n(\mtr)}
+\DeclareMathOperator{\ch}{ch}
+\DeclareMathOperator{\sh}{sh}
+\DeclareMathOperator{\vect}{vect}
+\DeclareMathOperator{\card}{card}
+\DeclareMathOperator{\comat}{comat}
+\DeclareMathOperator{\imv}{Im}
+\DeclareMathOperator{\rang}{rg}
+\DeclareMathOperator{\Fr}{Fr}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\supp}{supp}
+\newcommand{\veps}{\varepsilon}
+\newcommand{\mcu}{\mathcal{U}}
+\newcommand{\mcun}{\mcu_n}
+\newcommand{\dis}{\displaystyle}
+\newcommand{\croouv}{[\![}
+\newcommand{\crofer}{]\!]}
+\newcommand{\rab}{\mathcal{R}(a,b)}
+\newcommand{\pss}[2]{\langle #1,#2\rangle}
+ %Document 
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1.1cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+Exercice de routine (CAPES/AGREG - MATH)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 446
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 1
+\shape default
+ - Simplifier! 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Simplifier les sommes et produits suivants : 
+\begin_inset Formula 
+\[
+\begin{array}{lcl}
+\mathbf{1}.\ \sum_{k=1}^{n}\ln\left(1+\frac{1}{k}\right) & \quad\quad & \mathbf{2}.\ \prod_{k=2}^{n}\left(1-\frac{1}{k^{2}}\right)\\
+\mathbf{3}.\ \sum_{k=0}^{n}\frac{1}{(k+2)(k+3)}.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 2
+\shape default
+ - Forme algébrique - Somme et produits 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Mettre sous forme algébrique les nombres complexes suivants : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1.}\ z_{1}=(2+5i)+(i+3) & \quad\mathbf{2.}\ z_{1}=4(-2+3i)+3(-5-8i) & \quad\mathbf{3.}\ z_{3}=(2-i)(3+8i)\\
+{\displaystyle \mathbf{4.}\ z_{4}=(1-i)\overline{(1+i)}} & \quad\mathbf{5.}\ z_{5}=i(1-3i)^{2} & \quad\mathbf{6.}\ z_{6}=(1+i)^{3}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2914
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 3
+\shape default
+ - Racines 
+\begin_inset Formula $n$
+\end_inset
+
+-ièmes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre les équations suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1.}\ z^{4}=-1 &  & \mathbf{2.}\ z^{5}=-i.\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2911
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 4
+\shape default
+ - A coefficients réels 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre dans 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ les équations suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1.}\ 2z^{2}+6z+5=0 & \quad & \mathbf{2.}\ z^{2}-6z+13=0\\
+\mathbf{3.}\ z^{2}+z+1=0 & \quad & \mathbf{4.}\ \frac{3z+2}{z+1}=z+3
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 26
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 5
+\shape default
+ - Lieu géométrique et arguments 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Le plan est rapporté à un repère orthonormé direct 
+\begin_inset Formula $(O,\vec{u},\vec{v})$
+\end_inset
+
+.
+ Déterminer l'ensemble des points 
+\begin_inset Formula $M$
+\end_inset
+
+ dont l'affixe 
+\begin_inset Formula $z$
+\end_inset
+
+ vérifie la relation demandée : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1.}\ \arg(z-2)=\frac{\pi}{2}\ [2\pi] & \mathbf{2.}\ \arg(z-2)=\frac{\pi}{2}\ [\pi] & \mathbf{3.}\ \arg(iz)=\frac{\pi}{4}\ [\pi]\\
+\mathbf{4.}\ \arg\left(\frac{z}{1+i}\right)=\frac{\pi}{2}\ [2\pi] & \mathbf{5.}\ \arg\left(\frac{z-2i}{z-1+i}\right)=\frac{\pi}{2}\ [\pi]
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 655
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 6
+\shape default
+ - En pratique 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Décomposer en éléments simples les fractions rationnelles suivantes
+ : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+{\displaystyle \mathbf{1.}\quad\frac{1}{X^{3}-X}} & \quad\quad\mathbf{2.}\quad{\displaystyle \frac{X^{2}+2X+5}{X^{2}-3X+2}} & \quad\quad\mathbf{3.}\quad{\displaystyle \frac{X^{3}}{(X-1)(X-2)(X-3)}}\\
+\mathbf{4.}\quad{\displaystyle \frac{2X^{2}+1}{(X^{2}-1)^{2}}} & \quad\quad\mathbf{5.}\quad{\displaystyle \frac{X^{3}+1}{(X-1)^{3}}} & \quad\quad\mathbf{6.}\quad{\displaystyle \frac{X^{4}+1}{(X+1)^{2}(X^{2}+1)}}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2578
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 7
+\shape default
+ - Sous-groupes ou non? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Dans les questions suivantes, déterminer si la partie 
+\begin_inset Formula $H$
+\end_inset
+
+ est un sous-groupe du groupe 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=(\mathbb{Z},+)$
+\end_inset
+
+; 
+\begin_inset Formula $H=\{\textrm{nombres pairs}\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=(\mathbb{Z},+)$
+\end_inset
+
+; 
+\begin_inset Formula $H=\{\textrm{nombres impairs}\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=(\mathbb{R},+)$
+\end_inset
+
+; 
+\begin_inset Formula $H=[-1,+\infty[$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=(\mathbb{R}^{*},\times)$
+\end_inset
+
+; 
+\begin_inset Formula $H=\mathbb{Q}^{*}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=(\mathbb{R}^{*},\times)$
+\end_inset
+
+; 
+\begin_inset Formula $H=\{a+b\sqrt{2};\ a,b\in\mathbb{Q},\ (a,b)\neq(0,0)\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=(\{\textrm{bijections de \ensuremath{E} dans \ensuremath{E}}\},\circ)$
+\end_inset
+
+; 
+\begin_inset Formula $H=\{f\in G;\ f(x)=x\}$
+\end_inset
+
+ où 
+\begin_inset Formula $E$
+\end_inset
+
+ est un ensemble et 
+\begin_inset Formula $x\in E$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=(\{\textrm{bijections de \ensuremath{E} dans \ensuremath{E}}\},\circ)$
+\end_inset
+
+; 
+\begin_inset Formula $H=\{f\in G;\ f(x)=y\}$
+\end_inset
+
+ où 
+\begin_inset Formula $E$
+\end_inset
+
+ est un ensemble et 
+\begin_inset Formula $x,y\in E$
+\end_inset
+
+ avec 
+\begin_inset Formula $x\neq y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2580
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 8
+\shape default
+ - Exemples ou contre-exemples de morphismes de groupes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les applications 
+\begin_inset Formula $\phi:G\to H$
+\end_inset
+
+ définies ci-dessous sont-elles des morphismes de groupes? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=(GL_{n}(\mathbb{R}),\times)$
+\end_inset
+
+, 
+\begin_inset Formula $H=(\mathbb{R},+)$
+\end_inset
+
+, 
+\begin_inset Formula $\phi(A)=\textrm{tr}(A)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=(M_{n}(\mathbb{R}),+)$
+\end_inset
+
+, 
+\begin_inset Formula $H=(\mathbb{R},+)$
+\end_inset
+
+, 
+\begin_inset Formula $\phi(A)=\textrm{tr}(A)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=(\mathbb{R}^{*},\times)$
+\end_inset
+
+, 
+\begin_inset Formula $H=(\mathbb{R}^{*},\times)$
+\end_inset
+
+, 
+\begin_inset Formula $\phi(x)=|x|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=(\mathbb{R}^{*},\times)$
+\end_inset
+
+, 
+\begin_inset Formula $H=(\mathbb{R}^{*},\times)$
+\end_inset
+
+, 
+\begin_inset Formula $\phi(x)=2x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=(\mathbb{R},+)$
+\end_inset
+
+, 
+\begin_inset Formula $H=(GL_{2}(\mathbb{R}),\times)$
+\end_inset
+
+, 
+\begin_inset Formula $\phi(x)=\begin{pmatrix}1 & x\\
+0 & 1
+\end{pmatrix}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1021
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 9
+\shape default
+ - Étude de permutations 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Pour les permutations 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ suivantes, décomposer 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ en produits de cycles disjoints, en produit de transpositions, calculer
+ l'ordre de 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, la signature de 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, calculer 
+\begin_inset Formula $\sigma^{100}$
+\end_inset
+
+ : 
+\begin_inset Formula 
+\[
+\sigma_{1}=\left(\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+3 & 5 & 4 & 6 & 2 & 1
+\end{array}\right)\textrm{ et }\sigma_{2}=\left(\begin{array}{ccccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\
+4 & 6 & 9 & 7 & 2 & 5 & 8 & 1 & 3
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 618
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 10
+\shape default
+ - Quelques équations 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre les équations suivantes, où l'inconnue est un polynôme 
+\begin_inset Formula $P$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathbb{R}[X]$
+\end_inset
+
+ : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1.}\ P(X^{2})=(X^{2}+1)P(X) & \quad & \mathbf{2.}\ P'^{2}=4P\\
+\mathbf{3.}\ P\circ P=P.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 620
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 11
+\shape default
+ - En pratique! 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer le quotient et le reste de la division euclidienne de 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X^{4}+5X^{3}+12X^{2}+19X-7$
+\end_inset
+
+ par 
+\begin_inset Formula $X^{2}+3X-1$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X^{4}-4X^{3}-9X^{2}+27X+38$
+\end_inset
+
+ par 
+\begin_inset Formula $X^{2}-X-7$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X^{5}-X^{2}+2$
+\end_inset
+
+ par 
+\begin_inset Formula $X^{2}+1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 627
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 12
+\shape default
+ - Calculs de pgcd 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer les pgcd suivants : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P(X)=X^{4}-3X^{3}+X^{2}+4$
+\end_inset
+
+ et 
+\begin_inset Formula $Q(X)=X^{3}-3X^{2}+3X-2$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P(X)=X^{5}-X^{4}+2X^{3}-2X^{2}+2X-1$
+\end_inset
+
+ et 
+\begin_inset Formula $Q(X)=X^{5}-X^{4}+2X^{2}-2X+1$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P(X)=X^{n}-1$
+\end_inset
+
+ et 
+\begin_inset Formula $Q(X)=(X-1)^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 642
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 13
+\shape default
+ - Décomposer! 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Décomposer en produits d'irréductibles de 
+\begin_inset Formula $\mathbb{R}[X]$
+\end_inset
+
+ les polynômes suivants : 
+\begin_inset Formula 
+\[
+\begin{array}{lllll}
+\mathbf{1.}\ \ X^{4}+1 & \quad & \mathbf{2.}\ X^{8}-1 & \quad & \mathbf{3.}\ (X^{2}-X+1)^{2}+1\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2518
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 14
+\shape default
+ - Équations trigonométriques 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre dans 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ les équations suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+{\displaystyle \mathbf{1.}\ \sin x=\frac{1}{2}} & {\displaystyle \quad\mathbf{2.}\ \tan x=\sqrt{3}} & {\displaystyle \quad\mathbf{3.}\ \cos x=-1}\\
+{\displaystyle \mathbf{4.}\ \sin(3x)=1} & \quad{\displaystyle \mathbf{5.}\ \cos(4x)=-2} & {\displaystyle \quad\mathbf{6.}\ \sin x\cos x=\frac{1}{4}.}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 839
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 15
+\shape default
+ - Applications linéaires ou non (sur 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+)? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Dire si les applications suivantes sont des applications linéaires
+ : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}^{3},\ (x,y)\mapsto(x+y,x-2y,0)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}^{3},\ (x,y)\mapsto(x+y,x-2y,1)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R},\ (x,y)\mapsto x^{2}-y^{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2944
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 16
+\shape default
+ - Applications linéaires ou non (sur les polynômes)? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Dire si les applications suivantes sont des applications linéaires
+ : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}[X]\to\mathbb{R}^{2},\ P\mapsto\big(P(0),P'(1)\big)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}[X]\to\mathbb{R}[X],\ P\mapsto AP$
+\end_inset
+
+, où 
+\begin_inset Formula $A\in\mathbb{R}[X]$
+\end_inset
+
+ est un polynôme fixé; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}[X]\to\mathbb{R}[X],\ P\mapsto P^{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2945
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 17
+\shape default
+ - Applications linéaires ou non (espace de fonctions)? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soit 
+\begin_inset Formula $E$
+\end_inset
+
+ l'espace vectoriel 
+\begin_inset Formula $\mathcal{C}(\mathbb{R},\mathbb{R})$
+\end_inset
+
+ l'espace vectoriel des fonctions continues sur 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Dire si les applications suivantes sont des applications linéaires : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phi_{1}:E\to E,\ \phi_{1}(f)(x)=(f(x))^{2}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phi_{2}:E\to E,\ \phi_{2}(f)(x)=(f(x^{2}))$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phi_{3}:E\to E,\ \phi_{3}(f)(x)=\int_{0}^{x}f(t)dt$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1004
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 18
+\shape default
+ - Sur des polynômes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soit 
+\begin_inset Formula $u\in\mathcal{L}(\mathbb{R}_{n}[X])$
+\end_inset
+
+.
+ Calculer 
+\begin_inset Formula $\det(u)$
+\end_inset
+
+ dans chacun des cas suivants : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u(P)=P+P'$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u(P)=P(X+1)-P(X)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u(P)=XP'+P(1)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 857
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 19
+\shape default
+ - Bases? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les systèmes suivants forment-ils des bases de 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $S_{1}=\{(1,-1,0),(2,-1,2)\};$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $S_{2}=\{(1,-1,0),(2,-1,2),(1,0,a)\}$
+\end_inset
+
+ avec 
+\begin_inset Formula $a$
+\end_inset
+
+ réel (on discutera suivant la valeur de 
+\begin_inset Formula $a$
+\end_inset
+
+);
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $S_{3}=\{(1,0,0),(a,b,0),(c,d,e)\}$
+\end_inset
+
+ avec 
+\begin_inset Formula $a,b,c,d,e$
+\end_inset
+
+ réels (on discutera suivant leur valeur);
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $S_{4}=\{(1,1,3),(3,4,5),(-2,5,7),(8,-1,9)\}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 810
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 20
+\shape default
+ - Combinaisons linéaires? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les vecteurs 
+\begin_inset Formula $u$
+\end_inset
+
+ suivants sont-ils combinaison linéaire des vecteurs 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\mathbb{R}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $u=(1,2)$
+\end_inset
+
+, 
+\begin_inset Formula $u_{1}=(1,-2)$
+\end_inset
+
+, 
+\begin_inset Formula $u_{2}=(2,3)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\mathbb{R}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $u=(1,2)$
+\end_inset
+
+, 
+\begin_inset Formula $u_{1}=(1,-2)$
+\end_inset
+
+, 
+\begin_inset Formula $u_{2}=(2,3)$
+\end_inset
+
+, 
+\begin_inset Formula $u_{3}=(-4,5)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\mathbb{R}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $u=(2,5,3)$
+\end_inset
+
+, 
+\begin_inset Formula $u_{1}=(1,3,2)$
+\end_inset
+
+, 
+\begin_inset Formula $u_{2}=(1,-1,4)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\mathbb{R}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $u=(3,1,m)$
+\end_inset
+
+, 
+\begin_inset Formula $u_{1}=(1,3,2)$
+\end_inset
+
+, 
+\begin_inset Formula $u_{2}=(1,-1,4)$
+\end_inset
+
+ (discuter suivant la valeur de 
+\begin_inset Formula $m$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 812
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 21
+\shape default
+ - Pour bien commencer...
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les familles suivantes sont-elles libres dans 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ (ou 
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
+
+ pour la dernière famille)? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(u,v)$
+\end_inset
+
+ avec 
+\begin_inset Formula $u=(1,2,3)$
+\end_inset
+
+ et 
+\begin_inset Formula $v=(-1,4,6)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(u,v,w)$
+\end_inset
+
+ avec 
+\begin_inset Formula $u=(1,2,-1)$
+\end_inset
+
+, 
+\begin_inset Formula $v=(1,0,1)$
+\end_inset
+
+ et 
+\begin_inset Formula $w=(0,0,1)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(u,v,w)$
+\end_inset
+
+ avec 
+\begin_inset Formula $u=(1,2,-1)$
+\end_inset
+
+, 
+\begin_inset Formula $v=(1,0,1)$
+\end_inset
+
+ et 
+\begin_inset Formula $w=(-1,2,-3)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(u,v,w,z)$
+\end_inset
+
+ avec 
+\begin_inset Formula $u=(1,2,3,4)$
+\end_inset
+
+, 
+\begin_inset Formula $v=(5,6,7,8)$
+\end_inset
+
+, 
+\begin_inset Formula $w=(9,10,11,12)$
+\end_inset
+
+ et 
+\begin_inset Formula $z=(13,14,15,16)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 820
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 22
+\shape default
+ - Est-ce un sous-espace vectoriel? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Parmi les ensembles suivants, lesquels sont, ou ne sont pas, des sous-espac
+es vectoriels? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E_{1}=\{(x,y,z)\in\mathbb{R}^{3};\ x+y+3z=0\}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E_{2}=\{(x,y,z)\in\mathbb{R}^{3};\ x+y+3z=2\}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E_{3}=\{(x,y,z,t)\in\mathbb{R}^{4};\ x=y=2z=4t\}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E_{4}=\{(x,y)\in\mathbb{R}^{2};\ xy=0\}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E_{5}=\{(x,y)\in\mathbb{R}^{2};\ y=x^{2}\}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E_{6}=\{(x,y,z)\in\mathbb{R}^{3};\ 2x+3y-5z=0\}\cap\{(x,y,z)\in\mathbb{R}^{3};\ x-y+z=0\}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E_{7}=\{(x,y,z)\in\mathbb{R}^{3};\ 2x+3y-5z=0\}\cup\{(x,y,z)\in\mathbb{R}^{3};\ x-y+z=0\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 910
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 23
+\shape default
+ - Des calculs de produits 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer lorsqu'ils sont définis les produits 
+\begin_inset Formula $AB$
+\end_inset
+
+ et 
+\begin_inset Formula $BA$
+\end_inset
+
+ dans chacun des cas suivants : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle A=\left(\begin{array}{cc}
+1 & 0\\
+0 & 0
+\end{array}\right),\quad B=\left(\begin{array}{cc}
+0 & 0\\
+0 & 1
+\end{array}\right)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle A=\left(\begin{array}{ccc}
+0 & 2 & 1\\
+1 & 1 & 0\\
+-1 & -2 & -1
+\end{array}\right),\quad B=\left(\begin{array}{ccc}
+2 & 0 & 1\\
+-1 & 1 & 2
+\end{array}\right)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle A=\left(\begin{array}{cc}
+1 & 2\\
+1 & 1\\
+0 & 3
+\end{array}\right),\quad B=\left(\begin{array}{cccc}
+-1 & 1 & 0 & 1\\
+2 & 1 & 0 & 0
+\end{array}\right)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1440
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 24
+\shape default
+ - Calcul du polynôme minimal 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer le polynôme minimal des matrices suivantes : 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cc}
+1 & 1\\
+0 & 1
+\end{array}\right),\ B=\left(\begin{array}{ccc}
+1 & 1 & 1\\
+1 & 1 & 1\\
+1 & 1 & 1
+\end{array}\right),\ C=\left(\begin{array}{ccc}
+1 & 2 & -2\\
+2 & 1 & -2\\
+2 & 2 & -3
+\end{array}\right)\textrm{ et }D=\left(\begin{array}{ccc}
+3 & 0 & 8\\
+3 & -1 & 6\\
+-2 & 0 & -5
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1387
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 25
+\shape default
+ - 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Diagonaliser les matrices suivantes : 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{ccc}
+0 & 2 & -1\\
+3 & -2 & 0\\
+-2 & 2 & 1
+\end{array}\right),\textrm{ }B=\left(\begin{array}{ccc}
+0 & 3 & 2\\
+-2 & 5 & 2\\
+2 & -3 & 0
+\end{array}\right),C=\left(\begin{array}{ccc}
+1 & 0 & 0\\
+0 & 1 & 0\\
+1 & -1 & 2
+\end{array}\right).
+\]
+
+\end_inset
+
+On donnera aussi la matrice de passage de la base canonique à la base de
+ vecteurs propres.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 527
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 26
+\shape default
+ - Sans problèmes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre les systèmes linéaires suivants : 
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{rcl}
+x+y+2z & = & 3\\
+x+2y+z & = & 1\\
+2x+y+z & = & 0
+\end{array}\right.\quad\quad\quad\left\{ \begin{array}{rcl}
+x+2z & = & 1\\
+-y+z & = & 2\\
+x-2y & = & 1
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1042
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 27
+\shape default
+ - Relations usuelles sur les orthogonaux 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soit 
+\begin_inset Formula $E$
+\end_inset
+
+ un espace préhilbertien, et 
+\begin_inset Formula $A$
+\end_inset
+
+ et 
+\begin_inset Formula $B$
+\end_inset
+
+ deux parties de 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ Démontrer les relations suivantes : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\subset B\implies B^{\perp}\subset A^{\perp}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(A\cup B)^{\perp}=A^{\perp}\cap B^{\perp}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A^{\perp}=\textrm{vect}(A)^{\perp}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\textrm{vect}(A)\subset A^{\perp\perp}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+On suppose de plus que 
+\begin_inset Formula $E$
+\end_inset
+
+ est de dimension finie.
+ Démontrer que 
+\begin_inset Formula $\textrm{vect}(A)=A^{\perp\perp}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2589
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 28
+\shape default
+ - Produits scalaires sur 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les applications suivantes définissent-elles un produit scalaire sur
+ 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi_{1}\big((x_{1},x_{2}),(y_{1},y_{2})\big)=\sqrt{x_{1}^{2}+y_{1}^{2}+x_{2}^{2}+y_{2}^{2}}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi_{2}\big((x_{1},x_{2}),(y_{1},y_{2})\big)=4x_{1}y_{1}-x_{2}y_{2}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi_{3}\big((x_{1},x_{2}),(y_{1},y_{2})\big)=x_{1}y_{1}-3x_{1}y_{2}-3x_{2}y_{1}+10x_{2}y_{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1865
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 29
+\shape default
+ - Décomposition en somme de carrés 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Décomposer les formes quadratiques suivantes en sommes de carrés.
+ En déduire si elles sont positives.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q(x,y,z)=x^{2}+y^{2}+2z(x\cos\alpha+y\sin\alpha)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $q(x,y,z,t)=x^{2}+3y^{2}+4z^{2}+t^{2}+2xy+xt+yt$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 255
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 30
+\shape default
+ - Varions la constante...
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre les équations différentielles suivantes : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y'+y=\frac{1}{1+e^{x}}$
+\end_inset
+
+ sur 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(1+x)y'+y=1+\ln(1+x)$
+\end_inset
+
+ sur 
+\begin_inset Formula $]-1,+\infty[$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y'-\frac{y}{x}=x^{2}$
+\end_inset
+
+ sur 
+\begin_inset Formula $]0,+\infty[$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y'-2xy=-(2x-1)e^{x}$
+\end_inset
+
+ sur 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y'-\frac{2}{t}y=t^{2}$
+\end_inset
+
+ sur 
+\begin_inset Formula $]0,+\infty[$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 666
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 31
+\shape default
+ - Équations du second ordre à coefficients constants 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre les équations différentielles suivantes : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y''-2y'+y=x$
+\end_inset
+
+, 
+\begin_inset Formula $y(0)=y'(0)=0$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y''+9y=x+1$
+\end_inset
+
+, 
+\begin_inset Formula $y(0)=0$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y''-2y'+y=\sin^{2}x$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 301
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 32
+\shape default
+ - Équations à variables séparées 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre les équations différentielles suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1}.\ y'+e^{x-y}=0,\ y(0)=0 & \quad & \mathbf{2}.\ y'=\frac{x}{1+y},\ y(0)=0\\
+\mathbf{3}.\ y'+xy^{2}=-x,\ y(0)=0.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 297
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 33
+\shape default
+ - Équations autonomes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre les équations différentielles suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1}.\ y'=1+y^{2} & \quad & \mathbf{2}.\ y'=y^{2}\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 293
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 34
+\shape default
+ - Diagonalisable! 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre les systèmes différentiels suivants : 
+\begin_inset Formula 
+\[
+\mathbf{1}.\left\{ \begin{array}{rcl}
+x' & = & x+2y-z\\
+y' & = & 2x+4y-2z\\
+z' & = & -x-2y+z
+\end{array}\right.\quad\quad\mathbf{2}.\left\{ \begin{array}{rcl}
+x' & = & y+z\\
+y' & = & -x+2y+z\\
+z' & = & x+z
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1878
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 35
+\shape default
+ - Ouverts étoilés 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Parmi les ouverts suivants, déterminer lesquels sont étoilés : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{C}\backslash\{z_{0}\}$
+\end_inset
+
+ (
+\begin_inset Formula $z_{0}\in\mathbb{C}$
+\end_inset
+
+); 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\{z\in\mathbb{C};\ |z|<R\}$
+\end_inset
+
+ (
+\begin_inset Formula $R>0$
+\end_inset
+
+); 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\{z\in\mathbb{C};\ r<|z|<R\}$
+\end_inset
+
+ (
+\begin_inset Formula $R>r>0$
+\end_inset
+
+); 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{C}\backslash D$
+\end_inset
+
+, où 
+\begin_inset Formula $D$
+\end_inset
+
+ est une droite; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{C}\backslash D$
+\end_inset
+
+, où 
+\begin_inset Formula $D$
+\end_inset
+
+ est une demi-droite.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 767
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 36
+\shape default
+ - Calculs de résidus 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer le résidu aux singularités isolées des fonctions suivantes
+ : 
+\begin_inset Formula 
+\[
+f(z)=\frac{z^{2}+z+1}{z(z^{2}+1)^{2}},\quad g(z)=\frac{z^{a}}{1-z},\quad h(z)=\log(z).\sin\frac{1}{z-1}.
+\]
+
+\end_inset
+
+On prendra la détermination principale des fonctions 
+\begin_inset Formula $z\mapsto z^{a}$
+\end_inset
+
+ et 
+\begin_inset Formula $z\mapsto\log(z)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 777
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 37
+\shape default
+ - Développement en séries de Laurent 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Développer en séries de Laurent les fonctions suivantes : 
+\begin_inset Formula 
+\begin{eqnarray*}
+f(z)=z^{2}\exp\left(\frac{1}{z}\right) &  & \textrm{ dans }\{z;\ 0<|z|\}\\
+g(z)=\exp\left(z+\frac{1}{z}\right) &  & \textrm{ dans }\{z;\ 0<|z|\}\\
+h(z)=\frac{1}{(z-1)(z-2)} &  & \textrm{dans : (i)}\{z;\ |z|<1\},\ \textrm{(ii)}\ \{z;\ 1<|z|<2\},\ \textrm{(iii)}\ \{z;\ |z|>2\}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 778
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 38
+\shape default
+ - 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer les points singuliers isolés des fonctions suivantes, puis
+ déterminer leur nature (singularité 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+apparente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ ou 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+effaçable
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+, pôle, singularité essentielle) : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+{\displaystyle z\mapsto\exp(1/z)} & {\displaystyle z\mapsto\frac{1}{\sin z}-\frac{1}{z}} & {\displaystyle z\mapsto\frac{1}{\exp(z)-1}-\frac{1}{z}}\\
+{\displaystyle z\mapsto\exp\left(\frac{z}{1-z}\right)} & {\displaystyle z\mapsto\sin\left(\frac{1}{\sin(1/z)}\right)}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 36
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 39
+\shape default
+ - Lignes de niveau 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Représenter les lignes de niveau (c'est-à-dire les solutions 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ de l'équation 
+\begin_inset Formula $f(x,y)=k$
+\end_inset
+
+) pour : 
+\begin_inset Formula 
+\[
+f_{1}(x,y)=y^{2},\textrm{ avec }k=-1\textrm{ et }k=1\quad\quad f_{2}(x,y)=\frac{x^{4}+y^{4}}{8-x^{2}y^{2}}\textrm{ avec }k=2.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 38
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 40
+\shape default
+ - Diverses limites 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les fonctions suivantes ont-elles une limite en 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=(x+y)\sin\left(\frac{1}{x^{2}+y^{2}}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=\frac{x^{2}-y^{2}}{x^{2}+y^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=\frac{|x+y|}{x^{2}+y^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 46
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 41
+\shape default
+ - Calcul de dérivées partielles 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Justifier l'existence des dérivées partielles des fonctions suivantes,
+ et les calculer.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=e^{x}\cos y.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=(x^{2}+y^{2})\cos(xy).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=\sqrt{1+x^{2}y^{2}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 119
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 42
+\shape default
+ - Ordre 2 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer les dérivées partielles à l'ordre 2 des fonctions suivantes
+ : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=x^{2}(x+y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=e^{xy}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 128
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 43
+\shape default
+ - Différentielle 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Justifier que les fonctions suivantes sont différentiables, et calculer
+ leur différentielle 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=e^{xy}(x+y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y,z)=xy+yz+zx$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=(y\sin x,\cos x)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 132
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 44
+\shape default
+ - Matrices jacobiennes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Justifier que les fonctions suivantes sont différentiables, et calculer
+ leur matrice jacobienne.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dis f(x,y,z)=\left(\frac{1}{2}(x^{2}-z^{2}),\sin x\sin y\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dis f(x,y)=\left(xy,\frac{1}{2}x^{2}+y,\ln(1+x^{2})\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2065
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 45
+\shape default
+ - Extrema locaux 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer les extrema locaux des fonctions 
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}$
+\end_inset
+
+ suivantes : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=x^{2}+xy+y^{2}-3x-6y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=x^{2}+2y^{2}-2xy-2y+1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=x^{3}+y^{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=(x-y)^{2}+(x+y)^{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 140
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 46
+\shape default
+ - Extrema locaux 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer les extrema locaux des fonctions suivantes : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=y^{2}-x^{2}+\frac{x^{4}}{2}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=x^{3}+y^{3}-3xy$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=x^{4}+y^{4}-4(x-y)^{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2339
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 47
+\shape default
+ - Equivalents ou pas? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Quels sont les équivalents corrects parmi les propositions suivantes?
+ 
+\begin_inset Formula 
+\[
+\begin{array}{lllll}
+\mathbf{1}.\ n\sim_{+\infty}n+1 & \quad & \mathbf{2}.\ n^{2}\sim_{+\infty}n^{2}+n & \quad & \mathbf{3}.\ \ln(n)\sim_{+\infty}\ln(10^{6}n)\\
+\mathbf{4}.\ \exp(n)\sim_{+\infty}\exp\left(n+10^{-6}\right) & \quad & \mathbf{5}.\ \exp(n)\sim_{+\infty}\exp(2n) & \quad & \mathbf{6}.\ \ln(n)\sim_{+\infty}\ln(n+1).
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 217
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 48
+\shape default
+ - Prolongeable par continuité? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Dire si les fonctions suivantes sont prolongeables par continuité à
+ 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ tout entier : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\sin(x)\sin(1/x)$
+\end_inset
+
+ si 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g(x)=\cos(x)\cos(1/x)$
+\end_inset
+
+ si 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h(x)=\sin(x+1)\ln|1+x|$
+\end_inset
+
+ si 
+\begin_inset Formula $x\neq-1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 222
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 49
+\shape default
+ - Vrai ou faux 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les propositions suivantes sont elles vraies ou fausses : 
+\end_layout
+
+\begin_layout Enumerate
+L'image par une fonction continue d'un intervalle ouvert est un intervalle
+ ouvert.
+ 
+\end_layout
+
+\begin_layout Enumerate
+L'image par une fonction continue d'un intervalle fermé est un intervalle
+ fermé.
+ 
+\end_layout
+
+\begin_layout Enumerate
+L'image par une fonction continue d'une partie bornée est une partie bornée.
+ 
+\end_layout
+
+\begin_layout Enumerate
+L'image réciproque par une fonction continue d'un intervalle est un intervalle.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2854
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 50
+\shape default
+ - Calculs de limites avec le nombre dérivé 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm En utilisant la définition du nombre dérivé, déterminer les limites
+ suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+{\mathbf{1}.}{\displaystyle \lim_{x\to0}\frac{e^{3x+2}-e^{2}}{x}} & \quad & {\mathbf{2}.}{\displaystyle \lim_{x\to0}\frac{\cos x-1}{x}}\\
+{\mathbf{3}.}{\displaystyle \lim_{x\to1}\frac{\ln(2-x)}{x-1}} & \quad & {\mathbf{4}.}{\displaystyle \lim_{x\to\frac{\pi}{2}}\frac{\exp(\cos x)-1}{x-\frac{\pi}{2}}.}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 207
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 51
+\shape default
+ - Calculs de limites avec le nombre dérivé 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Étudier les limites suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lcl}
+{\displaystyle \mathbf{1}.\ \frac{x\sin x}{1-\cos x}\textrm{ en 0}} &  & {\displaystyle \mathbf{2}.\ \frac{\sin x-\sin2x}{x^{2}}\textrm{ en 0}}\\
+{\displaystyle \mathbf{3}.\ \frac{\sin x}{\sqrt{x}}\textrm{ en 0}} &  & {\displaystyle \mathbf{4}.\ \frac{\cos^{2}x-1}{x}\textrm{ en 0}}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 562
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 52
+\shape default
+ - Somme et produit de DLs 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer les développements limités suivants : 
+\begin_inset Formula 
+\[
+\begin{array}{lcl}
+{\displaystyle \mathbf{1}.\ \frac{1}{1-x}-e^{x}\textrm{ à l'ordre 3 en 0}} &  & {\displaystyle \mathbf{2}.\ \sqrt{1-x}+\sqrt{1+x}\textrm{ à l'ordre 4 en 0}}\\
+{\displaystyle \mathbf{3}.\ \sin x\cos(2x)\textrm{ à l'ordre 6 en 0}} &  & {\displaystyle \mathbf{4}.\ \cos(x)\ln(1+x)\textrm{ à l'ordre 4 en 0}}\\
+{\displaystyle \mathbf{5}.\ (x^{3}+1)\sqrt{1-x}\textrm{ à l'ordre 3 en 0}} &  & {\displaystyle \mathbf{6}.\ \big(\ln(1+x)\big)^{2}\textrm{ à l'ordre 4 en 0}}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 570
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 53
+\shape default
+ - Limites de fonctions 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer les limites des fonctions suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lrl}
+{\displaystyle \mathbf{1}.\ \frac{\sin x-x}{x^{3}}\textrm{ en }0;} &  & {\displaystyle \mathbf{2}.\ \frac{1+\ln(1+x)-e^{x}}{1-\cos x}\textrm{ en }0;}\\
+{\displaystyle \mathbf{3}.\ \left(\frac{a^{x}+b^{x}}{2}\right)^{1/x}\textrm{ en }0;} &  & {\displaystyle \mathbf{4}.\ \frac{2x}{\ln\left(\frac{1+x}{1-x}\right)}\textrm{ en }0;}\\
+{\displaystyle \mathbf{5}.\ \frac{\exp(\sin x)-\exp(\tan x)}{\sin x-\tan x}\textrm{ en }0;} &  & {\displaystyle \mathbf{6}.\ \frac{x^{x^{x}}\ln x}{x^{x}-1}\textrm{ en }0^{+};}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 356
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 54
+\shape default
+ - Équations 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre sur 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ les équations suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+{\bf 1.}\ \ln(x^{2}-1)-\ln(2x-1)+\ln2=0 & \quad\quad & {\bf 2.}\ \log_{10}(x+2)-\log_{10}(x+1)=\log_{10}(x-1).\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2337
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 55
+\shape default
+ - Système d'équations 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre les systèmes d'équations suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1.}\ \left\{ \begin{array}{rcl}
+x+y & = & 30\\
+\ln(x)+\ln(y) & = & 3\ln6
+\end{array}\right. & \quad\quad & \mathbf{2.}\ \left\{ \begin{array}{rcl}
+x^{2}+y^{2} & = & 218\\
+\ln(x)+\ln(y) & = & \ln(91)
+\end{array}\right.\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 370
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 56
+\shape default
+ - Valeur exacte 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer 
+\begin_inset Formula 
+\[
+\arccos\left(\cos\frac{2\pi}{3}\right),\quad\arccos\left(\cos\frac{-2\pi}{3}\right),\quad\arccos\left(\cos\frac{4\pi}{3}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2274
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 57
+\shape default
+ - Ensembles de définition 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Donner les ensembles de définition des fonctions suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1.}\ \sqrt{2x^{2}-12x+18} & \quad & \mathbf{2.}\ \ln(x^{2}+4x+4)\\
+\mathbf{3.}\sqrt{\frac{8-16x}{(7+x)^{2}}} & \quad & \mathbf{4.}\ln(3-x)+\frac{\sqrt{x-1}}{x-2}.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2859
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 58
+\shape default
+ - Limites et quotients 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer les limites suivantes si elles existent.
+ On pourra étudier le signe du dénominateur.
+ 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1.}\ {\displaystyle \lim_{x\to5^{+}}\frac{x^{2}-11x+28}{x^{2}-25}} & \quad & \mathbf{2.}\ {\displaystyle \lim_{x\to5^{-}}\frac{x^{2}-11x+28}{x^{2}-25}}\\
+\mathbf{3.}\ {\displaystyle \lim_{x\to5^{+}}\frac{x^{2}-9x+20}{x^{2}-25}} & \quad & \mathbf{4.}\ {\displaystyle \lim_{x\to5^{-}}\frac{x^{2}-9x+20}{x^{2}-25}}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1946
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 59
+\shape default
+ - Dénombrables? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les ensembles suivants sont-ils dénombrables? 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\{2^{n};\ n\geq0\}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{N}\times\mathbb{R}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{Q}[\sqrt{2}]=\{a+b\sqrt{2};\ a,b\in\mathbb{Q}\}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+l'ensemble des nombres premiers; 
+\end_layout
+
+\begin_layout Enumerate
+l'ensemble des fonctions de 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ dans 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1923
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 60
+\shape default
+ - 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer les intégrales curvilignes 
+\begin_inset Formula $\int_{C}\omega$
+\end_inset
+
+ dans les exemples suivants : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\omega=xydx+(x+y)dy$
+\end_inset
+
+, et 
+\begin_inset Formula $C$
+\end_inset
+
+ est l'arc de parabole 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $-1\leq x\leq2$
+\end_inset
+
+, parcouru dans le sens direct.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\omega=y\sin xdx+x\cos ydy$
+\end_inset
+
+, et 
+\begin_inset Formula $C$
+\end_inset
+
+ est le segment de droite 
+\begin_inset Formula $OA$
+\end_inset
+
+ de 
+\begin_inset Formula $O(0,0)$
+\end_inset
+
+ vers 
+\begin_inset Formula $A(1,1)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1965
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 61
+\shape default
+ - 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer l'intégrale double suivante 
+\begin_inset Formula $\int\!\int_{D}f(x,y)dxdy$
+\end_inset
+
+, avec 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dis f(x,y)=x\textrm{ et }D=\left\{ (x,y)\in\mtr^{2};y\geq0,\ x-y+1\geq0,\ x+2y-4\leq0\right\} .$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dis f(x,y)=x+y\textrm{ et }D=\left\{ (x,y)\in\mtr^{2};\ 0\leq x\leq1;\ x^{2}\leq y\leq x\right\} .$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dis f(x,y)=\cos(xy)\textrm{ et }D=\left\{ (x,y)\in\mtr^{2};\ 1\leq x\leq2,\ 0\leq xy\leq\frac{\pi}{2}\right\} .$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dis f(x,y)=xy\textrm{ et }D=\left\{ (x,y)\in\mtr^{2};\ x\geq0,\ y\geq0,\ xy+x+y\leq1.\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x,y)=\frac{1}{(x+y)^{3}}\textrm{ et }\dis D=\left\{ (x,y)\in\mtr^{2};1<x<3,\ y>2,x+y<5\right\} .$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1629
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 62
+\shape default
+ - Convergence d'intégrales impropres - 1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les intégrales impropres suivantes sont-elles convergentes? 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+{\displaystyle \mathbf{1}.\ \int_{0}^{1}\ln tdt} &  & {\displaystyle \mathbf{2}.\ \int_{0}^{+\infty}e^{-t^{2}}dt}\\
+{\displaystyle \mathbf{3}.\ \int_{0}^{+\infty}x(\sin x)e^{-x}dx} &  & {\displaystyle \mathbf{4}.\ \int_{0}^{+\infty}(\ln t)e^{-t}dt}\\
+{\displaystyle \mathbf{5}.\ \int_{0}^{1}\frac{dt}{(1-t)\sqrt{t}}}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2600
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 63
+\shape default
+ - Reconnaissance de formes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer toutes les primitives des fonctions suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lllll}
+{\displaystyle f(x)=\frac{x}{1+x^{2}}} & \quad & {\displaystyle g(x)=\frac{e^{3x}}{1+e^{3x}}} & \quad & {\displaystyle h(x)=\frac{\ln x}{x}}\\
+{\displaystyle k(x)=\cos(x)\sin^{2}(x)} & \quad & l(x)=\frac{1}{x\ln x} & \quad & m(x)=3x\sqrt{1+x^{2}}.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 408
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 64
+\shape default
+ - Limites de suites 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer la limite des suites suivantes : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dis u_{n}=\frac{1}{n}\left(\sin\left(\frac{\pi}{n}\right)+\sin\left(\frac{2\pi}{n}\right)+\dots+\sin\left(\frac{n\pi}{n}\right)\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dis u_{n}=n\left(\frac{1}{(n+1)^{2}}+\dots+\frac{1}{(n+n)^{2}}\right).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dis u_{n}=\frac{\sqrt{1}+\sqrt{2}+\dots+\sqrt{n-1}}{n\sqrt{n}}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dis u_{n}=\sqrt[n]{\left(1+\left(\frac{1}{n}\right)^{2}\right)\left(1+\left(\frac{2}{n}\right)^{2}\right)\dots\left(1+\left(\frac{n}{n}\right)^{2}\right)}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1672
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 65
+\shape default
+ - Théorème de convergence dominée - 1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer la limite, lorsque 
+\begin_inset Formula $n$
+\end_inset
+
+ tend vers 
+\begin_inset Formula $+\infty$
+\end_inset
+
+, des suites suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+{\displaystyle \mathbf{1}.\ \left(\int_{0}^{\pi/4}(\tan t)^{n}dt\right)} & \quad\quad & \mathbf{2}.{\displaystyle \left(\int_{1}^{+\infty}\frac{dt}{1+t^{n}}\right)}\\
+\mathbf{3}.{\displaystyle \left(\int_{0}^{1}f(t^{n})dt\right),\ f:[0,1]\to\mathbb{R}\textrm{ continue}.}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1674
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 66
+\shape default
+ - Découpage - 1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer la limite des suites suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1.}\ \left(\int_{0}^{+\infty}\frac{dx}{x^{n}+e^{x}}\right) & \quad\quad & \mathbf{2.}\ \left(\int_{0}^{+\infty}\frac{dx}{(1+x^{2})\sqrt[n]{1+x^{n}}}\right)\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1817
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 67
+\shape default
+ - Rayon de convergence - 1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer le rayon de convergence des séries entières suivantes :
+ 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1.}\ \sum_{n\geq1}\frac{1}{\sqrt{n}}x^{n} & \mathbf{2.}\ \sum_{n}\frac{n!}{(2n)!}x^{n} & \mathbf{3.}\ \sum_{n\geq1}\frac{n!}{2^{2n}\sqrt{(2n)!}}x^{n}\\
+\mathbf{4.}\ \sum_{n}(\ln n)x^{n} & \mathbf{5.}\ \sum_{n}\frac{\sqrt{n}x^{2n}}{2^{n}+1} & \mathbf{6.}\ \sum_{n}(2+ni)z^{n}\\
+\mathbf{7.}\ \sum_{n}\frac{(-1)^{n}}{1\times3\times\dots\times(2n-1)}z^{n}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1841
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 68
+\shape default
+ - Rayon de convergence et somme - 1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Pour les séries entières suivantes, donner le rayon de convergence
+ et exprimer leur somme en termes de fonctions usuelles : 
+\begin_inset Formula 
+\[
+\begin{array}{llllll}
+\mathbf{1.}\quad\sum_{n\geq0}\frac{n-1}{n!}x^{n} & \quad\quad & \mathbf{2.}\quad\sum_{n\geq0}\frac{n+2}{n+1}x^{n} & \quad\quad & \mathbf{3.}\quad\sum_{n\geq0}\frac{(n+1)(n-2)}{n!}x^{n}\\
+\mathbf{4.}\quad\sum_{n\geq1}\frac{(-1)^{n+1}}{2^{n}n!}x^{2n}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1854
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 69
+\shape default
+ - Régularité 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Montrer que les fonctions suivantes sont de classe 
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=\sin(x)/x$
+\end_inset
+
+ si 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, 
+\begin_inset Formula $f(0)=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g(x)=\textrm{ch}(\sqrt{x})$
+\end_inset
+
+ si 
+\begin_inset Formula $x\geq0$
+\end_inset
+
+ et 
+\begin_inset Formula $g(x)=\cos(\sqrt{-x})$
+\end_inset
+
+ si 
+\begin_inset Formula $x<0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h(x)=\frac{1}{\sin x}-\frac{1}{x}$
+\end_inset
+
+ si 
+\begin_inset Formula $x\in]-\pi,0[\cup]0,\pi[$
+\end_inset
+
+, 
+\begin_inset Formula $h(0)=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1109
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 70
+\shape default
+ - Majorations et équivalences - 1 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Etudier la convergence des séries 
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+ suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lllll}
+{\displaystyle \mathbf{1}.\ u_{n}=\frac{n}{n^{3}+1}} &  & {\displaystyle \mathbf{2}.\ u_{n}=\frac{\sqrt{n}}{n^{2}+\sqrt{n}}} &  & {\displaystyle \mathbf{3}.\ \dis u_{n}=n\sin(1/n)}\\
+{\displaystyle \mathbf{4}.\ u_{n}=\frac{1}{\sqrt{n}}\ln\left(1+\frac{1}{\sqrt{n}}\right)} &  & {\displaystyle \mathbf{5}.\ u_{n}=\frac{(-1)^{n}+n}{n^{2}+1}} &  & {\displaystyle \mathbf{6}.\ u_{n}=\frac{1}{n!}}\\
+{\displaystyle \mathbf{7}.\ u_{n}=\frac{3^{n}+n^{4}}{5^{n}-2^{n}}}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1165
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 71
+\shape default
+ - Vrai/Faux 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soit 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ une suite de nombres réels.
+ Dire si les affirmations suivantes sont vraies ou fausses.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $u_{n}>0$
+\end_inset
+
+ et si la série 
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+ converge, alors 
+\begin_inset Formula $u_{n+1}/u_{n}$
+\end_inset
+
+ a une limite strictement inférieure à 1.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $u_{n}>0$
+\end_inset
+
+ et si la série 
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+ converge, alors 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ est décroissante à partir d'un certain rang.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $u_{n}>0$
+\end_inset
+
+, et si la série 
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+ converge, alors la série de terme général 
+\begin_inset Formula $u_{n}^{2}$
+\end_inset
+
+ converge.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(-1)^{n}nu_{n}\to1$
+\end_inset
+
+, la série 
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+ converge.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(-1)^{n}n^{2}u_{n}\to1$
+\end_inset
+
+, la série 
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+ converge.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1774
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 72
+\shape default
+ - Vrai/Faux 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soit 
+\begin_inset Formula $(f_{n})$
+\end_inset
+
+ une suite de fonctions qui converge simplement vers une fonction 
+\begin_inset Formula $f$
+\end_inset
+
+ sur un intervalle 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ Dire si les assertions suivantes sont vraies ou fausses : 
+\end_layout
+
+\begin_layout Enumerate
+Si les 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ sont croissantes, alors 
+\begin_inset Formula $f$
+\end_inset
+
+ aussi.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si les 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ sont strictement croissantes, alors 
+\begin_inset Formula $f$
+\end_inset
+
+ aussi.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si les 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ sont périodiques de période 
+\begin_inset Formula $T$
+\end_inset
+
+, alors 
+\begin_inset Formula $f$
+\end_inset
+
+ aussi.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si les 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ sont continues en 
+\begin_inset Formula $a$
+\end_inset
+
+, alors 
+\begin_inset Formula $f$
+\end_inset
+
+ aussi.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Reprendre l'exercice en remplaçant la convergence simple par la convergence
+ uniforme.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 63
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 73
+\shape default
+ - Nature 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Étudier la nature des suites suivantes, et déterminer leur limite éventuell
+e : 
+\begin_inset Formula 
+\[
+\begin{array}{lcl}
+{\displaystyle \mathbf{1}.\ u_{n}=\frac{\sin(n)+3\cos\left(n^{2}\right)}{\sqrt{n}}} &  & {\displaystyle \mathbf{2}.\ u_{n}=\frac{2n+(-1)^{n}}{5n+(-1)^{n+1}}}\\
+{\displaystyle \mathbf{3}.\ u_{n}=\frac{n^{3}+5n}{4n^{2}+\sin(n)+\ln(n)}} &  & {\displaystyle \mathbf{4}.\ u_{n}=\sqrt{2n+1}-\sqrt{2n-1}}\\
+{\displaystyle \mathbf{5}.\ u_{n}=3^{n}e^{-3n}.}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 78
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 74
+\shape default
+ - Par encadrement 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Etudier les suites 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ définies par 
+\begin_inset Formula 
+\[
+\begin{array}{lcl}
+{\displaystyle 1.\ \sum_{k=1}^{n}\frac{n}{n+k}} &  & {\displaystyle 2.\ u_{n}=\sum_{k=0}^{2n+1}\frac{n}{n^{2}+k}.}\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2159
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 75
+\shape default
+ - Vrai/Faux 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Dire si les assertions suivantes sont vraies ou fausses.
+ On justifiera les réponses : 
+\end_layout
+
+\begin_layout Enumerate
+Soit 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ une suite croissante et 
+\begin_inset Formula $\ell\in\mathbb{R}$
+\end_inset
+
+.
+ Alors les propositions 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+si 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ converge vers 
+\begin_inset Formula $\ell$
+\end_inset
+
+, alors 
+\begin_inset Formula $u_{n}\leq\ell$
+\end_inset
+
+ quelque soit 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ et 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+s'il existe 
+\begin_inset Formula $n_{0}\in\mathbb{N}$
+\end_inset
+
+ tel que 
+\begin_inset Formula $u_{n_{0}}>\ell$
+\end_inset
+
+, alors 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ ne converge pas vers 
+\begin_inset Formula $\ell$
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ sont équivalentes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ est une suite géométrique non-nulle de raison 
+\begin_inset Formula $q\neq0$
+\end_inset
+
+, alors 
+\begin_inset Formula $\left(\frac{1}{u_{n}}\right)$
+\end_inset
+
+ est une suite géométrique de raison 
+\begin_inset Formula $\frac{1}{q}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Soit 
+\begin_inset Formula $(u_{n})_{n\geq0}$
+\end_inset
+
+ une suite à termes positifs convergeant vers 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Alors, 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ est décroissante à partir d’un certain rang.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ est croissante et que 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ vérifie 
+\begin_inset Formula $u_{n+1}=f(u_{n})$
+\end_inset
+
+ pour tout entier 
+\begin_inset Formula $n$
+\end_inset
+
+, alors 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ est croissante.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Toute suite non-majorée tend vers 
+\begin_inset Formula $+\infty$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2374
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 76
+\shape default
+ - Avec des quantificateurs 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soit 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ une suite de nombres réels.
+ Écrire avec des quantificateurs les propositions suivantes : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ est bornée.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ n'est pas croissante.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ n'est pas monotone.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ n'est pas majorée.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ ne tend pas vers 
+\begin_inset Formula $+\infty$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 97
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 77
+\shape default
+ - Vrai/Faux 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soient 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ et 
+\begin_inset Formula $(v_{n})$
+\end_inset
+
+ deux suites réelles.
+ Dire si les assertions suivantes sont vraies ou fausses.
+ Lorsqu'elles sont vraies, les démontrer.
+ Lorsqu'elles sont fausses, donner un contre-exemple.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ et 
+\begin_inset Formula $(v_{n})$
+\end_inset
+
+ divergent, alors 
+\begin_inset Formula $(u_{n}+v_{n})$
+\end_inset
+
+ diverge.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ et 
+\begin_inset Formula $(v_{n})$
+\end_inset
+
+ divergent, alors 
+\begin_inset Formula $(u_{n}\times v_{n})$
+\end_inset
+
+ diverge.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ converge et 
+\begin_inset Formula $(v_{n})$
+\end_inset
+
+ diverge, alors 
+\begin_inset Formula $(u_{n}+v_{n})$
+\end_inset
+
+ diverge.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ converge et 
+\begin_inset Formula $(v_{n})$
+\end_inset
+
+ diverge, alors 
+\begin_inset Formula $(u_{n}\times v_{n})$
+\end_inset
+
+ diverge.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ n'est pas majorée, alors 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ tend vers 
+\begin_inset Formula $+\infty$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ est positive et tend vers 0, alors 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ est décroissante à partir d'un certain rang.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1528
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 78
+\shape default
+ - Sont-elles continues? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer si l'application linéaire 
+\begin_inset Formula $T:(E,N_{1})\to(F,N_{2})$
+\end_inset
+
+ est continue dans les cas suivants : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\mathcal{C}([0,1],\mathbb{R})$
+\end_inset
+
+ muni de 
+\begin_inset Formula $\|f\|_{1}=\int_{0}^{1}|f(t)|dt$
+\end_inset
+
+ et 
+\begin_inset Formula $T:(E,\|.\|_{1})\to(E,\|.\|_{1}),\ f\mapsto fg$
+\end_inset
+
+ où 
+\begin_inset Formula $g\in E$
+\end_inset
+
+ est fixé.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\mathbb{R}[X]$
+\end_inset
+
+ muni de 
+\begin_inset Formula $\|\sum_{k\geq0}a_{k}X^{k}\|=\sum_{k\geq0}|a_{k}|$
+\end_inset
+
+ et 
+\begin_inset Formula $T:(E,\|.\|)\to(E,\|.\|)$
+\end_inset
+
+, 
+\begin_inset Formula $P\mapsto P'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\mathbb{R}_{n}[X]$
+\end_inset
+
+ muni de 
+\begin_inset Formula $\|\sum_{k=0}^{n}a_{k}X^{k}\|=\sum_{k=0}^{n}|a_{k}|$
+\end_inset
+
+ et 
+\begin_inset Formula $T:(E,\|.\|)\to(E,\|.\|)$
+\end_inset
+
+, 
+\begin_inset Formula $P\mapsto P'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\mathbb{R}[X]$
+\end_inset
+
+ muni de 
+\begin_inset Formula $\|\sum_{k\geq0}a_{k}X^{k}\|=\sum_{k\geq0}k!|a_{k}|$
+\end_inset
+
+ et 
+\begin_inset Formula $T:(E,\|.\|)\to(E,\|.\|)$
+\end_inset
+
+, 
+\begin_inset Formula $P\mapsto P'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\mathcal{C}([0,1],\mathbb{R})$
+\end_inset
+
+ muni de 
+\begin_inset Formula $\|f\|_{2}=\left(\int_{0}^{1}|f(t)|^{2}dt\right)^{1/2}$
+\end_inset
+
+, 
+\begin_inset Formula $F=\mathcal{C}([0,1],\mathbb{R})$
+\end_inset
+
+ muni de 
+\begin_inset Formula $\|f\|_{1}=\int_{0}^{1}|f(t)|dt$
+\end_inset
+
+ et 
+\begin_inset Formula $T:(E,\|.\|_{2})\to(F,\|.\|_{1}),\ f\mapsto fg$
+\end_inset
+
+ où 
+\begin_inset Formula $g\in E$
+\end_inset
+
+ est fixé.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1539
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 79
+\shape default
+ - 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer si les ensembles suivants sont, ou ne sont pas, compacts
+ : 
+\begin_inset Formula 
+\[
+\begin{array}{ll}
+A=\{(x,y)\in\mathbb{R}^{2},\ x^{2}+y^{4}=1\} & B=\{(x,y)\in\mathbb{R}^{2},\ x^{2}+y^{5}=2\}\\
+C=\{(x,y)\in\mathbb{R}^{2},\ x^{2}+xy+y^{2}\leq1\} & D=\{(x,y)\in\mathbb{R}^{2},\ x^{2}+8xy+y^{2}\leq1\}\\
+E=\{(x,y)\in\mathbb{R}^{2},\ y^{2}=x(1-2x)\}.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1460
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 80
+\shape default
+ - Vrai/faux 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Dites si les propositions suivantes sont vraies ou fausses : 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(E,N)$
+\end_inset
+
+ est un espace vectoriel normé, 
+\begin_inset Formula $x\in E$
+\end_inset
+
+, 
+\begin_inset Formula $r>0$
+\end_inset
+
+ et 
+\begin_inset Formula $B(x,r)$
+\end_inset
+
+ est la boule de centre 
+\begin_inset Formula $x$
+\end_inset
+
+ et de rayon 
+\begin_inset Formula $r>0$
+\end_inset
+
+, alors pour tout 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda B(x,r)=B(x,\lambda r)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $N:(x,y)\mapsto|5x+3y|$
+\end_inset
+
+ est une norme sur 
+\begin_inset Formula $\mtr^{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Soit 
+\begin_inset Formula $(E,\|\cdot\|)$
+\end_inset
+
+ un espace vectoriel normé, et 
+\begin_inset Formula $x,y$
+\end_inset
+
+ deux vecteurs de 
+\begin_inset Formula $E$
+\end_inset
+
+ tels que 
+\begin_inset Formula $\|x+y\|=\|x\|+\|y\|$
+\end_inset
+
+.
+ Alors 
+\begin_inset Formula $x\in\textrm{vect}(y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Soit 
+\begin_inset Formula $E=\mathbb{R}_{1}[X]$
+\end_inset
+
+.
+ Alors 
+\begin_inset Formula $N:P\mapsto|P(0)|+|P(1)|$
+\end_inset
+
+ est une norme sur 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+ et 
+\begin_inset Formula $N_{2}$
+\end_inset
+
+ sont deux normes équivalentes sur 
+\begin_inset Formula $E$
+\end_inset
+
+, et si on note 
+\begin_inset Formula $B_{1}=\{x\in E;\ N_{1}(x)\leq1\}$
+\end_inset
+
+ et 
+\begin_inset Formula $B_{2}=\{x\in E;\ N_{2}(x)\leq1\}$
+\end_inset
+
+, alors il existe 
+\begin_inset Formula $a,b>0$
+\end_inset
+
+ tels que 
+\begin_inset Formula $aB_{1}\subset B_{2}\subset bB_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Soit 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ une suite de l'espace vectoriel normé 
+\begin_inset Formula $(E,\|\cdot\|)$
+\end_inset
+
+ et soit 
+\begin_inset Formula $\ell\in E$
+\end_inset
+
+.
+ Alors 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ converge vers 
+\begin_inset Formula $\ell$
+\end_inset
+
+ si et seulement si 
+\begin_inset Formula $(\|u_{n}-\ell\|)$
+\end_inset
+
+ tend vers 0.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Une suite 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ de l'espace vectoriel normé 
+\begin_inset Formula $(E,\|\cdot\|)$
+\end_inset
+
+ converge si et seulement si toute suite extraite de 
+\begin_inset Formula $(u_{n})$
+\end_inset
+
+ converge.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1989
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 81
+\shape default
+ - Quelques suites de suites 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Dire si les suites suivantes sont convergentes dans 
+\begin_inset Formula $\ell^{2}$
+\end_inset
+
+, et si c'est le cas, calculer leur limite.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x(n)=(\frac{1}{n},0,0,0,\dots)$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x(n)=(1,1/2,1/3,\dots,1/n,0,0,\dots)$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x(n)=(1,1/\sqrt{2},1/\sqrt{3},\dots,1/\sqrt{n},0,0,\dots)$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x(n)_{m}=1$
+\end_inset
+
+ si 
+\begin_inset Formula $n=m$
+\end_inset
+
+, 0 sinon, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x(n)_{m}=\frac{1}{m}+\frac{1}{nm^{3}}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x(n)_{m}=\frac{1}{m}+\frac{1}{nm^{1/3}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 542
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 82
+\shape default
+ - Egalités et inégalités avec des valeurs absolues 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre dans 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ les équations et inéquations suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1.}\ |x+3|=5 & \quad & \mathbf{2.}\ |x+3|\leq5\\
+\mathbf{3.}\ |x+2|>7 & \quad & \mathbf{4.}\ |2x-4|\leq|x+2|
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1495
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 83
+\shape default
+ - Exemples 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer si les ensembles suivants sont ouverts ou fermés : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+A=\{(x,y)\in\mtr^{2}\mid0<\vert x-1\vert<1\} & \quad\quad & B=\{(x,y)\in\mtr^{2}\mid0\leq x\leq y\}\\
+C=\{(x,y)\in\mtr^{2}\mid\vert x\vert<1,\;\vert y\vert\leq1\} & \quad\quad & D=\{(x,y)\in\mtr^{2}\mid x\in\mtq\textrm{ et }y\in\mtq\}\\
+E=\{(x,y)\in\mtr^{2}\mid x\not\in\mtq\textrm{ ou }\ y\not\in\mtq\} & \quad\quad & F=\{(x,y)\in\mtr^{2}\mid x^{2}+y^{2}<4\}.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1886
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 84
+\shape default
+ - Fonction triangle 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer la transformée de Fourier de la fonction triangle définie
+ par : 
+\begin_inset Formula 
+\[
+f(x)=\left\{ \begin{array}{ll}
+1+x & \textrm{si }-1\leq x\leq0\\
+1-x & \textrm{si }0\leq x<1\\
+0 & \textrm{sinon.}
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 788
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 85
+\shape default
+ - Abscisse de convergence 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer l'abscisse de convergence de la transformée de Laplace des
+ fonction suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1}.\ e^{2t}\cos(\omega t),\ \omega\in\mathbb{R} & \quad & \mathbf{2}.\ t^{n}e^{-3t},\ n\geq0\\
+\mathbf{3}.\ \cosh(at),\ a>0
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 796
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 86
+\shape default
+ - Recherche d'original 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Retrouver l'original des transformée de Laplace suivantes : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1}.\ \frac{1}{(p+1)(p-2)} & \quad & \mathbf{2}.\ \frac{-1}{(p-2)^{2}}\\
+\mathbf{3}.\ \frac{5p+10}{p^{2}+3p-4} & \quad & \mathbf{4}.\ \frac{p-7}{p^{2}-14p+50}\\
+\mathbf{5}.\ \frac{p}{p^{2}-6p+13} & \quad & \mathbf{6}.\ \frac{e^{-2p}}{p+3}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 691
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 87
+\shape default
+ - Équations du second degré 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre, dans 
+\begin_inset Formula $\mathbb{Z}^{2}$
+\end_inset
+
+, les équations diophantiennes suivantes : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $xy=2x+3y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}-y^{2}-x+3y=30$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}-5y^{2}=3$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 693
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 88
+\shape default
+ - Des équations de Bezout 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre les équations suivantes dans 
+\begin_inset Formula $\mathbb{Z}^{2}$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2x+5y=3$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $323x-391y=612$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $162x+207y=27$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $221x+247y=15$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 706
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 89
+\shape default
+ - Calculs de pgcd 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soient 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+.
+ Calculer les pgcd suivants : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1}.\ (n^{2}+n)\wedge(2n+1) & \quad\quad & \mathbf{2}.\ (15n^{2}+8n+6)\wedge(30n^{2}+21n+13)\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2281
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 90
+\shape default
+ - Inversibles de 
+\begin_inset Formula $\mathbb{Z}/n\mathbb{Z}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm 
+\end_layout
+
+\begin_layout Enumerate
+Est-ce que 
+\begin_inset Formula $\overline{18}$
+\end_inset
+
+ est inversible dans 
+\begin_inset Formula $\mathbb{Z}/49\mathbb{Z}$
+\end_inset
+
+? Si oui, quel est son inverse? 
+\end_layout
+
+\begin_layout Enumerate
+Est-ce que 
+\begin_inset Formula $\overline{42}$
+\end_inset
+
+ est inversible dans 
+\begin_inset Formula $\mathbb{Z}/135\mathbb{Z}$
+\end_inset
+
+? Si oui, quel est son inverse? 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 717
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 91
+\shape default
+ - Équations linéaires 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre, dans 
+\begin_inset Formula $\mathbb{Z}/37\mathbb{Z}$
+\end_inset
+
+, les équations ou systèmes d'équations suivants : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\bar{7}y=\bar{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \begin{array}{rcl}
+\bar{3}x+\bar{7}y & = & \bar{3}\\
+\bar{6}x-\bar{7}y & = & \bar{0}
+\end{array}\right.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 720
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 92
+\shape default
+ - Équations du second degré 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}+x+\overline{7}=\overline{0}$
+\end_inset
+
+ dans 
+\begin_inset Formula $\mathbb{Z}/13\mathbb{Z}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}-\overline{4}x+\overline{3}=\overline{0}$
+\end_inset
+
+ dans 
+\begin_inset Formula $\mathbb{Z}/12\mathbb{Z}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1622
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 93
+\shape default
+ - Un peu d'astuce 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm 
+\end_layout
+
+\begin_layout Enumerate
+On note 
+\begin_inset Formula $z_{1},z_{2},z_{3}$
+\end_inset
+
+ les trois racines dans 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ du polynôme 
+\begin_inset Formula $P(z)=z^{3}-4z+8\sqrt{2}$
+\end_inset
+
+ et 
+\begin_inset Formula $A_{1},A_{2},A_{3}$
+\end_inset
+
+ les points du plan complexe d'affixes respectives 
+\begin_inset Formula $z_{1},z_{2}$
+\end_inset
+
+ et 
+\begin_inset Formula $z_{3}$
+\end_inset
+
+.
+ Quel est l'affixe de l'isobarycentre de 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ et 
+\begin_inset Formula $A_{3}$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+Soit 
+\begin_inset Formula $A,B$
+\end_inset
+
+ et 
+\begin_inset Formula $C$
+\end_inset
+
+ trois points du plan.
+ Déterminer les points 
+\begin_inset Formula $M$
+\end_inset
+
+ du plan tels que 
+\begin_inset Formula $\overrightarrow{MA}-2\overrightarrow{MB}+\overrightarrow{MC}=\overrightarrow{0}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 958
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 94
+\shape default
+ - Réduction de l'équation d'une conique 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Pour les coniques suivantes, déterminer la nature, les éléments caractérist
+iques et une équation réduite : 
+\begin_inset Formula 
+\[
+\begin{array}{ll}
+\mathbf{1.}\ x^{2}-xy+y^{2}=1\quad & \quad\\
+\mathbf{2.}\ x^{2}+\sqrt{3}xy+x-2=0\\
+\mathbf{3.}\ 2xy-2\sqrt{2}x-1=0\quad & \quad\\
+\mathbf{4.}\ \frac{x^{2}}{4}-\frac{\sqrt{3}}{2}xy+\frac{3}{4}y^{2}-(1+3\sqrt{3})x-(3-\sqrt{3})y+13=0
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1188
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 95
+\shape default
+ - Tous les cas? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer la nature au point 
+\begin_inset Formula $t=0$
+\end_inset
+
+ des arcs paramétrés suivants : 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\mathbf{1.}\ t\mapsto(t+2t^{2}-t^{3},t+2t^{2}-t^{7}) & \quad\quad & \mathbf{2.}\ t\mapsto(-t+t^{2},t^{2}+t^{3})\\
+\mathbf{3.}\ t\mapsto(-t^{2}-2t^{3},-t^{3}-t^{5}) & \quad\quad & \mathbf{4.}\ t\mapsto(t^{2}+3t^{3}+t^{4},-2t^{2}-6t^{3}+t^{4}).
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2545
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 96
+\shape default
+ - Immersions, submersions? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les fonctions suivantes sont-elles des immersions? des submersions?
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}^{3},\ (x,y)\mapsto(x,y,0)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}^{3}\to\mathbb{R}^{2},\ (x,y,z)\mapsto(y,z)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}^{3}\to\mathbb{R},\ (x,y,z)\mapsto xy+2yz+3xz$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}^{2},\ t\mapsto(\sin(2t),\sin(3t))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}^{3}\to\mathbb{R}^{2},\ (x,y,z)\mapsto(x^{2}+y^{2}+z^{2},xy)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}^{2}\to\mathbb{R}^{3},\ (x,y)\mapsto(e^{x},\cos(y),\sin(y)).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2557
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 97
+\shape default
+ - Sous-variété? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les ensembles suivants sont-ils des sous-variétés (si c'est le cas,
+ on précisera la dimension) : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{S}_{1}=\{(x,y,z)\in\mathbb{R}^{3};\ z=x-2(x^{2}+y^{2})\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{S}_{2}=\{(t,t^{2});\ t\in\mathbb{R}\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{S}_{3}=\{(x,y,z)\in\mathbb{R}^{3};\ x^{2}+y^{2}+z^{2}=1\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{S}_{4}=\{(x,y)\in\mathbb{R}^{2};\ xy=0\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{S}_{5}=\{(x,y)\in\mathbb{R}^{2};\ x>0\textrm{ et }y\geq0\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2136
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 98
+\shape default
+ - Distance à un plan et à une droite 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer la distance 
+\end_layout
+
+\begin_layout Enumerate
+du point 
+\begin_inset Formula $M(1,1,1)$
+\end_inset
+
+ au plan 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ paramétré par : 
+\begin_inset Formula 
+\[
+\begin{cases}
+x= & 1+2t+t'\\
+y= & t+t'\\
+z= & 2+t+t'.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+du point 
+\begin_inset Formula $M(0,2,4)$
+\end_inset
+
+ à la droite 
+\begin_inset Formula $(D)$
+\end_inset
+
+ d'équation : 
+\begin_inset Formula 
+\[
+\begin{cases}
+x+y-3z+1 & =0\\
+2x+y-5z & =0.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2144
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 99
+\shape default
+ - Longueur de l'astroïde 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer la longueur de l'astroïde de paramétrage 
+\begin_inset Formula 
+\[
+\left\{ \begin{gathered}x(t)=\cos^{3}t\\
+y(t)=\sin^{3}t
+\end{gathered}
+\right.,t\in\left[{0,2\pi}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2145
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 100
+\shape default
+ - Longueur d'une arche de cycloïde 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer la longueur d'une arche de cycloïde de paramétrage 
+\begin_inset Formula 
+\[
+\left\{ \begin{gathered}x(t)=t-\sin t\\
+y(t)=1-\cos t
+\end{gathered}
+\right.,t\in\left[{0,2\pi}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2016
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 101
+\shape default
+ - Vrai/Faux 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les assertions suivantes sont-elles vraies ou fausses? 
+\end_layout
+
+\begin_layout Enumerate
+Deux événements incompatibles sont indépendants.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Deux événements indépendants sont incompatibles.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $P(A)+P(B)=1$
+\end_inset
+
+, alors 
+\begin_inset Formula $A=\bar{B}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+ et 
+\begin_inset Formula $B$
+\end_inset
+
+ sont deux événements indépendants, alors 
+\begin_inset Formula $P(A\cup B)=P(A)+P(B)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Soit 
+\begin_inset Formula $(A_{n})_{n\in\mathbb{N}}$
+\end_inset
+
+ et 
+\begin_inset Formula $(B_{p})_{p\in\mathbb{N}}$
+\end_inset
+
+ deux systèmes complets d'événements.
+ Alors 
+\begin_inset Formula $(A_{n}\cap B_{p})_{(n,p)\in\mathbb{N}^{2}}$
+\end_inset
+
+ est un système complet d'événement.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1227
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 102
+\shape default
+ - Écriture ensembliste 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soit 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ un univers et soient 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+ trois événements de 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ Traduire en termes ensemblistes (en utilisant uniquement les symboles d'union,
+ d'intersection et de passage au complémentaire, ainsi que 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ et 
+\begin_inset Formula $C$
+\end_inset
+
+) les événements suivants : 
+\end_layout
+
+\begin_layout Enumerate
+Seul 
+\begin_inset Formula $A$
+\end_inset
+
+ se réalise; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ et 
+\begin_inset Formula $B$
+\end_inset
+
+ se réalisent, mais pas 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+les trois événements se réalisent; 
+\end_layout
+
+\begin_layout Enumerate
+au moins l'un des trois événements se réalise; 
+\end_layout
+
+\begin_layout Enumerate
+au moins deux des trois événements se réalisent; 
+\end_layout
+
+\begin_layout Enumerate
+aucun ne se réalise; 
+\end_layout
+
+\begin_layout Enumerate
+au plus l'un des trois se réalise; 
+\end_layout
+
+\begin_layout Enumerate
+exactement deux des trois se réalisent; 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2333
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 103
+\shape default
+ - Densité ou non? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Parmi les fonctions suivantes définies sur 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, déterminer lesquelles sont la densité d'une variable aléatoire à densité.
+ Calculer le cas échéant leur fonction de répartition et préciser si elles
+ admettent une espérance.
+ 
+\begin_inset Formula 
+\[
+\begin{array}{lll}
+\textbf{1. }f_{1}(x)=\left\{ \begin{array}{ll}
+\cos x & \textrm{ si }x\in[0,\pi/2]\\
+0 & \textrm{ sinon.}
+\end{array}\right. & \quad\quad & \textbf{2. }f_{2}(x)=\frac{1}{1+x^{2}},\ x\in\mathbb{R}\\
+\textbf{3. }f_{3}(x)=\frac{e^{x}}{(e^{x}+1)^{2}},\ x\in\mathbb{R} & \quad\quad & \textbf{4. }f_{4}(x)=\left\{ \begin{array}{ll}
+1+x & \textrm{ si }x\in[-1,0]\\
+1-x & \textrm{ si }x\in[0,1]\\
+0 & \textrm{ sinon}
+\end{array}\right.\\
+\textbf{5. }f_{5}(x)=\left\{ \begin{array}{ll}
+\frac{1}{|x|^{3}} & \textrm{ si }|x|>1\\
+0 & \textrm{ sinon}
+\end{array}\right. & \quad\quad & \textbf{6. }f_{6}(x)=\sin x+1,\ x\in\mathbb{R}.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 497
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 104
+\shape default
+ - Quelques exemples 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les fonctions suivantes sont-elles injectives? surjectives? bijectives?
+ 
+\begin_inset Formula 
+\[
+f_{1}:\mtz\to\mtz,\ n\mapsto2n,\ f_{2}:\mtz\to\mtz,\ n\mapsto-n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{3}:\mtr\to\mtr,\ x\mapsto x^{2},\ f_{4}:\mtr\to\mtr_{+},\ x\mapsto x^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{5}:\mtc\to\mtc,z\mapsto z^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 498
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 105
+\shape default
+ - Encore des exemples 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les applications suivantes sont-elles injectives, surjectives, bijectives?
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mtn\to\mtn,\ n\mapsto n+1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g:\mtz\to\mtz,\ n\mapsto n+1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h:\mtr^{2}\to\mtr^{2},\ (x,y)\mapsto(x+y,x-y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2530
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 106
+\shape default
+ - Diagramme de Venn 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm On considère le diagramme de Venn suivant, avec 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+ trois parties d'un ensemble 
+\begin_inset Formula $E$
+\end_inset
+
+, et 
+\begin_inset Formula $a,b,c,d,e,f,g,h$
+\end_inset
+
+ des élements de 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1.}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{qqzzff}{rgb}{0.,0.6,1.}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{zzffzz}{rgb}{0.6,1.,0.6}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{zzttqq}{rgb}{0.6,0.2,0.}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+clip(-5.42,-6.78) rectangle (12.72,6.06);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill[line width=2.pt,color=zzttqq] (-1.,4.52) -- (-0.94,-5.84) -- (9.42,-5.78)
+ -- (9.36,4.58) -- cycle;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [line width=2.pt,color=zzttqq] (-1.,4.52)-- (-0.94,-5.84);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [line width=2.pt,color=zzttqq] (-0.94,-5.84)-- (9.42,-5.78);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [line width=2.pt,color=zzttqq] (9.42,-5.78)-- (9.36,4.58);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [line width=2.pt,color=zzttqq] (9.36,4.58)-- (-1.,4.52);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [rotate around={37.278174199869035:(2.63,0.27)},line width=2.pt,fill=black,fill
+ opacity=0.10000000149011612] (2.63,0.27) ellipse (3.2328791871522835cm and
+ 2.017549959411765cm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [rotate around={-19.005984196036927:(6.34,1.71)},line width=2.pt,color=zzffzz,f
+ill=zzffzz,fill opacity=0.20000000298023224] (6.34,1.71) ellipse (2.328611391841271c
+m and 2.1251661144985716cm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [rotate around={-46.8965183032093:(4.96,-1.7)},line width=2.pt,color=qqzzff,fil
+l=qqzzff,fill opacity=0.15000000596046448] (4.96,-1.7) ellipse (3.444317075764753cm
+ and 2.7015033071245123cm);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0.24,0.16) node[anchor=north west] {$A$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (7.62,3.04) node[anchor=north west] {$B$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (6.08,-3.26) node[anchor=north west] {$C$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (2.26,2.38) node[anchor=north west] {$a$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (1.02,-3.62) node[anchor=north west] {$b$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (7.62,1.84) node[anchor=north west] {$c$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (4.72,2.48) node[anchor=north west] {$d$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (4.82,1.18) node[anchor=north west] {$e$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (2.82,0.02) node[anchor=north west] {$f$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (6.14,0.66) node[anchor=north west] {$g$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (5.62,-1.68) node[anchor=north west] {$h$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-0.82,4.54) node[anchor=north west] {$E$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{scriptsize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [color=ududff] (2.16,1.62)-- ++(-2.5pt,-2.5pt) -- ++(5.0pt,5.0pt) ++(-5.0pt,0)
+ -- ++(5.0pt,-5.0pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [color=ududff] (0.78,-3.82)-- ++(-2.5pt,-2.5pt) -- ++(5.0pt,5.0pt) ++(-5.0pt,0)
+ -- ++(5.0pt,-5.0pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [color=ududff] (7.32,1.2)-- ++(-2.5pt,-2.5pt) -- ++(5.0pt,5.0pt) ++(-5.0pt,0)
+ -- ++(5.0pt,-5.0pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [color=ududff] (4.7,2.14)-- ++(-2.5pt,-2.5pt) -- ++(5.0pt,5.0pt) ++(-5.0pt,0)
+ -- ++(5.0pt,-5.0pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [color=ududff] (4.72,0.86)-- ++(-2.5pt,-2.5pt) -- ++(5.0pt,5.0pt) ++(-5.0pt,0)
+ -- ++(5.0pt,-5.0pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [color=ududff] (2.94,-0.08)-- ++(-2.5pt,-2.5pt) -- ++(5.0pt,5.0pt) ++(-5.0pt,0)
+ -- ++(5.0pt,-5.0pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [color=ududff] (6.08,0.22)-- ++(-2.5pt,-2.5pt) -- ++(5.0pt,5.0pt) ++(-5.0pt,0)
+ -- ++(5.0pt,-5.0pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [color=ududff] (5.36,-2.4)-- ++(-2.5pt,-2.5pt) -- ++(5.0pt,5.0pt) ++(-5.0pt,0)
+ -- ++(5.0pt,-5.0pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{scriptsize}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Dire si les assertions suivantes sont vraies ou fausses : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\in A\cap\bar{B}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\in\bar{A}\cap\bar{B}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\in\bar{A}\cup\bar{B}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\in C\backslash A$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $e\in\bar{A}\cap\bar{B}\cap\bar{C}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\{h,b\}\subset\bar{A}\cap\bar{B}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\{a,f\}\subset A\cup C$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 485
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 107
+\shape default
+ - Écriture en extension 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Écrire en extension (c'est-à-dire en donnant tous leurs éléments) les
+ ensembles suivants : 
+\begin_inset Formula 
+\[
+A=\left\{ \textrm{nombres entiers compris entre \ensuremath{\sqrt{2}} et \ensuremath{2\pi}}\right\} .
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\left\{ x\in\mtq;\ \exists(n,p)\in\mtn\times\mtn,\ x=\frac{p}{n}\textrm{ et }1\leq p\leq2n\leq7\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 489
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 108
+\shape default
+ - Deux descriptions d'un même ensemble 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soit 
+\begin_inset Formula $A=\{(x,y)\in\mathbb{R}^{2};\ 4x-y=1\}$
+\end_inset
+
+ et 
+\begin_inset Formula $C=\{(t+1,4t+3);\ t\in\mathbb{R}\}$
+\end_inset
+
+.
+ Démontrer que 
+\begin_inset Formula $A=C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2395
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 109
+\shape default
+ - Autour de l'implication 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Trouver des propositions 
+\begin_inset Formula $P$
+\end_inset
+
+ et 
+\begin_inset Formula $Q$
+\end_inset
+
+ telles que 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\implies Q$
+\end_inset
+
+ est vrai et 
+\begin_inset Formula $Q\implies P$
+\end_inset
+
+ est vrai.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\implies Q$
+\end_inset
+
+ est faux et 
+\begin_inset Formula $Q\implies P$
+\end_inset
+
+ est vrai.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\implies Q$
+\end_inset
+
+ est faux et 
+\begin_inset Formula $Q\implies P$
+\end_inset
+
+ est faux.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2161
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 110
+\shape default
+ - Forme normale conjonctive et disjonctive 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Écrire sous forme normale conjonctive et sous forme normale disjonctive
+ les propositions ci-dessous : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\lnot p\wedge q)\implies r$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lnot(p\vee\lnot q)\wedge(s\implies t)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lnot(p\wedge q)\wedge(p\vee q)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 469
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 111
+\shape default
+ - Vraies ou fausses 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer parmi les propositions suivantes lesquelles sont vraies
+ : 
+\end_layout
+
+\begin_layout Enumerate
+136 est un multiple de 17 et 2 divise 167.
+ 
+\end_layout
+
+\begin_layout Enumerate
+136 est un multiple de 17 ou 2 divise 167.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in\mathbb{R},\ (x+1=0\ \textrm{ et }x+2=0)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\exists x\in\mathbb{R},\ x+1=0)\textrm{ et }(\exists x\in\mathbb{R},\ x+2=0)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in\mathbb{R},\ (x+1\neq0\textrm{ ou }x+2\neq0)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\in\mathbb{R}^{*},\ \forall y\in\mathbb{R}^{*},\ \forall z\in\mathbb{R}^{*},\ z-xy=0$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall y\in\mathbb{R}^{*},\exists x\in\mathbb{R}^{*},\ \forall z\in\mathbb{R}^{*},\ z-xy=0$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall y\in\mathbb{R}^{*},\forall z\in\mathbb{R}^{*},\ \exists x\in\mathbb{R}^{*},\ z-xy=0$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists a\in\mathbb{R},\ \forall\veps>0,\ |a|<\veps$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\veps>0,\ \exists a\in\mathbb{R},\ |a|<\veps$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 518
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 112
+\shape default
+ - Nature des relations 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Dire si les relations suivantes sont réflexives, symétriques, antisymétriqu
+es, transitives : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\mathbb{Z}$
+\end_inset
+
+ et 
+\begin_inset Formula $x\mathcal{R}y\iff x=-y$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\mathbb{R}$
+\end_inset
+
+ et 
+\begin_inset Formula $x\mathcal{R}y\iff\cos^{2}x+\sin^{2}y=1$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E=\mathbb{N}$
+\end_inset
+
+ et 
+\begin_inset Formula $x\mathcal{R}y\iff\exists p,q\geq1,\ y=px^{q}$
+\end_inset
+
+ (
+\begin_inset Formula $p$
+\end_inset
+
+ et 
+\begin_inset Formula $q$
+\end_inset
+
+ sont des entiers).
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Quelles sont parmi les exemples précédents les relations d'ordre et les
+ relations d'équivalence?
+\end_layout
+
+\begin_layout Part*
+Supplément :
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1838
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 1
+\shape default
+ - DSE en 0 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Développer en série entière au voisinage de 0 les fonctions suivantes.
+ On précisera le rayon de convergence de la série entière obtenue.
+ 
+\begin_inset Formula 
+\[
+\begin{array}{lcl}
+\mathbf{1.}\ln(1+2x^{2}) & \quad & \mathbf{2.}{\displaystyle \frac{1}{a-x}\textrm{ avec }a\neq0}\\
+\mathbf{3.}\ln(a+x)\textrm{ avec }a>0 & \quad & \mathbf{4.}{\displaystyle \frac{e^{x}}{1-x}}\\
+\mathbf{5.}\ln(1+x-2x^{2}) & \quad & \mathbf{6.}{\displaystyle (4+x^{2})^{-3/2}}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1505
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 2
+\shape default
+ - Exemples 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Déterminer l'intérieur et l'adhérence des parties de 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ suivantes : 
+\begin_inset Formula 
+\begin{eqnarray*}
+A & = & \left\{ (x,y)\in\mathbb{R}^{2};\ x>0\right\} \\
+B & = & \left\{ (x,y)\in\mathbb{R}^{2};\ xy=1\right\} \\
+C & = & \left\{ (x,y)\in\mathbb{R}^{2};\ xy>1\right\} \\
+D & = & \left\{ (x,y)\in\mtr^{2}\mid x^{2}+y^{2}\le2\right\} \setminus\left\{ (x,y)\in\mtr^{2}\mid(x-1)^{2}+y^{2}<1\right\} .
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 254
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 3
+\shape default
+ - Premier ordre, à coefficients constants 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Résoudre les équations différentielles suivantes : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $7y'+2y=2x^{3}-5x^{2}+4x-1$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y'+2y=x^{2}-2x+3$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y'+y=xe^{-x}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y'-2y=\cos(x)+2\sin(x)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1298
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 4
+\shape default
+ - Exemples de groupes - avec des fonctions 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Les ensembles suivants munis des lois considérées sont-ils des groupes?
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G$
+\end_inset
+
+ est l'ensemble des fonctions de 
+\begin_inset Formula $\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ définies par 
+\begin_inset Formula $x\mapsto ax+b$
+\end_inset
+
+, avec 
+\begin_inset Formula $a\in\mathbb{R}^{*}$
+\end_inset
+
+ et 
+\begin_inset Formula $b\in\mathbb{R}$
+\end_inset
+
+, muni de la composition; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G$
+\end_inset
+
+ est l'ensemble des fonctions croissantes de 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ dans 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, muni de l'addition; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G=\{f_{1},f_{2},f_{3},f_{4}\}$
+\end_inset
+
+, où 
+\begin_inset Formula 
+\[
+f_{1}(x)=x,\ f_{2}(x)=-x,\ f_{3}(x)=\frac{1}{x},\ f_{4}(x)=-\frac{1}{x},
+\]
+
+\end_inset
+
+muni de la composition.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1302
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 5
+\shape default
+ - Quelques sous-groupes usuels 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soit 
+\begin_inset Formula $(G,\cdot)$
+\end_inset
+
+ un groupe.
+ Démontrer que les parties suivantes sont des sous-groupes de 
+\begin_inset Formula $G$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C(G)=\{x\in G;\ \forall y\in G,xy=yx\}$
+\end_inset
+
+ (
+\begin_inset Formula $C(G)$
+\end_inset
+
+ s'appelle le centre de 
+\begin_inset Formula $G$
+\end_inset
+
+); 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $aHa^{-1}=\{aha^{-1};\ h\in H\}$
+\end_inset
+
+ où 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ et 
+\begin_inset Formula $H$
+\end_inset
+
+ est un sous-groupe de 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+On suppose de plus que 
+\begin_inset Formula $G$
+\end_inset
+
+ est abélien.
+ On dit que 
+\begin_inset Formula $x$
+\end_inset
+
+ est un élément de torsion de 
+\begin_inset Formula $G$
+\end_inset
+
+ s'il existe 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ tel que 
+\begin_inset Formula $x^{n}=e$
+\end_inset
+
+.
+ Démontrer que l'ensemble des éléments de torsion de 
+\begin_inset Formula $G$
+\end_inset
+
+ est un sous-groupe de 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1310
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 6
+\shape default
+ - Des propriétés bien connues 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Traduire en termes de morphismes de groupes les propriétés bien connues
+ suivantes (dont le domaine de validité a volontairement été omis) : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ln(xy)=\ln(x)+\ln(y)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $|zz'|=|z||z'|$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sqrt{xy}=\sqrt{x}\sqrt{y}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $e^{x+y}=e^{x}e^{y}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\det(MM')=\det(M)\det(M')$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1457
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 7
+\shape default
+ - Vrai/faux 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm 
+\end_layout
+
+\begin_layout Enumerate
+En dimension finie, un endomorphisme admet un nombre fini de vecteurs propres.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+ est diagonalisable, alors 
+\begin_inset Formula $A^{2}$
+\end_inset
+
+ est diagonalisable.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A^{2}$
+\end_inset
+
+ est diagonalisable, alors 
+\begin_inset Formula $A$
+\end_inset
+
+ est diagonalisable.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Tout endomorphisme d'un espace vectoriel réel de dimension impaire admet
+ au moins une valeur propre.
+ 
+\end_layout
+
+\begin_layout Enumerate
+La somme de deux matrices diagonalisables est diagonalisable.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1408
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 8
+\shape default
+ - Trigonalisation - sans indications 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Trigonaliser les matrices suivantes : 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{ccc}
+1 & 4 & -2\\
+0 & 6 & -3\\
+-1 & 4 & 0
+\end{array}\right),\ B=\left(\begin{array}{ccc}
+2 & -1 & -1\\
+2 & 1 & -2\\
+3 & -1 & -2
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1456
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 9
+\shape default
+ - Vrai/Faux 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soit 
+\begin_inset Formula $E$
+\end_inset
+
+ un 
+\begin_inset Formula $\mathbb{K}$
+\end_inset
+
+-espace vectoriel de dimension finie, et 
+\begin_inset Formula $u\in\mathcal{L}(E)$
+\end_inset
+
+.
+ Dire si les assertions suivantes sont vraies ou fausses : 
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $F$
+\end_inset
+
+ et 
+\begin_inset Formula $G$
+\end_inset
+
+ sont deux sous-espaces supplémentaires de 
+\begin_inset Formula $E$
+\end_inset
+
+ stables par 
+\begin_inset Formula $u$
+\end_inset
+
+, alors 
+\begin_inset Formula $u$
+\end_inset
+
+ est diagonalisable si et seulement si les deux endomorphismes induits 
+\begin_inset Formula $u_{F}$
+\end_inset
+
+ et 
+\begin_inset Formula $u_{G}$
+\end_inset
+
+ sont diagonalisables.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Deux matrices semblables ont le même polynôme caractéristique et le même
+ polynôme minimal.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Si le polynôme caractéristique d'une matrice est égal à son polynôme minimal,
+ alors la matrice est diagonalisable.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 399
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 10
+\shape default
+ - Intégration par parties - Niveau 3 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer les intégrales suivantes : 
+\begin_inset Formula 
+\[
+\mathbf{1.}\quad I=\int_{1}^{2}\frac{\ln(1+t)}{t^{2}}dt\quad\mathbf{2.}\quad J=\int_{0}^{1}x(\arctan x)^{2}dx\quad\quad\mathbf{2.}\quad K=\int_{0}^{1}\frac{x\ln x}{(x^{2}+1)^{2}}dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 395
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 11
+\shape default
+ - Changements de variables - Recherche de primitives 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm En effectuant un changement de variables, donner une primitive des
+ fonctions suivantes : 
+\begin_inset Formula 
+\[
+\mathbf{1.}\quad x\mapsto\frac{\ln x}{x}\quad\quad\mathbf{2.}\quad x\mapsto\cos(\sqrt{x})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1954
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 12
+\shape default
+ - Exemples de familles non sommables 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Démontrer que les familles suivantes ne sont pas sommables : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(\frac{1}{x^{2}}\right)_{x\in\mathbb{Q}\cap[1,+\infty[}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(a_{n,p})_{(n,p)\in\mathbb{N}^{2}}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n,p}=\frac{1}{n^{2}-p^{2}}$
+\end_inset
+
+ si 
+\begin_inset Formula $n\neq p$
+\end_inset
+
+ et 
+\begin_inset Formula $a_{n,n}=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2014
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 13
+\shape default
+ - Tribu image réciproque 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soit 
+\begin_inset Formula $E$
+\end_inset
+
+ et 
+\begin_inset Formula $F$
+\end_inset
+
+ deux ensembles, 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ une tribu sur 
+\begin_inset Formula $F$
+\end_inset
+
+ et 
+\begin_inset Formula $\phi:E\to F$
+\end_inset
+
+ une application.
+ Montrer que 
+\begin_inset Formula $\mathcal{T}'=\{\phi^{-1}(A);\ A\in\mathcal{T}\}$
+\end_inset
+
+ est une tribu sur 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1292
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 14
+\shape default
+ - Loi de Pascal 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm On lance une pièce de monnaie dont la probabilité de tomber sur pile
+ vaut 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ On note 
+\begin_inset Formula $X$
+\end_inset
+
+ la variable aléatoire correspondant au nombre de lancers nécessaires pour
+ obtenir 
+\begin_inset Formula $r$
+\end_inset
+
+ fois pile.
+ Quelle est la loi de 
+\begin_inset Formula $X$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1275
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 15
+\shape default
+ - Diagonalisable? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soient 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+ et 
+\begin_inset Formula $X_{2}$
+\end_inset
+
+ deux variables aléatoires indépendantes qui suivent une loi géométrique
+ de paramètre 
+\begin_inset Formula $p\in]0,1[$
+\end_inset
+
+.
+ Soit 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cc}
+X_{1} & 1\\
+0 & X_{2}
+\end{array}\right).
+\]
+
+\end_inset
+
+Quelle est la probabilité que 
+\begin_inset Formula $A$
+\end_inset
+
+ soit diagonalisable?
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2579
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 16
+\shape default
+ - Sous-groupes du groupe des matrices inversibles? 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Dire si les parties suivantes de 
+\begin_inset Formula $GL_{n}(\mathbb{R})$
+\end_inset
+
+ sont des sous-groupes de 
+\begin_inset Formula $GL_{n}(\mathbb{R})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1}=\{A\in GL_{n}(\mathbb{R});\ A\textrm{ diagonale avec tous ses coefficients diagonaux non-nuls}\}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{2}=\left\{ \begin{pmatrix}a & b\\
+0 & 1
+\end{pmatrix};\ a>0,\ b\in\mathbb{R}\right\} $
+\end_inset
+
+ (ici, 
+\begin_inset Formula $n=2$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{3}=\left\{ \begin{pmatrix}0 & 1\\
+a & b
+\end{pmatrix};\ a>0,\ b\in\mathbb{R}\right\} $
+\end_inset
+
+ (ici, 
+\begin_inset Formula $n=2$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2799
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 17
+\shape default
+ - Isomorphismes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm On considère l'ensemble de matrices 
+\begin_inset Formula $G=\left\{ \left(\begin{array}{cc}
+a & b\\
+0 & 1
+\end{array}\right):a,b\in\mathbb{R},a\neq0\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Démontrer que 
+\begin_inset Formula $G$
+\end_inset
+
+ est un sous-groupe de 
+\begin_inset Formula $GL_{2}(\mathbb{R})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+On considère l'application 
+\begin_inset Formula $\varphi:G\to\mathbb{R}^{*}$
+\end_inset
+
+ définie par 
+\begin_inset Formula 
+\[
+\varphi\left(\left(\begin{array}{cc}
+a & b\\
+0 & 1
+\end{array}\right)\right)=a.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Démontrer que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ est un morphisme de groupes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Déterminer un sous-groupe distingué 
+\begin_inset Formula $H$
+\end_inset
+
+ de 
+\begin_inset Formula $G$
+\end_inset
+
+ tel que 
+\begin_inset Formula $G/H\simeq\mathbb{R}^{*}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Donner un isomorphisme 
+\begin_inset Formula $\psi:H\to(\mathbb{R},+)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
