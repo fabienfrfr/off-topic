@@ -11030,5 +11030,674 @@ Donner un isomorphisme
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Exercice 2107
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 18
+\shape default
+ - Plus court chemin 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Cherchez le plus court chemin de 
+\begin_inset Formula $A$
+\end_inset
+
+ à 
+\begin_inset Formula $K$
+\end_inset
+
+ dans le graphe suivant.
+ On détaillera les calculs.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{qqqqff}{rgb}{0.33,0.33,0.33}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.5cm,y=1.5cm]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+clip(-1.52,-0.5) rectangle (6.82,2.98);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-1,1)-- (0,2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0,2)-- (1,2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (1,2)-- (3,2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0,2)-- (0,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0,0)-- (2,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (2,0)-- (0,2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (2,0)-- (3,2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (3,2)-- (3,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (3,2)-- (4,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (3,1)-- (5,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (5,0)-- (4,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (4,1)-- (5,2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (5,2)-- (6,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (6,1)-- (5,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (5,2)-- (3,2);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-1,1)-- (0,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (2,0)-- (3,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-0.7,1.78) node[anchor=north west] {4};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0.05,1.17) node[anchor=north west] {2};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-0.72,0.62) node[anchor=north west] {1};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0.55,2.32) node[anchor=north west] {5};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (1.84,2.32) node[anchor=north west] {3};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (1.06,1.17) node[anchor=north west] {3};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0.89,-0.12) node[anchor=north west] {7};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (2.3,1.24) node[anchor=north west] {4};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (2.62,0.57) node[anchor=north west] {10};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (3.58,0.58) node[anchor=north west] {6};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (3.79,2.32) node[anchor=north west] {32};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (3.58,1.62) node[anchor=north west] {20};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (5.6,1.65) node[anchor=north west] {9};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (5.51,0.49) node[anchor=north west] {30};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (4.54,0.7) node[anchor=north west] {7};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (4.5,1.69) node[anchor=north west] {8};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (4.93,1.29) node[anchor=north west] {18};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (3.07,1.47) node[anchor=north west] {5};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (4,1)-- (6,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [color=qqqqff] (-1,1) circle (1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[color=qqqqff] (-1.18,1.02) node {$A$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [color=qqqqff] (0,2) circle (1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[color=qqqqff] (0.05,2.15) node {$B$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [color=qqqqff] (0,0) circle (1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[color=qqqqff] (0,-0.15) node {$C$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [color=qqqqff] (1,2) circle (1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[color=qqqqff] (1.05,2.15) node {$D$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [color=qqqqff] (3,2) circle (1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[color=qqqqff] (3.05,2.15) node {$E$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [color=qqqqff] (2,0) circle (1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[color=qqqqff] (2.01,-0.15) node {$F$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [color=qqqqff] (3,1) circle (1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[color=qqqqff] (3.05,0.79) node {$G$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [color=qqqqff] (5,2) circle (1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[color=qqqqff] (5.05,2.15) node {$H$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [color=qqqqff] (4,1) circle (1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[color=qqqqff] (4,1.19) node {$I$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [color=qqqqff] (5,0) circle (1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[color=qqqqff] (5.01,-0.15) node {$J$};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fill [color=qqqqff] (6,1) circle (1.5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[color=qqqqff] (6.15,1.09) node {$K$};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2094
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 19
+\shape default
+ - Temps d'arrêt 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm On note 
+\begin_inset Formula $H_{n}$
+\end_inset
+
+ la somme 
+\begin_inset Formula $H_{n}=\sum_{k=1}^{n}\frac{1}{k}$
+\end_inset
+
+.
+ On admet que 
+\begin_inset Formula $(H_{n})$
+\end_inset
+
+ tend vers 
+\begin_inset Formula $+\infty$
+\end_inset
+
+.
+ Écrire un algorithme qui détermine le plus petit entier 
+\begin_inset Formula $n$
+\end_inset
+
+ tel que 
+\begin_inset Formula $H_{n}$
+\end_inset
+
+ dépasse un réel 
+\begin_inset Formula $a$
+\end_inset
+
+ donné.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2093
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 20
+\shape default
+ - Renversant! 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Écrire une fonction qui prend en entrée un entier naturel 
+\begin_inset Formula $a$
+\end_inset
+
+ et retourne cet entier écrit à l'envers.
+ Par exemple, si 
+\begin_inset Formula $a=1234$
+\end_inset
+
+, la fonction devra retourner 
+\begin_inset Formula $a=4321$
+\end_inset
+
+.
+ On pourra utiliser les fonctions quotient(n,p) et reste(n,p) qui donnent
+ le quotient et le reste de la division de n par p.
+\end_layout
+
 \end_body
 \end_document
