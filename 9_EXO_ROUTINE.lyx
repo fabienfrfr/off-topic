@@ -10451,7 +10451,7 @@ vskip
 0.2cm Calculer les intégrales suivantes : 
 \begin_inset Formula 
 \[
-\mathbf{1.}\quad I=\int_{1}^{2}\frac{\ln(1+t)}{t^{2}}dt\quad\mathbf{2.}\quad J=\int_{0}^{1}x(\arctan x)^{2}dx\quad\quad\mathbf{2.}\quad K=\int_{0}^{1}\frac{x\ln x}{(x^{2}+1)^{2}}dx
+\mathbf{1.}\quad I=\int_{1}^{2}\frac{\ln(1+t)}{t^{2}}dt\quad\mathbf{2.}\quad J=\int_{0}^{1}x(\arctan x)^{2}dx\quad\quad\mathbf{3.}\quad K=\int_{0}^{1}\frac{x\ln x}{(x^{2}+1)^{2}}dx
 \]
 
 \end_inset
@@ -11033,7 +11033,7 @@ Donner un isomorphisme
 \begin_layout Standard
 \noindent
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -11047,7 +11047,7 @@ status open
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -11639,7 +11639,7 @@ vskip
 \begin_layout Standard
 \noindent
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -11697,6 +11697,187 @@ vskip
 .
  On pourra utiliser les fonctions quotient(n,p) et reste(n,p) qui donnent
  le quotient et le reste de la division de n par p.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1045
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 21
+\shape default
+ - Orthonormalisation de Schmidt 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Dans 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ muni du produit scalaire canonique, orthonormaliser en suivant le procédé
+ de Schmidt la base suivante : 
+\begin_inset Formula 
+\[
+u=(1,0,1),\ v=(1,1,1),\ w=(-1,-1,0).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 331
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 22
+\shape default
+ - Erreur commise 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Majorer l'erreur commise dans les approximations suivantes : 
+\begin_inset Formula 
+\[
+\mathbf{a}.\sqrt{10001}\simeq100;\ \mathbf{b}.\frac{1}{0,999^{2}}\simeq1;\ \mathbf{c}.\cos1\simeq\frac{1}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 345
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 23
+\shape default
+ - Quelques calculs 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Calculer la dérivée 
+\begin_inset Formula $n$
+\end_inset
+
+-ième des fonctions suivantes : 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Formula 
+\[
+\mathbf{1}.x\mapsto x\exp(x)\quad\quad\mathbf{2}.x\mapsto x^{2}\sin x\quad\quad\mathbf{3}.x\mapsto x^{n-1}\ln(1+x).
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
