@@ -11883,11 +11883,11 @@ vskip
 \begin_layout Standard
 \noindent
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
-% Exercice Perso
+% Exercice 1758
 \end_layout
 
 \end_inset
@@ -11910,9 +11910,169 @@ vskip
 
 0.3cm
 \shape smallcaps
-Exercice 21
+Exercice 25
 \shape default
- - Réseau de neurone 
+ - Tribu engendrée 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soit 
+\begin_inset Formula $\Omega=\mathbb{Z}$
+\end_inset
+
+.
+ On considère 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ la tribu engendrée par les ensembles 
+\begin_inset Formula $S_{n}=\{n,n+1,n+2\}$
+\end_inset
+
+ avec 
+\begin_inset Formula $n\in\mathbb{Z}.$
+\end_inset
+
+ Quels sont les éléments de la tribu 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 1762
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 26
+\shape default
+ - Mesurables! 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Prouver que les fonctions suivantes sont mesurables (boréliennes):
+ 
+\end_layout
+
+\begin_layout Enumerate
+la fonction indicatrice de 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+la fonction 
+\begin_inset Formula $x\mapsto x+1$
+\end_inset
+
+ si 
+\begin_inset Formula $x>0$
+\end_inset
+
+ et 
+\begin_inset Formula $-x$
+\end_inset
+
+ si 
+\begin_inset Formula $x\leq0$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Enumerate
+la derivée 
+\begin_inset Formula $f'$
+\end_inset
+
+ d'une fonction dérivable 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Exercice Perso1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice Perso 1
+\shape default
+ - Réseau de neurone XOR.
+ 
 \begin_inset ERT
 status collapsed
 
@@ -11942,7 +12102,7 @@ Soit 3 neurones vérifiant l'application
 \align center
 \begin_inset CommandInset include
 LatexCommand input
-filename "fig_n.tex"
+filename "fig_p1.tex"
 
 \end_inset
 
@@ -11984,6 +12144,91 @@ Tracer pour chaque neurone l'ensemble réalisable de sortie suivant la valeurs
 \begin_layout Enumerate
 Pour des entrées binaires, lequels des trois vérifient la porte logique
  XOR ? Calculer l'erreur quadratique pour chaque cas.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Exercice Perso2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice Perso 2
+\shape default
+ - Gradient d'un réseau de neurone.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm 
+\end_layout
+
+\begin_layout Standard
+Soit 2 neurones vérifiant l'application 
+\begin_inset Formula $F(x,a,b,c):\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+ tel que :
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "fig_p2.tex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calculer la valeurs pour chacune des sortie et des dérivations automatiques.
+\end_layout
+
+\begin_layout Enumerate
+Rappeler la relation pour calculer la variation des poids des neurones 
+\begin_inset Formula $(a,b,c)$
+\end_inset
+
+ à chaque instant.
+\end_layout
+
+\begin_layout Enumerate
+Calculer les variations pour deux itérations et déduire la convergence.
 \end_layout
 
 \end_body
