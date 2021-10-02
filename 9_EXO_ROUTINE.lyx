@@ -12042,6 +12042,137 @@ la derivée
 \begin_layout Standard
 \noindent
 \begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2574
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 27
+\shape default
+ - Insertion dans une liste triée 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Écrire une fonction qui prend en argument une liste triée 
+\begin_inset Formula $l$
+\end_inset
+
+ et un entier 
+\begin_inset Formula $elt$
+\end_inset
+
+ et qui renvoie la liste triée obtenue par insertion à sa place de 
+\begin_inset Formula $elt$
+\end_inset
+
+ dans 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ On fera attention à ce que la liste 
+\begin_inset Formula $l$
+\end_inset
+
+ peut être vide.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% Exercice 2111
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.3cm
+\shape smallcaps
+Exercice 28
+\shape default
+ - Connexité - I 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+0.2cm Soit 
+\begin_inset Formula $G$
+\end_inset
+
+ un graphe non-orienté simple d'ordre 
+\begin_inset Formula $2p$
+\end_inset
+
+.
+ On suppose que le degré de chaque sommet est au moins égal à 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Démontrer que ce graphe est connexe.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
@@ -12137,7 +12268,15 @@ Tracer pour chaque neurone l'ensemble réalisable de sortie suivant la valeurs
 \begin_inset Formula $\left\{ 1,-1,-1,-1,1,-1,1,1,-1\right\} $
 \end_inset
 
+ : comparer la premiere couche avec un neurone de convolution 
+\begin_inset Quotes eld
+\end_inset
 
+moyenne
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
@@ -12216,11 +12355,12 @@ filename "fig_p2.tex"
 \end_layout
 
 \begin_layout Enumerate
-Calculer la valeurs pour chacune des sortie et des dérivations automatiques.
+Calculer les valeurs pour chacune des sortie et des dérivations automatiques.
 \end_layout
 
 \begin_layout Enumerate
-Rappeler la relation pour calculer la variation des poids des neurones 
+Rappeler la formule du gradient pour la variation des poids des neurones
+ 
 \begin_inset Formula $(a,b,c)$
 \end_inset
 
@@ -12228,7 +12368,7 @@ Rappeler la relation pour calculer la variation des poids des neurones
 \end_layout
 
 \begin_layout Enumerate
-Calculer les variations pour deux itérations et déduire la convergence.
+Calculer la descente de gradient pour deux itérations et déduire la convergence.
 \end_layout
 
 \end_body
