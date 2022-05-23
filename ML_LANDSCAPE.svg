@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="91cm" height="62cm" viewBox="2 10 1805 1236" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="Arrière-plan">
+    <g>
+      <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="144.34,11.1321 355.084,11.1321 323.783,97.1321 113.039,97.1321 "/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="234.061" y="34.0134">
+        <tspan x="234.061" y="34.0134">Besoin :</tspan>
+        <tspan x="234.061" y="50.0134">- Prédiction-Modèle</tspan>
+        <tspan x="234.061" y="66.0134">- Décision-Recherche</tspan>
+        <tspan x="234.061" y="82.0134">- Segmentation-Detection</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="108.013" y="136.126" width="220.75" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="218.388" y="159.007">
+        <tspan x="218.388" y="159.007">Proposer une/plusieurs</tspan>
+        <tspan x="218.388" y="175.007">problématique(s) mesurable(s)</tspan>
+      </text>
+    </g>
+    <g>
+      <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="272.906,318.522 376.685,429.756 272.906,540.99 169.127,429.756 "/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="272.906" y="425.637">
+        <tspan x="272.906" y="425.637">Les données existent ?</tspan>
+        <tspan x="272.906" y="441.637">(samples &gt; 50)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="3.69948" y="236.806" width="218.5" height="86" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="112.949" y="259.687">
+        <tspan x="112.949" y="259.687">Générer des données :</tspan>
+        <tspan x="112.949" y="275.687">- WebScraping (BeautifulSoup)</tspan>
+        <tspan x="112.949" y="291.687">-Faires des experiences</tspan>
+        <tspan x="112.949" y="307.687">- Faire des sondages</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="46.704" y="700.562" width="323.75" height="86" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="208.579" y="731.443">
+        <tspan x="208.579" y="731.443">(Previsualisation Tableurs) Lister les variables :</tspan>
+        <tspan x="208.579" y="747.443">Qualitative : nominale, dichotomique, ordinale.</tspan>
+        <tspan x="208.579" y="763.443">Quantitative : Discrete, continue</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="42.7338" y="825.404" width="331.15" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="208.309" y="848.285">
+        <tspan x="208.309" y="848.285">Importer les données</tspan>
+        <tspan x="208.309" y="864.285">(pandas.read, sqlalchemy engine, sparksession)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="67.7292" y="921.456" width="280.8" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="208.129" y="944.337">
+        <tspan x="208.129" y="944.337">Statistique de base pour chaque fichiers</tspan>
+        <tspan x="208.129" y="960.337">(df.describes, df.info, df.type)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="55.615" y="1009.81" width="305.55" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="208.39" y="1032.69">
+        <tspan x="208.39" y="1032.69">Filtrer les colonnes inutiles et uniformisation</tspan>
+        <tspan x="208.39" y="1048.69">(Parsing, df.drop)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="26.1794" y="1109.11" width="363.5" height="70" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="207.929" y="1131.99">
+        <tspan x="207.929" y="1131.99">Regrouper les données/dataframe par problématique</tspan>
+        <tspan x="207.929" y="1147.99">Creer variable de merging si besoin</tspan>
+        <tspan x="207.929" y="1163.99">(df.insert, pd.merge, gdf.dissolve)</tspan>
+      </text>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="218.411,97.1321 218.411,116.629 218.388,116.629 218.388,126.39 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="218.388,133.89 213.388,123.89 218.388,126.39 223.388,123.89 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="660.116" y="55.6028" width="275.8" height="70" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="798.016" y="78.4841">
+        <tspan x="798.016" y="78.4841">Définir les Targets</tspan>
+        <tspan x="798.016" y="94.4841">(1er Hypothese de mesure)</tspan>
+        <tspan x="798.016" y="110.484">Proposer hypothèse pour chaque partie</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="529.278" y="276.326" width="136.25" height="38" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="597.403" y="299.207">
+        <tspan x="597.403" y="299.207">Donnée catégorie</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="933.174" y="281.684" width="155.35" height="63.5816" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1010.85" y="317.356">
+        <tspan x="1010.85" y="317.356">Donnée Quantitative</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="601.952" y="154.322" width="392.3" height="86" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="798.102" y="177.203">
+        <tspan x="798.102" y="177.203">Mesure corrélations variables/variables :</tspan>
+        <tspan x="798.102" y="193.203">- Quantitative/Quantitative : Pearson (df.corr, clustermap)</tspan>
+        <tspan x="798.102" y="209.203">- Qualitative/Qualitative : Cramer (khi2 norm)</tspan>
+        <tspan x="798.102" y="225.203">-Qualitative/Quantitative : ETA-square (effect size)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="452.832" y="347.748" width="286.85" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="596.257" y="370.629">
+        <tspan x="596.257" y="370.629">Relation entre feature et classe "Target" :</tspan>
+        <tspan x="596.257" y="386.629">- Distribution (distplot)</tspan>
+      </text>
+    </g>
+    <g>
+      <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="509.306,628.532 591.11,710.633 509.306,792.735 427.502,710.633 "/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="509.306" y="706.515">
+        <tspan x="509.306" y="706.515">Distribution</tspan>
+        <tspan x="509.306" y="722.515">séparable ?</tspan>
+      </text>
+    </g>
+    <g>
+      <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="814.179,690.546 928.262,770.367 814.179,850.189 700.096,770.367 "/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="814.179" y="758.249">
+        <tspan x="814.179" y="758.249">Observe t-on</tspan>
+        <tspan x="814.179" y="774.249">des modes / Phase</tspan>
+        <tspan x="814.179" y="790.249">/ Seuil ?</tspan>
+      </text>
+    </g>
+    <g>
+      <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1105.65,636.81 1192.79,727.568 1105.65,818.327 1018.51,727.568 "/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1105.65" y="723.45">
+        <tspan x="1105.65" y="723.45">Relation linéaire /</tspan>
+        <tspan x="1105.65" y="739.45">polynomiale ?</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="456.304" y="953.166" width="106.65" height="38" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="509.629" y="976.047">
+        <tspan x="509.629" y="976.047">Classification</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="613.014" y="953.416" width="195.55" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="710.789" y="976.297">
+        <tspan x="710.789" y="976.297">Partitionnement</tspan>
+        <tspan x="710.789" y="992.297">(estimateur non supervisé)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1060.58" y="958.81" width="92.05" height="38" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1106.61" y="981.691">
+        <tspan x="1106.61" y="981.691">Regression</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="42.8086" y="611.424" width="331.15" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="208.384" y="634.305">
+        <tspan x="208.384" y="634.305">Etablir état des connaissances (Wikipedia) et</tspan>
+        <tspan x="208.384" y="650.305">définir l'objectif concret (Ajouter data si besoin)</tspan>
+      </text>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="509.306,792.735 509.306,872.95 509.629,872.95 509.629,943.43 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="509.629,950.93 504.629,940.93 509.629,943.43 514.629,940.93 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="864.38" y="385.198" width="293.45" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1011.11" y="408.079">
+        <tspan x="1011.11" y="408.079">Relation entre feature "Target" et feature :</tspan>
+        <tspan x="1011.11" y="424.079">- Dispersion (scatter)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="758.77" y="485.58" width="267.6" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="892.57" y="508.461">
+        <tspan x="892.57" y="508.461">Analyse bivarié des variables d'intéret</tspan>
+        <tspan x="892.57" y="524.461">- relation par paire (pairplot)</tspan>
+      </text>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="795.1,604.034 729.774,604.034 729.774,603.148 509.306,603.148 509.306,618.796 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="509.306,626.296 504.306,616.296 509.306,618.796 514.306,616.296 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="602.11,710.634 652.048,710.634 652.048,659.948 814.178,659.948 814.178,680.81 "/>
+      <path style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" d="M 592.11 710.634 C 592.11,708.134 594.61,705.634 597.11,705.634 C 599.61,705.634 602.11,708.134 602.11,710.634 C 602.11,713.134 599.61,715.634 597.11,715.634 C 594.61,715.634 592.11,713.134 592.11,710.634z"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="814.178,688.31 809.178,678.31 814.178,680.81 819.178,678.31 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1007.51,727.568 1005.95,727.568 1005.95,659.624 814.178,659.624 814.178,680.81 "/>
+      <path style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" d="M 1017.51 727.568 C 1017.51,730.068 1015.01,732.568 1012.51,732.568 C 1010.01,732.568 1007.51,730.068 1007.51,727.568 C 1007.51,725.068 1010.01,722.568 1012.51,722.568 C 1015.01,722.568 1017.51,725.068 1017.51,727.568z"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="814.178,688.31 809.178,678.31 814.178,680.81 819.178,678.31 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="462.618" y="432.876" width="267.6" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="596.418" y="455.757">
+        <tspan x="596.418" y="455.757">Mesure de la contingence</tspan>
+        <tspan x="596.418" y="471.757">(crosstab)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="700.996" y="1127.85" width="233.25" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="817.621" y="1150.73">
+        <tspan x="817.621" y="1150.73">Statistique des Hypothèses :</tspan>
+        <tspan x="817.621" y="1166.73">- Test Student H0 (ttest_ind)</tspan>
+      </text>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="814.178,850.19 814.178,874.2 710.79,874.2 710.79,943.68 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="710.79,951.18 705.79,941.18 710.79,943.68 715.79,941.18 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="795.1" y="577.034" width="195.55" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="892.875" y="599.915">
+        <tspan x="892.875" y="599.915">Mesure des Outliers (IQR)</tspan>
+        <tspan x="892.875" y="615.915">et des Valeurs Manquantes</tspan>
+      </text>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="990.65,604.034 1105.65,604.034 1105.65,627.074 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1105.65,634.574 1100.65,624.574 1105.65,627.074 1110.65,624.574 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="509.629,992.176 509.629,1060.01 817.621,1060.01 817.621,1118.12 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="817.621,1125.62 812.621,1115.62 817.621,1118.12 822.621,1115.62 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="710.79,1007.42 710.79,1030.15 817.62,1030.15 817.62,1118.12 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="817.62,1125.62 812.62,1115.62 817.62,1118.12 822.62,1115.62 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1106.61,996.81 1106.61,1062.33 817.621,1062.33 817.621,1118.12 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="817.621,1125.62 812.621,1115.62 817.621,1118.12 822.621,1115.62 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="852.504" y="952.38" width="188.05" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="946.529" y="975.261">
+        <tspan x="946.529" y="975.261">Structure dimensionnality</tspan>
+        <tspan x="946.529" y="991.261">(looking reduction PCA)</tspan>
+      </text>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="939.262,770.368 946.202,770.368 946.202,856.444 946.53,856.444 946.53,942.644 "/>
+      <path style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" d="M 929.262 770.368 C 929.262,767.868 931.762,765.368 934.262,765.368 C 936.762,765.368 939.262,767.868 939.262,770.368 C 939.262,772.868 936.762,775.368 934.262,775.368 C 931.762,775.368 929.262,772.868 929.262,770.368z"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="946.53,950.144 941.53,940.144 946.53,942.644 951.53,940.144 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1267.27" y="153.692" width="267.6" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1401.07" y="176.573">
+        <tspan x="1401.07" y="176.573">Preparation du dataset</tspan>
+        <tspan x="1401.07" y="192.573">(split Traning, Test and Validation)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1303.67" y="231.552" width="196.35" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1401.85" y="254.433">
+        <tspan x="1401.85" y="254.433">Standardisation </tspan>
+        <tspan x="1401.85" y="270.433">Normalisation des données</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1320.52" y="313.32" width="160.993" height="38" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1401.01" y="336.201">
+        <tspan x="1401.01" y="336.201">Data Encoding</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1321.01" y="411.458" width="160.993" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1401.51" y="442.339">
+        <tspan x="1401.51" y="442.339">Feature Imputation</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1320.87" y="498.832" width="160.993" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1401.36" y="529.713">
+        <tspan x="1401.36" y="529.713">Feature Reduction</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1320.78" y="578.132" width="160.993" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1401.28" y="609.013">
+        <tspan x="1401.28" y="609.013">Feature Engineering</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1305.04" y="761.606" width="192.1" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1401.09" y="784.487">
+        <tspan x="1401.09" y="784.487">Sampling</tspan>
+        <tspan x="1401.09" y="800.487">(SMOTE, Transform Space)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1335.12" y="667.28" width="132" height="56.8529" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1401.12" y="699.588">
+        <tspan x="1401.12" y="699.588">Feature selection</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1264.21" y="840.952" width="252.25" height="86" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1390.33" y="863.833">
+        <tspan x="1390.33" y="863.833">Pipeline Preprocessing Model Fitting</tspan>
+        <tspan x="1390.33" y="879.833">(avec CrossValidation)</tspan>
+        <tspan x="1390.33" y="895.833">- Optimizer SGD, normal, etc.</tspan>
+        <tspan x="1390.33" y="911.833">- Loss Function (crossentropy, MSE)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1265.3" y="950.818" width="252.05" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1391.33" y="973.699">
+        <tspan x="1391.33" y="973.699">Evaluate performance</tspan>
+        <tspan x="1391.33" y="989.699">(Metric : Confusion, R2, V-measure)</tspan>
+      </text>
+    </g>
+    <g>
+      <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1391.12,1034.21 1478.75,1116.73 1391.12,1199.25 1303.49,1116.73 "/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1391.12" y="1112.61">
+        <tspan x="1391.12" y="1112.61">Metric proche de</tspan>
+        <tspan x="1391.12" y="1128.61">l'objectif ?</tspan>
+      </text>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1292.49,1116.73 1244.33,1116.73 1244.33,374.338 1401.51,374.338 1401.51,401.722 "/>
+      <path style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" d="M 1302.49 1116.73 C 1302.49,1119.23 1299.99,1121.73 1297.49,1121.73 C 1294.99,1121.73 1292.49,1119.23 1292.49,1116.73 C 1292.49,1114.23 1294.99,1111.73 1297.49,1111.73 C 1299.99,1111.73 1302.49,1114.23 1302.49,1116.73z"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1401.51,409.222 1396.51,399.222 1401.51,401.722 1406.51,399.222 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1551.84" y="388.392" width="219.45" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1661.57" y="411.273">
+        <tspan x="1661.57" y="411.273">Modele d'ensemble / Blending </tspan>
+        <tspan x="1661.57" y="427.273">/ Transfert Model (ANN)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1554.88" y="489.3" width="212.85" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1661.3" y="512.181">
+        <tspan x="1661.3" y="512.181">Tuning du Model :</tspan>
+        <tspan x="1661.3" y="528.181">Hyperparametre (GridSearch)</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1554.7" y="600.296" width="212.85" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1661.12" y="623.177">
+        <tspan x="1661.12" y="623.177">Modification Manuelle</tspan>
+        <tspan x="1661.12" y="639.177">des Seuils</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1550.46" y="701.202" width="212.85" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1656.88" y="732.083">
+        <tspan x="1656.88" y="732.083">Modelisation finale</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1549.49" y="902.134" width="215.8" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1657.39" y="933.015">
+        <tspan x="1657.39" y="933.015">Établir lien avec connaissance</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1550.63" y="806.112" width="212.85" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1657.06" y="836.993">
+        <tspan x="1657.06" y="836.993">Prédiction du Modèle</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1549.71" y="1007.27" width="215.8" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1657.61" y="1030.15">
+        <tspan x="1657.61" y="1030.15">Visualisation complete des </tspan>
+        <tspan x="1657.61" y="1046.15">résultats (dashboard)</tspan>
+      </text>
+    </g>
+    <g>
+      <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1508.76,1166.8 1806.33,1166.8 1778.18,1244.15 1480.61,1244.15 "/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1643.47" y="1193.36">
+        <tspan x="1643.47" y="1193.36">Réponse à la problématique "business"</tspan>
+        <tspan x="1643.47" y="1209.36">Proposition de conseil sur les données</tspan>
+        <tspan x="1643.47" y="1225.36">Ouverture à nouvelle problématique</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="1011.38" y="851.354" width="189.2" height="54" rx="0" ry="0"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1105.98" y="874.235">
+        <tspan x="1105.98" y="874.235">Mesure Normalité Donnée</tspan>
+        <tspan x="1105.98" y="890.235">QQplot</tspan>
+      </text>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="272.906,540.99 272.906,576.207 208.384,576.207 208.384,601.688 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="208.384,609.188 203.384,599.188 208.384,601.688 213.384,599.188 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="208.384,665.424 208.384,682.993 208.579,682.993 208.579,690.826 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="208.579,698.326 203.579,688.326 208.579,690.826 213.579,688.326 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="208.579,786.562 208.579,805.983 208.309,805.983 208.309,815.668 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="208.309,823.168 203.309,813.168 208.309,815.668 213.309,813.168 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="208.309,879.404 208.309,900.43 208.129,900.43 208.129,911.72 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="208.129,919.22 203.129,909.22 208.129,911.72 213.129,909.22 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="208.129,975.456 208.129,992.632 208.39,992.632 208.39,1000.07 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="208.39,1007.57 203.39,997.572 208.39,1000.07 213.39,997.572 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="208.39,1064.81 208.39,1086.96 207.929,1086.96 207.929,1099.37 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="207.929,1106.87 202.929,1096.87 207.929,1099.37 212.929,1096.87 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="218.388,191.118 218.388,216.282 272.906,216.282 272.906,308.786 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="272.906,316.286 267.906,306.286 272.906,308.786 277.906,306.286 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="158.127,429.756 112.949,429.756 112.949,332.542 "/>
+      <path style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" d="M 168.127 429.756 C 168.127,432.256 165.627,434.756 163.127,434.756 C 160.627,434.756 158.127,432.256 158.127,429.756 C 158.127,427.256 160.627,424.756 163.127,424.756 C 165.627,424.756 168.127,427.256 168.127,429.756z"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="112.949,325.042 117.949,335.042 112.949,332.542 107.949,335.042 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="223.206,279.806 272.906,279.806 272.906,308.786 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="272.906,316.286 267.906,306.286 272.906,308.786 277.906,306.286 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="389.68,1144.11 413.378,1144.11 413.378,33.4264 798.016,33.4264 798.016,45.8667 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="798.016,53.3667 793.016,43.3667 798.016,45.8667 803.016,43.3667 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="934.246,1154.85 1224.46,1154.85 1224.46,116.824 1401.07,116.824 1401.07,143.956 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1401.07,151.456 1396.07,141.456 1401.07,143.956 1406.07,141.456 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1478.75,1116.73 1537.27,1116.73 1537.27,367.392 1661.57,367.392 1661.57,378.656 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1661.57,386.156 1656.57,376.156 1661.57,378.656 1666.57,376.156 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="798.102,240.322 798.102,258.324 597.403,258.324 597.403,266.59 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="597.403,274.09 592.403,264.09 597.403,266.59 602.403,264.09 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="798.102,241.328 798.102,261.506 1010.85,261.506 1010.85,271.948 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1010.85,279.448 1005.85,269.448 1010.85,271.948 1015.85,269.448 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="597.403,314.326 597.403,331.037 596.257,331.037 596.257,338.012 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="596.257,345.512 591.257,335.512 596.257,338.012 601.257,335.512 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1010.85,346.274 1010.85,365.736 1011.11,365.736 1011.11,375.462 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1011.11,382.962 1006.11,372.962 1011.11,375.462 1016.11,372.962 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="596.257,402.755 596.257,417.815 596.418,417.815 596.418,423.14 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="596.418,430.64 591.418,420.64 596.418,423.14 601.418,420.64 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="730.218,459.876 892.57,459.876 892.57,475.844 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="892.57,483.344 887.57,473.344 892.57,475.844 897.57,473.344 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1011.11,439.198 1011.11,462.389 892.57,462.389 892.57,475.844 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="892.57,483.344 887.57,473.344 892.57,475.844 897.57,473.344 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="892.57,539.58 892.57,558.307 892.875,558.307 892.875,567.298 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="892.875,574.798 887.875,564.798 892.875,567.298 897.875,564.798 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1105.65,818.327 1105.65,834.84 1105.98,834.84 1105.98,841.618 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1105.98,849.118 1100.98,839.118 1105.98,841.618 1110.98,839.118 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1105.98,905.354 1105.98,932.082 1106.61,932.082 1106.61,949.074 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1106.61,956.574 1101.61,946.574 1106.61,949.074 1111.61,946.574 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="798.016,125.603 798.016,139.963 798.102,139.963 798.102,144.586 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="798.102,152.086 793.102,142.086 798.102,144.586 803.102,142.086 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1401.07,208.699 1401.07,220.126 1401.85,220.126 1401.85,221.816 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1401.85,229.316 1396.85,219.316 1401.85,221.816 1406.85,219.316 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1401.85,286.559 1401.85,299.939 1401.01,299.939 1401.01,303.584 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1401.01,311.084 1396.01,301.084 1401.01,303.584 1406.01,301.084 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1401.01,351.32 1401.01,381.389 1401.51,381.389 1401.51,401.722 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1401.51,409.222 1396.51,399.222 1401.51,401.722 1406.51,399.222 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1401.51,465.458 1401.51,482.145 1401.36,482.145 1401.36,489.096 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1401.36,496.596 1396.36,486.596 1401.36,489.096 1406.36,486.596 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1401.36,552.832 1401.36,565.482 1401.28,565.482 1401.28,568.396 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1401.28,575.896 1396.28,565.896 1401.28,568.396 1406.28,565.896 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1401.28,632.132 1401.28,649.706 1401.12,649.706 1401.12,657.544 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1401.12,665.044 1396.12,655.044 1401.12,657.544 1406.12,655.044 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1401.12,724.133 1401.12,742.869 1401.09,742.869 1401.09,751.87 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1401.09,759.37 1396.09,749.37 1401.09,751.87 1406.09,749.37 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1401.09,815.606 1401.09,822.5 1390.33,822.5 1390.33,831.216 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1390.33,838.716 1385.33,828.716 1390.33,831.216 1395.33,828.716 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1390.33,926.952 1390.33,938.885 1391.33,938.885 1391.33,941.082 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1391.33,948.582 1386.33,938.582 1391.33,941.082 1396.33,938.582 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1391.33,1004.82 1391.33,1019.51 1391.12,1019.51 1391.12,1024.47 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1391.12,1031.97 1386.12,1021.97 1391.12,1024.47 1396.12,1021.97 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1661.57,442.392 1661.57,465.846 1661.3,465.846 1661.3,479.564 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1661.3,487.064 1656.3,477.064 1661.3,479.564 1666.3,477.064 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1661.3,543.3 1661.3,571.295 1661.12,571.295 1661.12,589.553 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1661.12,597.053 1656.12,587.053 1661.12,589.553 1666.12,587.053 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1657.55,655.706 1657.55,678.454 1656.88,678.454 1656.88,691.466 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1656.88,698.966 1651.88,688.966 1656.88,691.466 1661.88,688.966 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1656.88,755.202 1656.88,780.657 1657.06,780.657 1657.06,796.376 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1657.06,803.876 1652.06,793.876 1657.06,796.376 1662.06,793.876 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1657.06,861.119 1657.06,881.626 1657.39,881.626 1657.39,892.398 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1657.39,899.898 1652.39,889.898 1657.39,892.398 1662.39,889.898 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1657.39,956.134 1657.39,981.7 1657.61,981.7 1657.61,997.53 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1657.61,1005.03 1652.61,995.03 1657.61,997.53 1662.61,995.03 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="1657.61,1061.27 1657.61,1114.04 1657.55,1114.04 1657.55,1157.07 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1657.55,1164.57 1652.55,1154.57 1657.55,1157.07 1662.55,1154.57 "/>
+    </g>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1401.09" y="788.606">
+      <tspan x="1401.09" y="788.606"></tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1661.57" y="415.392">
+      <tspan x="1661.57" y="415.392"></tspan>
+    </text>
+  </g>
+</svg>
