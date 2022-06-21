@@ -4,20 +4,20 @@
    height="62cm"
    viewBox="2 10 1805 1236"
    version="1.1"
-   id="svg821"
+   id="svg841"
    sodipodi:docname="ML_LANDSCAPE.svg"
    inkscape:export-filename="/media/fabienfrfr/F6166FAF166F7013/0_JOBS/COMPET_ML/ML_LANDSCAPE.png"
-   inkscape:export-xdpi="384"
-   inkscape:export-ydpi="384"
-   inkscape:version="1.1.2 (08b2f3d93c, 2022-04-05)"
+   inkscape:export-xdpi="180"
+   inkscape:export-ydpi="180"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs825" />
+     id="defs845" />
   <sodipodi:namedview
-     id="namedview823"
+     id="namedview843"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -27,14 +27,14 @@
      inkscape:document-units="cm"
      showgrid="false"
      inkscape:zoom="0.36017473"
-     inkscape:cx="1453.4612"
-     inkscape:cy="1185.5357"
-     inkscape:window-width="1920"
-     inkscape:window-height="1043"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:cx="1719.9985"
+     inkscape:cy="1173.0418"
+     inkscape:window-width="1846"
+     inkscape:window-height="1016"
+     inkscape:window-x="1994"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg821" />
+     inkscape:current-layer="svg841" />
   <g
      id="Arrière-plan">
     <g
@@ -634,7 +634,7 @@
        id="g272">
       <polyline
          style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
-         points="602.11,710.634 652.048,710.634 652.048,726.75 773.179,726.75 773.179,736.81 "
+         points="602.11,710.634 652.048,710.634 652.048,726.75 773.178,726.75 773.178,736.81 "
          id="polyline266" />
       <path
          style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
@@ -644,14 +644,14 @@
       <polygon
          style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
          fill-rule="evenodd"
-         points="773.179,744.31 768.179,734.31 773.179,736.81 778.179,734.31 "
+         points="773.178,744.31 768.178,734.31 773.178,736.81 778.178,734.31 "
          id="polygon270" />
     </g>
     <g
        id="g280">
       <polyline
          style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
-         points="1007.51,727.568 1005.95,727.568 1005.95,726.75 773.179,726.75 773.179,736.81 "
+         points="1007.51,727.568 1005.95,727.568 1005.95,726.75 773.178,726.75 773.178,736.81 "
          id="polyline274" />
       <path
          style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
@@ -661,7 +661,7 @@
       <polygon
          style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
          fill-rule="evenodd"
-         points="773.179,744.31 768.179,734.31 773.179,736.81 778.179,734.31 "
+         points="773.178,744.31 768.178,734.31 773.178,736.81 778.178,734.31 "
          id="polygon278" />
     </g>
     <g
@@ -716,7 +716,7 @@
        id="g306">
       <polyline
          style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
-         points="773.179,906.189 773.179,916.75 710.79,916.75 710.79,943.68 "
+         points="773.178,906.188 773.178,916.75 710.79,916.75 710.79,943.68 "
          id="polyline302" />
       <polygon
          style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
@@ -824,12 +824,12 @@
        id="g358">
       <polyline
          style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
-         points="898.262,826.367 946.202,826.367 946.202,856.444 946.53,856.444 946.53,942.644 "
+         points="898.262,826.368 946.202,826.368 946.202,856.444 946.53,856.444 946.53,942.644 "
          id="polyline352" />
       <path
          style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
          fill-rule="evenodd"
-         d="M 888.262 826.367 C 888.262,823.867 890.762,821.367 893.262,821.367 C 895.762,821.367 898.262,823.867 898.262,826.367 C 898.262,828.867 895.762,831.367 893.262,831.367 C 890.762,831.367 888.262,828.867 888.262,826.367z"
+         d="M 888.262 826.368 C 888.262,823.868 890.762,821.368 893.262,821.368 C 895.762,821.368 898.262,823.868 898.262,826.368 C 898.262,828.868 895.762,831.368 893.262,831.368 C 890.762,831.368 888.262,828.868 888.262,826.368z"
          id="path354" />
       <polygon
          style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
@@ -1824,16 +1824,16 @@
          y="412.198"
          id="tspan808" /></text>
     <text
-       font-size="12.7998"
+       font-size="12.8"
        style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
-       x="208.609"
+       x="208.608"
        y="633.424"
        id="text814"><tspan
-         x="208.609"
+         x="208.608"
          y="633.424"
          id="tspan812" /></text>
     <text
-       font-size="12.7998"
+       font-size="12.8"
        style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
        x="208.39"
        y="1036.81"
@@ -1841,5 +1841,47 @@
          x="208.39"
          y="1036.81"
          id="tspan816" /></text>
+    <g
+       id="g832">
+      <rect
+         style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
+         x="980.4"
+         y="47.75"
+         width="197.2"
+         height="90"
+         rx="0"
+         ry="0"
+         id="rect820" />
+      <text
+         font-size="12.7998"
+         style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+         x="1079"
+         y="72.6311"
+         id="text830"><tspan
+           x="1079"
+           y="72.6311"
+           id="tspan822">Si donnée structurée</tspan><tspan
+           x="1079"
+           y="88.6311"
+           id="tspan824">(Graphe, Image, Text) :</tspan><tspan
+           x="1079"
+           y="104.631"
+           id="tspan826">- Markov Random Field</tspan><tspan
+           x="1079"
+           y="120.631"
+           id="tspan828">- Bayes, Convolution</tspan></text>
+    </g>
+    <g
+       id="g838">
+      <polyline
+         style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
+         points="995.258,197.322 1079,197.322 1079,147.486 "
+         id="polyline834" />
+      <polygon
+         style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000"
+         fill-rule="evenodd"
+         points="1079,139.986 1084,149.986 1079,147.486 1074,149.986 "
+         id="polygon836" />
+    </g>
   </g>
 </svg>
