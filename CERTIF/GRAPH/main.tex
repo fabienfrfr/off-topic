@@ -261,4 +261,193 @@ public List<Node> GetNeighbors(Node node, List<Relationship> relationships)
 \end{lstlisting}
 \end{frame}
 
+
+%%%
+
+\section{Fondamentaux des Graphes et des Bases de Données Graphes}
+\subsection{Introduction : Pourquoi les graphes ?}
+\begin{frame}{Pourquoi les graphes ?}
+  \begin{itemize}
+    \item Représentation directe des entités et relations complexes (réseaux sociaux, routes, web, biologie).
+    \item Résolution efficace des problématiques où les connexions comptent.
+    \item Exemple : problème des sept ponts de Königsberg, modélisé par Euler (naissance de la théorie des graphes).
+  \end{itemize}
+\end{frame}
+
+\subsection{Structures fondamentales d'un graphe}
+\begin{frame}{Concepts de base}
+  \begin{itemize}
+    \item \textbf{Noeuds (sommets / vertices)}, \textbf{arêtes (edges)}, \textbf{propriétés}, \textbf{labels}
+    \item Types : orienté / non orienté, pondéré / non pondéré, graphe cyclique / acyclique
+    \item Modèles : adjacency list, adjacency matrix
+  \end{itemize}
+\end{frame}
+
+\subsection{Comparaison SQL vs Bases de Données Graphes}
+\begin{frame}{Relationnel vs Graphe}
+  \begin{itemize}
+    \item SQL : données en tables, relations via clés étrangères.
+    \item Graphe : connexions directes entre entités, requêtes par traversée rapide.
+    \item Avantages : absence d’index pour navigation, expressivité accrue pour les requêtes relationnelles complexes.
+  \end{itemize}
+  \begin{block}{Index-free Adjacency (Neo4j)}
+    Les relations sont stockées sous forme de pointeurs, optimisant l’accès et la navigation dans le graphe.
+  \end{block}
+\end{frame}
+
+\section{Modélisation et Requêtes dans une Base de Données Graphe (Neo4j)}
+\subsection{Le Property Graph Model}
+\begin{frame}{Le Property Graph Model}
+  \begin{itemize}
+    \item Noeuds et relations portent des propriétés clé-valeur.
+    \item Typage par labels (noeuds) et types (relations).
+  \end{itemize}
+  \begin{block}{Exemple}
+    \texttt{(:Person \{name: "Alex"\})-[:KNOWS]->(:Person \{name: "Jordan"\})}
+  \end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Cypher : Concepts clés}
+  \begin{itemize}
+    \item Syntaxe déclarative et visuelle inspirée de l’ASCII art.
+    \item \texttt{MATCH}, \texttt{WHERE}, \texttt{RETURN}, \texttt{CREATE}, \texttt{MERGE}, \texttt{DELETE}
+    \item Exemples :
+      \begin{itemize}
+        \item Requête basique :
+\begin{lstlisting}
+MATCH (n:Person)-[:KNOWS]->(friend)
+WHERE n.name = "Alex"
+RETURN friend.name
+\end{lstlisting}
+        \item Création :
+\begin{lstlisting}
+CREATE (a:Person {name:"Alice"})
+\end{lstlisting}
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\subsection{Gremlin et autres langages de graphes}
+\begin{frame}{Comparaison Cypher, Gremlin, GQL}
+  \begin{itemize}
+    \item \textbf{Cypher} : Déclaratif, standard Neo4j, pattern-matching, facile à apprendre.
+    \item \textbf{Gremlin} : Orienté traversée (impératif), TinkerPop, multiplateforme, syntaxe en étapes (pipes).
+    \item \textbf{GQL} (Graph Query Language) : Vers une normalisation ISO, synthèse de Cypher, PGQL et SQL/PGQ.
+    \item \textbf{SPARQL} : Pour RDF, orienté graphe sémantique.
+  \end{itemize}
+\end{frame}
+
+\section{Opérations, Indexation, Sécurité}
+\begin{frame}{Transactions et Index}
+  \begin{itemize}
+    \item ACID, gestion des transactions.
+    \item Indexation des nœuds et propriétés.
+    \item Contrôle d’accès : RBAC (Role-Based Access Control).
+    \item Sauvegarde, restauration, haute disponibilité.
+  \end{itemize}
+\end{frame}
+
+\section{Requêtes Complexes et Algorithmes sur Graphes}
+\subsection{Parallèle Relationnel / Graphe}
+\begin{frame}{Jointures vs. Traversées de Graphe}
+  \begin{itemize}
+    \item Jointure relationnelle devient : traversée directe de relations.
+    \item Avantage énorme sur les requêtes multi-hop ou à profondeur variable.
+  \end{itemize}
+\end{frame}
+
+\subsection{La science des graphes appliquée}
+\begin{frame}{Algorithmes et applications}
+  \begin{itemize}
+    \item \textbf{Recherche de chemin :}
+      \begin{itemize}
+        \item BFS, DFS, Dijkstra, A* (trouver le plus court chemin)
+      \end{itemize}
+    \item \textbf{Centralité et importance :}
+      \begin{itemize}
+        \item Degree, PageRank, Betweenness, Closeness
+      \end{itemize}
+    \item \textbf{Détection de communautés :}
+      \begin{itemize}
+        \item Louvain, Label Propagation 
+      \end{itemize}
+    \item \textbf{Similarité :}
+      \begin{itemize}
+        \item Cosine, Jaccard, node embedding (Word2Vec pour graphes)
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\subsection{Exemples d’algorithmes Cypher/Gremlin}
+\begin{frame}[fragile]{Chemin le plus court Cypher}
+\begin{lstlisting}
+MATCH (start:Person {name: "Alice"}), (end:Person {name: "Bob"}),
+path = shortestPath((start)-[*]-(end))
+RETURN path
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Chemin le plus court Gremlin}
+\begin{lstlisting}
+g.V().has('name','Alice')
+  .repeat(both().simplePath())
+  .until(has('name','Bob'))
+  .path()
+  .limit(1)
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Community Detection / Embeddings}
+  \begin{itemize}
+    \item Community detection: séparation naturelle des sous-réseaux d’un graphe.
+    \item Embeddings : vectorisation des nœuds pour le Machine Learning (proximité dans l’espace vectoriel encode la similarité structurelle).
+    \item Applications : recommandation, analyse sociale, détection de fraudes.
+  \end{itemize}
+\end{frame}
+
+\section{Import, Export et Outils d’Intégration}
+\begin{frame}{Travail avec les données}
+  \begin{itemize}
+    \item Import : CSV, JSON, connecteurs (Kafka, Spark, etc.).
+    \item Export : mêmes formats, intégration BI et ML.
+    \item APIs : Driver Python, Java, REST, Bolt.
+    \item Focus sur la conversion de graphes relationnels (\texttt{LOAD CSV}, mapping tables $\to$ nœuds et relations).
+  \end{itemize}
+\end{frame}
+
+\section{Bonnes Pratiques et Certification}
+\begin{frame}{Modélisation et bonnes pratiques}
+  \begin{itemize}
+    \item Limiter le nombre de labels par noeud (recommandé : $\leq$ 4)
+    \item Favoriser les pattern simples et typés
+    \item Utiliser index et contraintes pour l’unicité/sécurité
+    \item Tester la performance des requêtes (\texttt{EXPLAIN}/\texttt{PROFILE}, analyse des plans d’exécution)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Certification Neo4j / Ressources}
+  \begin{itemize}
+    \item Certification officielle Neo4j Professional gratuite, accès en ligne.
+    \item Sujets : Cypher, Modélisation, Sécurité, Algorithmes, Transactions.
+    \item Plateformes de formation : Neo4j GraphAcademy, blog posts, documentation Neo4j.
+    \item Pour aller plus loin : exploration de Gremlin (multi-db), comparaisons Cypher/Gremlin/SQL, utilisation de la GDS (Graph Data Science) Library pour l’IA.
+  \end{itemize}
+\end{frame}
+
+\section*{Conclusion}
+\begin{frame}{Conclusion}
+\vspace{0.5cm}
+\Large
+Les graphes et bases de données orientées graphe sont au cœur des nouveaux challenges d’analyse et d’Intelligence Artificielle (exploiter les connexions, pas seulement les enregistrements).  
+Cypher et Gremlin sont vos alliés pour explorer, analyser, et modéliser le réel numérique interconnecté.  
+\bigskip
+
+\footnotesize
+Ressources complémentaires sur :\\
+\url{https://graphacademy.neo4j.com/certifications/neo4j-certification/} \\
+\url{https://data-xtractor.com/blog/category/graphs/} \\
+\url{https://graphacademy.neo4j.com/courses/graph-data-science-fundamentals/}
+
+\end{frame}
+
 \end{document}
