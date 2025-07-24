@@ -1,0 +1,270 @@
+\documentclass{beamer}
+
+% Encodage et langue
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+% Packages utiles
+\usepackage{amsmath}     % formules mathématiques
+\usepackage{amssymb}
+\usepackage{listings}    % code source
+\usepackage{xcolor}      % couleurs pour listings
+
+% Thème et couleurs
+\usetheme{Madrid}        % thème (choix libre)
+\usecolortheme{seahorse} % palette de couleurs (optionnel)
+
+% Configuration du package listings pour le code C#
+\lstset{
+  language=[Sharp]C,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{gray}\itshape,
+  stringstyle=\color{red},
+  numbers=left,
+  numberstyle=\tiny,
+  stepnumber=1,
+  numbersep=5pt,
+  showstringspaces=false,
+  breaklines=true,
+  frame=single,
+  backgroundcolor=\color{gray!10}
+}
+
+
+\begin{document}
+
+\title{Knowledge Management \& Graphs Concepts}
+\author{Fabien FURFARO}
+\date{\today}
+\frame{\titlepage}
+
+% Slide Sommaire général
+\begin{frame}
+  \frametitle{Sommaire}
+  \tableofcontents
+\end{frame}
+
+% Partie 1 : Présentation du contexte et du besoin
+\section{Présentation du contexte et du besoin}
+
+\subsection{Historique}
+\begin{frame}
+  \frametitle{Historique}
+
+  La gestion des connaissances (Knowledge Management) a évolué en plusieurs phases :
+  \begin{itemize}
+    \item Avant 1980 : pratiques informelles, catalogage manuel, échanges oraux.
+    \item 1980-1995 : premiers outils informatiques et bases de connaissances structurées.
+    \item 1995-2010 : plateformes collaboratives, moteurs de recherche spécialisés.
+    \item 2010 et après : NLP/NLU, graph databases, transformers, accent sur gouvernance et modélisation.
+  \end{itemize}
+\end{frame}
+
+\subsection{Défis actuels et objectifs}
+\begin{frame}
+  \frametitle{Défis actuels et objectifs}
+  
+  \begin{itemize}
+  \item \textbf{Fragmentation} de l'information et silos de données.
+  \item \textbf{Hétérogénéité} des systèmes.
+  \item \textbf{Perte du savoir} par turnover ou absence de capitalisation.
+  \end{itemize}
+  
+  Objectif : créer des plateformes « Google-like », capables de retrouver et structurer la connaissance avec un \textbf{KMS} (Knowledge Management System) s’appuyant sur curation humaine, ontologie métier, indexation croisée et technologies avancées (ex : knowledge graph, IA).
+\end{frame}
+
+\subsection{Composants d’un KMS moderne}
+\begin{frame}
+  \frametitle{Composants d’un KMS moderne}
+  \begin{itemize}
+    \item Modèles formels, ontologies.
+    \item Moteurs de règle, systèmes experts.
+    \item Knowledge graph, sémantique.
+    \item IA (NLP/NLU, entity recognition, retrieval).
+    \item Interfaces LLM/RAG, intégration outils métier.
+  \end{itemize}
+\end{frame}
+
+\subsection{Cas d’usage : Curiosity}
+\begin{frame}
+  \frametitle{Cas d’usage : Curiosity}
+  \begin{itemize}
+    \item KMS basé sur un \textbf{Linked Property Graph (LPG)} développé en C\#.
+    \item Détection automatique et pondération des entités (NLP).
+    \item Recherche par similarité (subgraph embedding, vectorisation texte).
+    \item Rapidité sur grands volumes (plusieurs centaines de milliers de docs).
+  \end{itemize}
+\end{frame}
+
+\subsection{Bénéfices et limites}
+\begin{frame}
+  \frametitle{Bénéfices et limites}
+  \begin{itemize}
+    \item Gain de temps, pertinence, efficacité de support client
+    \item Sécurité du patrimoine informationnel
+    \item Défis persistants de désilotage, capitalisation experte, automatisation des process
+  \end{itemize}
+\end{frame}
+
+\subsection{Exemple concret : aéronautique}
+\begin{frame}
+  \frametitle{Exemple concret : aéronautique}
+  
+  Déploiement progressif chez un avionneur : de 15 000 utilisateurs internes à plus de 100 000 clients externes, grâce à la puissance du knowledge graph pour résoudre des problématiques techniques complexes.
+\end{frame}
+
+\subsection{Approche Capgemini « Trust before technology »}
+\begin{frame}
+  \frametitle{Approche Capgemini « Trust before technology »}
+  
+  \begin{itemize}
+    \item Diagnostic métier et technique approfondi, co-construction humaine + technologique, prototypage rapide permettant d’incarner la valeur ajoutée.
+  \end{itemize}
+\end{frame}
+
+% Partie 2 : Présentation des compétences nécessaires
+\section{Présentation des compétences nécessaires}
+
+\subsection{Théorie et concepts fondamentaux}
+
+\subsubsection{Graphes et connaissance}
+\begin{frame}
+  \frametitle{Graphes et connaissance}
+
+  \begin{itemize}
+    \item \textbf{Graphe orienté ou non orienté}: \( G = (V, E) \) avec \( V \) = nœuds (entités), \( E \) = arêtes (relations).
+    \item \textbf{Linked Property Graph (LPG)}: chaque nœud/arête peut avoir des propriétés clé-valeur.
+    \item \textbf{Requête sur graphe}: trouver des sous-graphes isomorphes, calcul de chemins, recherche de motifs.
+  \end{itemize}
+\end{frame}
+
+\subsubsection{Sémantique, ontologies}
+\begin{frame}
+  \frametitle{Sémantique, ontologies}
+
+  \begin{itemize}
+    \item \textbf{Ontologie}: formalise les concepts et relations d’un domaine (ex : OWL, RDF Schema) ; utile pour donner du sens et permettre des inférences au-delà du simple graphe.
+  \end{itemize}
+\end{frame}
+
+\subsubsection{Vectorisation et recherche sémantique}
+\begin{frame}
+  \frametitle{Vectorisation et recherche sémantique}
+
+  \begin{itemize}
+    \item \textbf{Embeddings}: vectorisation des nœuds/document associés pour calculer la similarité (cosinus, euclidienne) :
+    \[
+    \cos(\theta) = \frac{\mathbf{v}_1 \cdot \mathbf{v}_2}{\|\mathbf{v}_1\|\|\mathbf{v}_2\|}
+    \]
+    \item Techniques courantes : Word2Vec, GloVe, transformers (BERT/LLM).
+  \end{itemize}
+\end{frame}
+
+\subsubsection{IA et NLP}
+\begin{frame}
+  \frametitle{IA et NLP}
+
+  \begin{itemize}
+    \item Extraction d’entités : reconnaissance automatique des entités dans un texte.
+    \item Similarité sémantique : utiliser des modèles de langage pour relier de nouveaux cas à l’historique.
+  \end{itemize}
+\end{frame}
+
+\subsection{Mathématiques et algorithmes de base}
+
+\begin{frame}
+  \frametitle{Algorithmes fondamentaux}
+  \begin{itemize}
+    \item Algorithme de parcours de graphe (DFS, BFS).
+    \item Pagerank pour déterminer l’importance d’un nœud.
+    \item Recherche de plus courts chemins (Dijkstra, A*).
+    \item Recherche de sous-graphes similaires (isomorphisme de sous-graphe, graph embedding).
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Exemple d’algorithme : BFS en C\#}
+\begin{lstlisting}
+Queue<Node> queue = new Queue<Node>();
+HashSet<Node> visited = new HashSet<Node>();
+queue.Enqueue(startNode);
+
+while (queue.Count > 0)
+{
+    Node current = queue.Dequeue();
+    if (!visited.Contains(current))
+    {
+        visited.Add(current);
+        foreach (Node neighbor in current.Neighbors)
+        {
+            queue.Enqueue(neighbor);
+        }
+    }
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Exemple de similarité cosinus entre deux embeddings}
+\begin{lstlisting}
+public double CosineSimilarity(double[] v1, double[] v2)
+{
+    double dot = 0.0, mag1 = 0.0, mag2 = 0.0;
+    for (int i = 0; i < v1.Length; i++)
+    {
+        dot += v1[i] * v2[i];
+        mag1 += v1[i] * v1[i];
+        mag2 += v2[i] * v2[i];
+    }
+    return dot / (Math.Sqrt(mag1) * Math.Sqrt(mag2));
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+  \frametitle{PageRank}
+  Formule de base :
+  \[
+  PR(u) = \frac{1-d}{N} + d \sum_{v \in B_u} \frac{PR(v)}{L(v)}
+  \]
+  avec \( d \) = facteur d’amortissement (classiquement 0.85), \( N \) = nombre total de nœuds.
+\end{frame}
+
+\subsection{Exemple pratique de requête sur un LPG}
+
+\begin{frame}[fragile]
+  \frametitle{Définition d’un nœud et d’une relation en C\#}
+
+\begin{lstlisting}
+public class Node
+{
+    public string Id { get; set; }
+    public Dictionary<string, object> Properties { get; set; }
+}
+
+public class Relationship
+{
+    public Node From { get; set; }
+    public Node To { get; set; }
+    public string Type { get; set; }
+    public Dictionary<string, object> Properties { get; set; }
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Recherche des voisins d’un nœud (extraction de sous-graphe)}
+\begin{lstlisting}
+public List<Node> GetNeighbors(Node node, List<Relationship> relationships)
+{
+    return relationships
+    .Where(r => r.From == node)
+    .Select(r => r.To)
+    .ToList();
+}
+\end{lstlisting}
+\end{frame}
+
+\end{document}
