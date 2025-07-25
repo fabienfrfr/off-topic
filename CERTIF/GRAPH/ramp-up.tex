@@ -1,0 +1,134 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+% Définition des couleurs utilisées dans TikZ
+
+\definecolor{MediumPurple}{RGB}{147,112,219}
+\definecolor{Chartreuse2}{RGB}{102,205,0}
+\definecolor{Chartreuse4}{RGB}{69,139,0}
+
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+
+% Configuration des listings pour C#, SQL, Python
+\lstset{
+  language=[Sharp]C,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{gray}\itshape,
+  stringstyle=\color{red},
+  numbers=left,
+  numberstyle=\tiny,
+  stepnumber=1,
+  numbersep=5pt,
+  showstringspaces=false,
+  breaklines=true,
+  frame=single,
+  backgroundcolor=\color{gray!10}
+}
+
+\title{Knowledge Management System\\Solution Architect}
+\author{Fabien FURFARO}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+  \frametitle{Sommaire}
+  \tableofcontents
+\end{frame}
+
+\section{Pourquoi a-t-on besoin de gestionnaire de connaissance ?}
+
+\begin{frame}
+  \frametitle{Évolution de la transmission du savoir}
+  \begin{itemize}
+    \item Transmission orale
+    \item Invention de l’écriture
+    \item Traduction et diffusion manuscrite
+    \item Imprimerie
+    \item Révolution industrielle : normalisation
+    \item Numérisation : explosion des données, multiplication des supports et des silos
+  \end{itemize}
+\end{frame}
+
+\section{Comment est géré la connaissance numérique aujourd'hui ?}
+
+\begin{frame}
+  \frametitle{Évolution de la transmission du savoir}
+  \begin{itemize}
+    \item Transmission orale
+  \end{itemize}
+\end{frame}
+
+
+\section{Comment fonctionne les bases de données relationnelles ?}
+
+\begin{frame}
+  \frametitle{Évolution de la transmission du savoir}
+  \begin{itemize}
+    \item Transmission orale
+  \end{itemize}
+\end{frame}
+
+\section{Quels sont les limites des bases de données relationnelles ?}
+
+\begin{frame}
+  \frametitle{Comment trouver ma liste d'amis d'amis d'amis et mes preference ?}
+  \begin{itemize}
+    \item Transmission orale
+  \end{itemize}
+\end{frame}
+
+
+\section{Comment les bases de données graphes répondents à cette problématique ?}
+
+\begin{frame}
+  \frametitle{Les bases de données graphes, RDF vs Property}
+  \begin{itemize}
+    \item Transmission orale
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Comparatifs des language de requetes graphes}
+  \begin{itemize}
+    \item Transmission orale
+  \end{itemize}
+\end{frame}
+
+
+\section{Quels autres limites peuvent apparaitres avec les bases de donnée relationnelle ?}
+
+\begin{frame}
+  \frametitle{Les base de données vectorielles}
+  \begin{itemize}
+    \item similarité de texte, mais aussi image/son/video possible!
+  \end{itemize}
+\end{frame}
+
+
+\section{Quels sont les architectures modernes pour la gestion de la connaissance ?}
+
+\begin{frame}
+  \frametitle{Modulaire vs AllinOne}
+  \begin{itemize}
+    \item similarité de texte, mais aussi image/son/video possible!
+  \end{itemize}
+\end{frame}
+
+
+\end{document}
