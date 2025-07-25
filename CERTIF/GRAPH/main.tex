@@ -9,6 +9,9 @@
 \usepackage{listings}
 \usepackage{xcolor}
 
+\usepackage{tikz}
+
+
 \usetheme{Madrid}
 \usecolortheme{seahorse}
 
@@ -80,6 +83,20 @@
     \item IA (NLP/NLU, entity recognition, retrieval).
     \item Interfaces LLM/RAG, intégration outils métier.
   \end{itemize}
+\end{frame}
+
+% Use TikZiT
+\begin{frame}{Petit graphe avec TikZ}
+  \begin{center}
+    \begin{tikzpicture}
+      \node[circle,draw] (A) at (0,0) {A};
+      \node[circle,draw] (B) at (2,0) {B};
+      \node[circle,draw] (C) at (1,1.5) {C};
+      \draw[->,thick] (A) -- (B);
+      \draw[->,thick] (B) -- (C);
+      \draw[->,thick] (C) -- (A);
+    \end{tikzpicture}
+  \end{center}
 \end{frame}
 
 \subsection{Cas d’usage : Curiosity}
