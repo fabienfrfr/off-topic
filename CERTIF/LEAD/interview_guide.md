@@ -71,7 +71,7 @@ Docteur en physique avec une spécialisation en **computer vision/statistiques**
 - N’hésite pas à reformuler les questions et demander des précision/clarification.
 - Prendre du temps pour répondre, l'important c'est l'expression de la logique et le raisonnement.
 - Proposer des exemples simples et avoir les bases mathématiques (loi statistique, biais/variance, cross-validation).
-- Etre honnete sur l'usage de LLM pour aider à coder/datascience.
+- Etre honnete sur l'usage de LLM pour aider à coder/datascience. D'ailleurs en GenAI, on ne fait presque pas d'entrainement, c'est plus des compétences de software qui sont necessaires.
 
 ---
 
