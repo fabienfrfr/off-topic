@@ -2,6 +2,25 @@
 Demo multi-tâches illustrant le paradoxe de Simpson avec classification et régression,
 incluant l'utilisation de MAPIE pour les intervalles de confiance et SHAP pour l'interprétabilité.
 Code demonstratif pour générer un test techniques datascience (à completer et assisté par IA).
+
+Adapter par problématique, par exemple :
+- **Industrie** : Analyse de la qualité de production entre deux usines, où chaque ligne de production locale a une tendance inverse à la tendance globale.
+- **Finance** : Analyse des performances de portefeuilles d’investissement ; la rentabilité globale masque des comportements opposés selon la classe d’actifs ou la région.
+- **Santé** : Étude des taux de guérison d’un traitement sur plusieurs hôpitaux avec efficacité globale mais inefficacité dans certains groupes d’âge ou sévérité.
+- **Marketing** : Analyse des taux de conversion par canal de distribution avec une inversion entre les performances globales et celles segmentées par région ou profil client.
+- **Ressources humaines** : Étude des salaires moyens au sein d’une entreprise où la moyenne globale masque des différences inverses entre cadres et ouvriers selon les départements.
+- **Éducation** : Comparaison des résultats scolaires selon différentes filières ou niveaux d’enseignement, avec inversion des tendances entre groupes et global.
+- **Écologie** : Croissance des plantes selon type de sol et climat, avec des effets inverses entre sous-groupes qui contrastent avec la moyenne globale.
+- **Transport** : Analyse des temps de trajet selon modes de transport (train, voiture) et zones géographiques montrant des tendances locales inverses à la tendance globale.
+- **Sport** : Performances d’athlètes selon type d’entraînement avec inversion des effets selon les groupes d’âge (jeunes vs seniors).
+- **Assurance** : Sinistralité globale d’un portefeuille clients où les sous-groupes d’assurés (selon âge ou type de contrat) montrent des tendances contraires à la moyenne.
+- **Télécommunications** : Analyse de la satisfaction client selon type de service (mobile, internet) et région, avec des tendances inverses entre segments et global.
+- **Agriculture** : Rendement des cultures selon techniques agricoles et conditions climatiques, avec des effets inverses entre sous-groupes.
+- **Tourisme** : Analyse des préférences de voyage selon type de destination et saison, avec inversion des tendances entre groupes et global.
+- **Immobilier** : Étude des prix de l’immobilier selon quartiers et types de biens, avec des tendances locales inverses à la tendance globale.
+- **Alimentation** : Préférences alimentaires selon catégories de consommateurs (végétariens, omnivores) et régions, avec des effets inverses entre sous-groupes.
+- **Énergie** : Consommation énergétique selon types de bâtiments (résidentiel, commercial) et zones climatiques, avec des tendances inverses entre segments et global.
+- **Logistique** : Analyse des délais de livraison selon modes de transport et régions, avec inversion des effets selon les sous-groupes.
 """
 
 import numpy as np
