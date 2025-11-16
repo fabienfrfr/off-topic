@@ -34,7 +34,7 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
   - **Comment** :
     1. **À quoi ça sert ?** → "Réduire les fraudes de 30%."
     2. **Pour qui ?** → "Équipe risque et clients finaux."
-    3. **Quelles contraintes ?** → "RGPD, latence < 1s, budget < 50k€."
+    3. **Quelles contraintes ?** → "RGPD (chiffrage et anonymisation), latence < 1s, budget < 50k€."
   - **Astuce** : Organiser un atelier de 1h avec les métiers pour valider le besoin.
 
 - *Diagramme de contexte* :
