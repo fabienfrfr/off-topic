@@ -1,35 +1,37 @@
-= Bonnes pratiques pour les lead architectes (IA/Data)
-:toc: macro
-:toclevels: 4
-:icons: font
-
-toc::[]
-
-== Introduction
-Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux métiers en solutions techniques robustes, évolutives et alignées sur la valeur business. Ce guide synthétise les bonnes pratiques, outils et astuces pour chaque phase du projet, de la compréhension du besoin à la livraison et l’amélioration continue.
+# Bonnes pratiques pour les lead architectes (IA/Data)
 
 *Documentation vivante* : Mise à jour trimestrielle pour intégrer les retours terrain et les évolutions technologiques.
 
-=== Rôle et responsabilités
-- **Alignement stratégique** :
-  - Traduire les objectifs business en choix techniques (ex : batch vs streaming, monolithique vs microservices).
-  - **Exemple** : Pour un besoin de réactivité, privilégier une architecture event-driven (Kafka, Pulsar).
-- **Gouvernance** :
-  - Définir des standards (nomenclature, qualité de code, sécurité, RGPD).
-  - **Astuce** : Créer un *Tech Radar* interne pour guider les choix technologiques et éviter les solutions "hype" non matures.
-- **Risques à éviter** :
-  - Sous-estimer la dette technique ou les coûts de maintenance.
-  - Adopter une technologie sans évaluer son TRL (Technology Readiness Level) ou son adéquation au besoin.
+---
+
+## Introduction
+Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux métiers en solutions techniques robustes, évolutives et alignées sur la valeur business. Ce guide synthétise les bonnes pratiques, outils et astuces pour chaque phase du projet, de la compréhension du besoin à la livraison et l’amélioration continue.
 
 ---
 
-== Méthodologie détaillée
+## Rôle et responsabilités
 
-=== 1. Comprendre le besoin
+### Alignement stratégique
+- Traduire les objectifs business en choix techniques (ex : batch vs streaming, monolithique vs microservices).
+- **Exemple** : Pour un besoin de réactivité, privilégier une architecture event-driven (Kafka, Pulsar).
+
+### Gouvernance
+- Définir des standards (nomenclature, qualité de code, sécurité, RGPD).
+- **Astuce** : Créer un *Tech Radar* interne pour guider les choix technologiques et éviter les solutions "hype" non matures.
+
+### Risques à éviter
+- Sous-estimer la dette technique ou les coûts de maintenance.
+- Adopter une technologie sans évaluer son TRL (Technology Readiness Level) ou son adéquation au besoin.
+
+---
+
+## Méthodologie détaillée
+
+### 1. Comprendre le besoin
 **Objectif** : Clarifier le contexte, les attentes et les contraintes pour éviter les malentendus et les dérives.
 
-**Outils et méthodes** :
-- *Bête à cornes* :
+#### Outils et méthodes
+- **Bête à cornes**
   - **Pourquoi** : 80% des échecs de projets viennent d’un besoin mal compris.
   - **Comment** :
     1. **À quoi ça sert ?** → "Réduire les fraudes de 30%."
@@ -37,9 +39,9 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
     3. **Quelles contraintes ?** → "RGPD (chiffrage et anonymisation), latence < 1s, budget < 50k€."
   - **Astuce** : Organiser un atelier de 1h avec les métiers pour valider le besoin.
 
-- *Diagramme de contexte* :
+- **Diagramme de contexte**
   - **Exemple** :
-    ```
+    ```plaintext
     [Client] --> (API Front) --> [Modèle IA] --> (Base de données)
                   ^               |              ^
                   |              v              |
@@ -47,96 +49,107 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
     ```
   - **Astuce** : Utiliser le *C4 Model* pour les architectures complexes.
 
-- *Objectifs SMART* :
+- **Objectifs SMART**
   - **Exemple** : "Détecter 95% des fraudes en <500ms d’ici Q1 2026."
-  - **À éviter** : Des objectifs flous comme "améliorer l’expérience client".
+  - **À éviter** : Des objectifs flous comme "améliorer l’expérience client."
 
-- *QCDP (Qualité, Coût, Délai, Performance)* :
-  - **Template** :
-    | Critère       | Exigence                     | Priorité (1-5) |
-    |---------------|------------------------------|---------------|
-    | Qualité       | Précision modèle > 90%       | 5             |
-    | Coût          | Budget < 50k€                | 4             |
+- **QCDP (Qualité, Coût, Délai, Performance)**
+  
+QCDP
+
+
+  | Critère       | Exigence                     | Priorité (1-5) |
+  |---------------|------------------------------|---------------|
+  | Qualité       | Précision modèle > 90%       | 5             |
+  | Coût          | Budget < 50k€                | 4             |
 
 ---
 
-=== 2. État de l’art et analyse
+### 2. État de l’art et analyse
 **Objectif** : Évaluer les solutions existantes et leur adéquation au besoin.
 
-- *Benchmark technologique* :
-  - **Critères** : Performance, coût, scalabilité, communauté, support.
-  - **Exemple** :
-    | Outil         | Avantages                  | Inconvénients               |
-    |---------------|----------------------------|-----------------------------|
-    | TensorFlow    | Écosystème mature          | Courbe d’apprentissage      |
-    | PyTorch       | Flexibilité                | Moins industrialisé         |
+- **Benchmark technologique**
+  
+Benchmark technologique
 
-- *TRL (Technology Readiness Level)* :
+
+  | Outil         | Avantages                  | Inconvénients               |
+  |---------------|----------------------------|-----------------------------|
+  | TensorFlow    | Écosystème mature          | Courbe d’apprentissage      |
+  | PyTorch       | Flexibilité                | Moins industrialisé         |
+
+- **TRL (Technology Readiness Level)**
   - **Astuce** :
     - PoC : TRL 3-4.
     - MVP : TRL 6-7.
     - Production : TRL 7+.
   - **Exemple** : Un modèle de NLP custom a un TRL 4 (validé en labo).
 
-- *Analyse VRIO* :
+- **Analyse VRIO**
   - **Question clé** : "Cette solution nous donne-t-elle un avantage concurrentiel durable ?"
   - **Exemple** : Un algorithme propriétaire de scoring = avantage (VRIO positif).
 
-- *ROI et KPI* :
+- **ROI et KPI**
   - **Formule** : ROI = (Gains - Coûts) / Coûts.
   - **Astuce** : Inclure les coûts cachés (formation, maintenance, cloud).
 
 ---
 
-=== 3. Conception de la solution
+### 3. Conception de la solution
 **Objectif** : Définir une architecture fonctionnelle et technique alignée sur les besoins.
 
-- *BPMN (Business Process Model and Notation)* :
+- **BPMN (Business Process Model and Notation)**
   - **Exemple** : Processus de validation de prêt :
-    ```
+    ```plaintext
     [Client] --> [Soumettre demande] --> [Vérification IA] --> [Décision]
     ```
   - **Astuce** : Utiliser `bpmn.io` pour des modèles collaboratifs.
 
-- *SADT (Structured Analysis and Design Technique)* :
+- **SADT (Structured Analysis and Design Technique)**
   - **Niveaux** :
     - A-0 : Vue globale (ex : "Système de recommandation").
     - A0 : Sous-systèmes (ex : "Moteur de règles", "Modèle ML").
   - **À éviter** : Des diagrammes trop détaillés trop tôt.
 
-- *Modèle Kano* :
-  - **Exemple** :
-    | Fonctionnalité       | Type       | Priorité |
-    |----------------------|------------|----------|
-    | Prédiction temps réel| Performante| Haute    |
+- **Modèle Kano**
+  
+Modèle Kano
 
-- *Roadmap technique* :
-  - **Template** :
-    | Livrable          | Durée | Risques                  | Atténuation               |
-    |-------------------|-------|--------------------------|---------------------------|
-    | API de scoring    | 3 sem | Latence > 1s             | Tests de charge précoce   |
+
+  | Fonctionnalité       | Type       | Priorité |
+  |----------------------|------------|----------|
+  | Prédiction temps réel| Performante| Haute    |
+
+- **Roadmap technique**
+  
+Roadmap technique
+
+
+  | Livrable          | Durée | Risques                  | Atténuation               |
+  |-------------------|-------|--------------------------|---------------------------|
+  | API de scoring    | 3 sem | Latence > 1s             | Tests de charge précoce   |
 
 ---
 
-=== 4. Développement
+### 4. Développement
 **Objectif** : Implémenter les fonctionnalités avec rigueur et traçabilité.
 
-- *Example Mapping* :
+- **Example Mapping**
   - **Exemple** :
     - **Règle métier** : "Un client gold a un plafond de crédit de 10k€."
     - **Scénario** :
-      ```
+      ```gherkin
       Given un client gold
       When il demande un crédit de 8k€
       Then le système approuve
       ```
 
-- *DDD (Domain-Driven Design)* :
+- **DDD (Domain-Driven Design)**
   - **Bonnes pratiques** :
     - Séparer les *bounded contexts* (ex : "Facturation" vs "Recommandation").
     - **Astuce** : Utiliser des `value objects` pour les règles métiers (ex : `Money`, `Percentage`).
 
-- *Tests* :
+- **Tests**
   - **Stratégie** :
     - Tests unitaires : 80% de couverture sur le code critique.
     - Tests d’intégration : Valider les interactions entre services.
@@ -146,28 +159,34 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
         assert calculer_score(client_gold) == "FAIBLE"
     ```
 
-- *Matrice de traçabilité* :
-  - **Template** :
-    | Exigence          | Test associé       | Statut   |
-    |-------------------|--------------------|----------|
-    | Latence < 500ms   | test_performance() | ✅ Pass  |
+- **Matrice de traçabilité**
+  
+Matrice de traçabilité
+
+
+  | Exigence          | Test associé       | Statut   |
+  |-------------------|--------------------|----------|
+  | Latence < 500ms   | test_performance() | ✅ Pass  |
 
 ---
 
-=== 5. Livraison et amélioration continue
+### 5. Livraison et amélioration continue
 **Objectif** : Livrer une solution fiable et planifier les itérations.
 
-- *AMDEC (Analyse des Modes de Défaillance)* :
-  - **Exemple** :
-    | Risque               | Cause               | Effet            | Action préventive       |
-    |----------------------|---------------------|------------------|-------------------------|
-    | Défaillance API CRM  | Timeout réseau      | Erreur 500       | Retry + circuit breaker |
+- **AMDEC (Analyse des Modes de Défaillance)**
+  
+AMDEC
 
-- *Tests E2E* :
+
+  | Risque               | Cause               | Effet            | Action préventive       |
+  |----------------------|---------------------|------------------|-------------------------|
+  | Défaillance API CRM  | Timeout réseau      | Erreur 500       | Retry + circuit breaker |
+
+- **Tests E2E**
   - **Outils** : Selenium (UI), Postman (API), Locust (charge).
   - **Astuce** : Automatiser les tests de non-régression dans le pipeline CI/CD.
 
-- *PDCA (Plan-Do-Check-Act)* :
+- **PDCA (Plan-Do-Check-Act)**
   - **Exemple** :
     - **Plan** : Réduire la latence de 20%.
     - **Do** : Optimiser les requêtes SQL et le caching.
@@ -176,9 +195,9 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
 
 ---
 
-== Spécialisation DATA/IA
+## Spécialisation DATA/IA
 
-=== Exploration des données
+### Exploration des données
 - **Astuces** :
   - Utiliser `Great Expectations` pour valider la qualité des données.
   - **Exemple** :
@@ -188,25 +207,27 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
     results = df.expect_column_values_to_not_be_null("client_id")
     ```
 
-=== Bases de données
+### Bases de données
 - **Choix technologiques** :
   - **Data Warehouse** : Snowflake (SQL), Databricks (Spark).
   - **Data Lake** : Delta Lake (versioning), Iceberg (open format).
   - **Temps réel** : Kafka + Flink pour le streaming.
-- **ACID et ArangoDB** :
+
+- **ACID et ArangoDB**
   - **Cas d’usage** : ArangoDB pour les graphes (ex : réseau social).
   - **À éviter** : MongoDB pour des transactions financières (manque de garanties ACID).
 
 ---
 
-== Modélisation IA
-- **Biais/Variance** :
+## Modélisation IA
+
+- **Biais/Variance**
   - **Diagnostic** :
     - **High bias** : Erreur d’entraînement et de test élevées → Modèle trop simple.
     - **High variance** : Erreur de test >> entraînement → Overfitting.
   - **Astuce** : Utiliser `sklearn.model_selection.LearningCurve`.
 
-- *Pipeline ML* :
+- **Pipeline ML**
   - **Exemple avec MLflow** :
     ```python
     with mlflow.start_run():
@@ -216,12 +237,15 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
 
 ---
 
-== Infrastructure et DevOps
-- **Git** :
+## Infrastructure et DevOps
+
+- **Git**
   - **Branching** : GitFlow pour les releases, Trunk-Based Development pour l’agilité.
-- **Terraform** :
+
+- **Terraform**
   - **Astuce** : Modulariser les configurations (ex : `modules/kafka`, `modules/postgres`).
-- **Docker** :
+
+- **Docker**
   - **Bonnes pratiques** :
     - Multi-stage builds pour réduire la taille des images.
     - **Exemple** :
@@ -235,23 +259,29 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
 
 ---
 
-== Management d’équipe
-- **Leadership situationnel** :
-  - **Matrice compétence/motivation** :
-    | Compétence \ Motivation | Faible | Moyenne | Élevée |
-    |-------------------------|--------|---------|--------|
-    | Faible                  | Diriger| Encadrer| Déléguer|
+## Management d’équipe
+
+- **Leadership situationnel**
+  
+Leadership situationnel
+
+
+  | Compétence \ Motivation | Faible | Moyenne | Élevée |
+  |-------------------------|--------|---------|--------|
+  | Faible                  | Diriger| Encadrer| Déléguer|
+
   - **Astuce** : Pour un junior motivé, donner des tâches challengeantes avec mentorat.
 
-- **Comité de pilotage** :
+- **Comité de pilotage**
   - **Template de reporting** :
     - Avancement : Burndown chart.
     - Risques : Top 3 avec plans d’action.
 
 ---
 
-== Annexes
-- **Template ADR (Architecture Decision Record)** :
+## Annexes
+
+- **Template ADR (Architecture Decision Record)**
   ```markdown
   # Titre de la décision
   **Statut** : Proposé / Accepté / Obsolète
@@ -261,7 +291,7 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
   **Conséquences** : Impact à court/long terme.
   ```
 
-- **Checklist pré-livraison** :
+- **Checklist pré-livraison**
   - [ ] Tests unitaires/integration passés.
   - [ ] Documentation mise à jour (README, Swagger, schémas).
   - [ ] Backup des données critiques.
@@ -269,9 +299,8 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
 
 ---
 
-== Conclusion
-Ce guide est un **cadre évolutif** pour les lead architectes IA/Data. **Astuce finale** :
+## Conclusion
+Ce guide est un **cadre évolutif** pour les lead architectes IA/Data.
+**Astuce finale** :
 - Documenter chaque compromis (ex : "On sacrifie 5% de précision pour diviser par 2 la latence").
 - Utiliser des *ADR* pour justifier les choix techniques et faciliter la maintenance.
-
----
