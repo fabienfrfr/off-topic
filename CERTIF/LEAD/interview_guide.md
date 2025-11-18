@@ -91,6 +91,7 @@ Exprimer d’abord ce que tu as compris des enjeux (“Vous avez surtout des mis
 - **Comment mesurez-vous le succès d’un projet IA, au-delà des KPI techniques ?***(Objectifs métier : ROI, adoption, niveau d’industrialisation, satisfaction des utilisateurs finaux)*
 - **Quelles perspectives ou ambitions avez-vous pour vos solutions IA à 3-5 ans ?**
   *(Projection : feuille de route innovation, technologies en veille/priorité, montée en charge des équipes)*
+- Comment est organiser les differentes equipes ? Est ce qu'il y a des equipes specialisé avant-vente, des équipes spécialisé developpement ? ou des equipes transverse ?
 
 ### Entretien RH / culture d’équipe
 

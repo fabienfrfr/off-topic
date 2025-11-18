@@ -3,6 +3,7 @@
 *Documentation vivante* : Mise à jour trimestrielle pour intégrer les retours terrain et les évolutions technologiques. (**Office Viewer**)
 
 > Note : Il ne s’agit pas d’un guide à appliquer à la lettre mais d’une base méthodologique. Tout dépend fortement du contexte.
+
 ---
 
 ## Introduction
@@ -47,7 +48,7 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
     2. **Pour qui ?** → "Équipe risque et clients finaux."
     3. **Quelles contraintes ?** → "RGPD (chiffrage et anonymisation), latence < 1s, budget < 50k€."
   - **Astuce** : Organiser un atelier de 1h avec les métiers pour valider le besoin.
-  - **Implicite** : Permet d'initier la comprehension de la problématique et des attentes du clients pour la mission (profils, durée, coût, livrable). 
+  - **Implicite** : Permet d'initier la comprehension de la problématique et des attentes du clients pour la mission (profils, durée, coût, livrable).
 - **Diagramme de contexte**
 
   - **Exemple** :
@@ -62,16 +63,15 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
 
   - **Exemple** : "Détecter 95% des fraudes en <500ms d’ici Q1 2026."
   - **À éviter** : Des objectifs flous comme "améliorer l’expérience client."
-
 - **Astuces** :
-  - Faire une lexique des acronymes et termes techniques avec leurs définitions pour éviter les confusions. Ex : CRM = "Customer relationship management" en gestion, mais aussi CRM = "coefficient de réduction-majoration" dans les assurances.
 
+  - Faire une lexique des acronymes et termes techniques avec leurs définitions pour éviter les confusions. Ex : CRM = "Customer relationship management" en gestion, mais aussi CRM = "coefficient de réduction-majoration" dans les assurances.
 
 ---
 
 ### 2. État de l’art et analyse
 
-**Objectif** : Évaluer les solutions existantes et leur adéquation au besoin.
+**Objectif** : Évaluer les solutions existantes et leur adéquation au besoin. (Mais aussi ce qu'y est déjà fait chez le client / en internes)
 
 - **Benchmark technologique**
 
@@ -82,14 +82,14 @@ Benchmark technologique
 | TensorFlow | Écosystème mature | Courbe d’apprentissage |
 | PyTorch    | Flexibilité        | Moins industrialisé    |
 
-- **TRL (Technology Readiness Level)**
+- **TRL (Technology Readiness Level)
+  *Necessaire pour identifier la maturité !***
 
   - **Astuce** :
     - PoC : TRL 3-4.
     - MVP : TRL 6-7.
     - Production : TRL 7+.
   - **Exemple** : Un modèle de NLP custom a un TRL 4 (validé en labo).
-
 - **QCDP (Qualité, Coût, Délai, Performance)**
 
 QCDP / Matrice de décision
@@ -107,7 +107,6 @@ QCDP / Matrice de décision
 
   - **Formule** : ROI = (Gains - Coûts) / Coûts.
   - **Astuce** : Inclure les coûts cachés (formation, maintenance, cloud).
-
 - **Remarques** : Ces outils peuvent également etre utilisé en cas de construction du *Business Model* (voir Business Model Canvas pour plus de détails).
 
 ---
@@ -231,7 +230,7 @@ AMDEC
 
   - **Data Warehouse** : Snowflake (SQL), Databricks (Spark).
   - **Data Lake** : Delta Lake (versioning), Iceberg (open format).
-  - **Temps réel** : Kafka + Flink pour le streaming.
+  - **Temps réel** : Kafka + Flink pour le streaming. Lambda également.
 - **ACID et ArangoDB**
 
   - **Cas d’usage** : ArangoDB pour les graphes (ex : réseau social).
