@@ -2,6 +2,7 @@
 
 *Documentation vivante* : Mise à jour trimestrielle pour intégrer les retours terrain et les évolutions technologiques. (**Office Viewer**)
 
+> Note : Il ne s’agit pas d’un guide à appliquer à la lettre mais d’une base méthodologique. Tout dépend fortement du contexte.
 ---
 
 ## Introduction
@@ -46,6 +47,7 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
     2. **Pour qui ?** → "Équipe risque et clients finaux."
     3. **Quelles contraintes ?** → "RGPD (chiffrage et anonymisation), latence < 1s, budget < 50k€."
   - **Astuce** : Organiser un atelier de 1h avec les métiers pour valider le besoin.
+  - **Implicite** : Permet d'initier la comprehension de la problématique et des attentes du clients pour la mission (profils, durée, coût, livrable). 
 - **Diagramme de contexte**
 
   - **Exemple** :
@@ -60,14 +62,10 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
 
   - **Exemple** : "Détecter 95% des fraudes en <500ms d’ici Q1 2026."
   - **À éviter** : Des objectifs flous comme "améliorer l’expérience client."
-- **QCDP (Qualité, Coût, Délai, Performance)**
 
-QCDP
+- **Astuces** :
+  - Faire une lexique des acronymes et termes techniques avec leurs définitions pour éviter les confusions. Ex : CRM = "Customer relationship management" en gestion, mais aussi CRM = "coefficient de réduction-majoration" dans les assurances.
 
-| Critère | Exigence                 | Priorité (1-5) |
-| -------- | ------------------------ | --------------- |
-| Qualité | Précision modèle > 90% | 5               |
-| Coût    | Budget < 50k€           | 4               |
 
 ---
 
@@ -91,6 +89,16 @@ Benchmark technologique
     - MVP : TRL 6-7.
     - Production : TRL 7+.
   - **Exemple** : Un modèle de NLP custom a un TRL 4 (validé en labo).
+
+- **QCDP (Qualité, Coût, Délai, Performance)**
+
+QCDP / Matrice de décision
+
+| Critère | Exigence                 | Priorité (1-5) |
+| -------- | ------------------------ | --------------- |
+| Qualité | Précision modèle > 90% | 5               |
+| Coût    | Budget < 50k€           | 4À             |
+
 - **Analyse VRIO**
 
   - **Question clé** : "Cette solution nous donne-t-elle un avantage concurrentiel durable ?"
@@ -100,11 +108,13 @@ Benchmark technologique
   - **Formule** : ROI = (Gains - Coûts) / Coûts.
   - **Astuce** : Inclure les coûts cachés (formation, maintenance, cloud).
 
+- **Remarques** : Ces outils peuvent également etre utilisé en cas de construction du *Business Model* (voir Business Model Canvas pour plus de détails).
+
 ---
 
 ### 3. Conception de la solution
 
-**Objectif** : Définir une architecture fonctionnelle et technique alignée sur les besoins.
+**Objectif** : Définir une architecture fonctionnelle et technique alignée sur les besoins. (uniquement Macro)
 
 - **BPMN (Business Process Model and Notation)**
 
@@ -253,10 +263,10 @@ AMDEC
 - **Git**
 
   - **Branching** : GitFlow pour les releases, Trunk-Based Development pour l’agilité.
-- **Terraform**
+- **Terraform** : Infrastructure as Code
 
   - **Astuce** : Modulariser les configurations (ex : `modules/kafka`, `modules/postgres`).
-- **Docker**
+- **Docker** : Gestion des service via Docker-compose ou Kubernetes
 
   - **Bonnes pratiques** :
     - Multi-stage builds pour réduire la taille des images.

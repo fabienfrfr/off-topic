@@ -27,6 +27,8 @@ Docteur en physique avec une spécialisation en **computer vision/statistiques**
 
 *Phrase de conclusion suggérée (qualités en filigrane, pas de justification directe) : Adaptabilité et rigueur — savoir changer de focale entre recherche, produit et client.*
 
+**Bonus** : Activité de recherche comme TPTT.
+
 ---
 
 ## Questions classiques
