@@ -144,6 +144,13 @@ Roadmap technique
 | -------------- | ------ | ------------ | ------------------------ |
 | API de scoring | 3 sem  | Latence > 1s | Tests de charge précoce |
 
+Permet d'estimer le chiffrage (durée / JH / TJM)
+
+- **RACI**
+
+Modèle RACI : Définition des rôles et responsabilités (matrice workpackage/role)
+
+
 ---
 
 ### 4. Développement
