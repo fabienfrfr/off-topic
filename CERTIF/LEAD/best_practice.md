@@ -67,6 +67,17 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
 
   - Faire une lexique des acronymes et termes techniques avec leurs définitions pour éviter les confusions. Ex : CRM = "Customer relationship management" en gestion, mais aussi CRM = "coefficient de réduction-majoration" dans les assurances.
 
+  Lexique du consultant : 
+  - AT : Assistance Technique
+  - Catalogue : 
+  - CdC : Cahier des Charges
+  - UO : Unité d'oeuvre
+  - EDM : Engagement delivery management
+  - PTF ou propole : Proposition technique et financiere
+  - MCT : Mémo coordination technique 
+  - Framing
+  - Scoping
+
 ---
 
 ### 2. État de l’art et analyse
