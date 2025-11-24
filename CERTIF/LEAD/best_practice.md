@@ -34,6 +34,8 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
 
 ## Méthodologie détaillée
 
+**Préambule :** La méthodo est dépendante du [Cycle de développement](https://fr.wikipedia.org/wiki/Cycle_de_d%C3%A9veloppement_(logiciel)). Pour simplifier, lorsqu'on est dans le domaine du **Hardware**, on retrouve du **Cycle en V**, lorsqu'on est dans le **Sofware**, on est plus souvent confronté à des méthodes agiles **Scrum/Lean**, voire de l'extreme programming.
+
 ### 1. Comprendre le besoin
 
 **Objectif** : Clarifier le contexte, les attentes et les contraintes pour éviter les malentendus et les dérives.
@@ -162,11 +164,15 @@ Permet d'estimer le chiffrage (durée / JH / TJM)
 Modèle RACI : Définition des rôles et responsabilités (matrice workpackage/role)
 
 
+- **Exigence** :
+
+Definir fonction principale et contrainte. Must / Have rules.
+
 ---
 
 ### 4. Développement
 
-**Objectif** : Implémenter les fonctionnalités avec rigueur et traçabilité.
+**Objectif** : Implémenter les fonctionnalités (lien avec les exigences) et traçabilité.
 
 - **Example Mapping**
 
