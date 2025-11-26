@@ -166,7 +166,7 @@ Modèle RACI : Définition des rôles et responsabilités (matrice workpackage/r
 
 - **Exigence** :
 
-Definir fonction principale et contrainte. Must / Have rules.
+Definir fonction principale et contrainte. Must / Have rules. MoSCoW
 
 ---
 

@@ -1,0 +1,92 @@
+= Présentation Technique : L'IA et l'Architecture Logicielle
+:backend: revealjs
+:revealjs_theme: white
+:revealjs_transition: slide
+:kroki-fetch-diagram: true
+
+// Configuration pour Kroki (nécessite l'extension asciidoctor-kroki)
+:kroki-server-url: https://demo.kroki.io
+
+== Slide 1 : Introduction à l'IA
+[.text-center]
+*L'impact de l'IA sur les architectures modernes*
+
+---
+**Pourquoi l'IA change la donne ?**
+- Automatisation des tâches répétitives
+- Prise de décision basée sur les données
+- Nouveaux paradigmes : MLOps, LLMOps
+
+[NOTE.speaker]
+--
+À mentionner : L'IA n'est pas une solution magique, mais un outil puissant.
+--
+
+---
+**Exemple de code Python simple :**
+[source,python]
+----
+def predict(model, input_data):
+    return model.predict(input_data)
+----
+
+---
+
+== Slide 2 : Architecture Microservices et IA
+[.text-center]
+*Intégration des modèles d'IA dans une architecture microservice*
+
+---
+**Schéma d'architecture :**
+[kroki, type="plantuml", format="svg"]
+----
+@startuml
+skinparam monochrome true
+
+rectangle "API Gateway" as api
+rectangle "Service A" as sa
+rectangle "Service B" as sb
+rectangle "Modèle IA" as ml
+
+api --> sa : Requête utilisateur
+sa --> ml : Appel au modèle
+ml --> sb : Traitement des données
+sb --> api : Réponse
+@enduml
+----
+
+---
+**Avantages :**
+- Scalabilité
+- Isolation des composants
+- Facilité de maintenance
+
+---
+
+== Slide 3 : Défis et Bonnes Pratiques
+[.text-center]
+*Comment éviter les pièges ?*
+
+---
+**Défis courants :**
+1. Latence des modèles
+2. Gestion des données
+3. Sécurité et conformité
+
+---
+**Bonnes pratiques :**
+- Utiliser des **pipelines CI/CD** pour les modèles
+- Monitorer les performances avec des outils comme **Prometheus**
+- Documenter avec des outils comme **AsciiDoc** !
+
+---
+**Schéma de pipeline MLOps :**
+[kroki, type="mermaid", format="svg"]
+----
+graph LR
+    A[Données Brutes] --> B[Prétraitement]
+    B --> C[Entraînement]
+    C --> D[Validation]
+    D --> E[Déploiement]
+    E --> F[Monitoring]
+----
