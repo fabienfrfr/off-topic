@@ -10,6 +10,8 @@
 
 Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux métiers en solutions techniques robustes, évolutives et alignées sur la valeur business. Ce guide synthétise les bonnes pratiques, outils et astuces pour chaque phase du projet, de la compréhension du besoin à la livraison et l’amélioration continue.
 
+**Transverse au Software Engineering :** Principes SOLID; Design Pattern (MVC, etc.); Regles de programmation (CRUD, snake_case, etc.)
+
 ---
 
 ## Rôle et responsabilités
