@@ -77,6 +77,30 @@ Docteur en physique avec une spécialisation en **computer vision/statistiques**
 - Proposer des exemples simples et avoir les bases mathématiques (loi statistique, biais/variance, cross-validation).
 - Etre honnete sur l'usage de LLM pour aider à coder/datascience. D'ailleurs en GenAI, on ne fait presque pas d'entrainement, c'est plus des compétences de software qui sont necessaires.
 
+
+### Entretiens Executive (CTO/CEO) -- BONUS
+
+Dans le pitch, transmettre l'idée : "Mon rôle est de sécuriser vos engagements en garantissant la faisabilité technique des projets et la montée en compétence des équipes, pour transformer l'innovation en valeur métier."
+
+Question Orientation Business :
+
+| Question | Enjeu réel | Réponse factuelle |
+| :--- | :--- | :--- |
+| **"Comment éviter l'effet POC ?"** | Rentabilité & Industrialisation. | "Anticiper les contraintes de production (MLOps, sécurité) dès le cadrage pour aligner le TRL sur les besoins du client." |
+| **"Si un client veut une techno inadaptée ?"** | Conseil & Courage technique. | "Expliquer les risques de maintenance et de dérive, puis proposer une alternative plus robuste qui sécurise le ROI." |
+| **"Comment piloter une équipe sur un gros budget ?"** | Scalabilité & Qualité. | "Standardiser les pratiques (SOLID, ADR) pour garantir que l'excellence opérationnelle soit constante, peu importe la taille de l'équipe." |
+| **"Quelle est la principale menace pour l'IA ?"** | Lucidité métier. | "La perte de vue du KPI business. L'IA doit répondre à un gain opérationnel concret, pas seulement à une performance statistique." |
+
+Questions Stratégiques à poser (partenariat) :
+
+| Thématique | Question à poser | Objectif |
+| :--- | :--- | :--- |
+| **Stratégie Offre** | "Quelle est la priorité actuelle de votre portefeuille : l'innovation de rupture ou l'optimisation des coûts ?" | Comprendre les enjeux financiers. |
+| **Gouvernance** | "Comment arbitrez-vous entre l'usage d'assets internes et les solutions Cloud natives pour vos clients ?" | Montrer un intérêt pour l'efficacité. |
+| **Succès** | "Quelles sont vos attentes prioritaires pour un Lead Tech sur les 12 premiers mois ?" | S'aligner sur vos futurs KPIs. |
+| **Équipe** | "Quelle est votre vision sur l'évolution de la filière IA face à l'accélération des LLM ?" | Démontrer une vision long terme. |
+
+
 ---
 
 ## Questions à poser (5 max par contexte)
