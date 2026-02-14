@@ -262,6 +262,17 @@ AMDEC
   - **Cas d’usage** : ArangoDB pour les graphes (ex : réseau social).
   - **À éviter** : MongoDB pour des transactions financières (manque de garanties ACID).
 
+
+
+### Focus : Métiers et Outils de l'Analyse (Complément)
+
+* **Matrice des profils** : Distinguer l'**Analyst** (Insights), le **Scientist** (Modèles), l'**Engineer** (Pipelines) et le **ML Engineer** (Prod) via leurs radars de compétences.
+* **Piliers Analyst** : Structurer autour de la **Data Viz** (clarté), le **Reporting** (KPIs), l'**Insight** (opportunités) et le **Storytelling** (décision).
+* **Stack BI Open Source** : Privilégier **Metabase** (simplicité), **Apache Superset** (puissance) ou **Looker Studio** (gratuit/cloud) pour limiter les coûts.
+* **Approche Low-Code** : Utiliser **KNIME** pour des flux de préparation de données visuels, facilitant la passation entre profils métiers et techniques.
+* **Data-as-Code** : Adopter des outils comme **Evidence.dev** pour générer des rapports en Markdown, liant directement SQL et narration technique.
+
+
 ---
 
 ## Modélisation IA
