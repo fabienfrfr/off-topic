@@ -266,12 +266,29 @@ AMDEC
 
 ### Focus : Métiers et Outils de l'Analyse (Complément)
 
+| Catégories | Compétences | Analyst | Scientist | Engineer | ML Engineer |
+| --- | --- | --- | --- | --- | --- |
+| **Axes Principaux** | **Data Visualization** | **5** | 3 | 2 | 2 |
+|  | **Storytelling / Business** | **5** | 3 | 1 | 2 |
+|  | **Statistics** | 3 | **5** | 2 | 3 |
+|  | **Machine Learning** | 2 | **5** | 1 | 4 |
+|  | **Software Engineering** | 2 | 3 | 4 | **5** |
+|  | **MLOps / Deployment** | 1 | 2 | 3 | **5** |
+|  | **Data Pipelines (ETL)** | 2 | 2 | **5** | 4 |
+|  | **Database Management** | 3 | 2 | **5** | 3 |
+| **Intermédiaires** | **Reporting** (Analyst/Engineer) | **4** | 2 | **4** | 2 |
+|  | **Experimentation** (Scientist/Analyst) | **4** | **4** | 1 | 2 |
+|  | **Optimization** (Scientist/ML Eng) | 1 | **4** | 2 | **4** |
+|  | **System Design** (Engineer/ML Eng) | 1 | 1 | **4** | **4** |
+
+
 * **Matrice des profils** : Distinguer l'**Analyst** (Insights), le **Scientist** (Modèles), l'**Engineer** (Pipelines) et le **ML Engineer** (Prod) via leurs radars de compétences.
 * **Piliers Analyst** : Structurer autour de la **Data Viz** (clarté), le **Reporting** (KPIs), l'**Insight** (opportunités) et le **Storytelling** (décision).
-* **Stack BI Open Source** : Privilégier **Metabase** (simplicité), **Apache Superset** (puissance) ou **Looker Studio** (gratuit/cloud) pour limiter les coûts.
-* **Approche Low-Code** : Utiliser **KNIME** pour des flux de préparation de données visuels, facilitant la passation entre profils métiers et techniques.
-* **Data-as-Code** : Adopter des outils comme **Evidence.dev** pour générer des rapports en Markdown, liant directement SQL et narration technique.
+* **Stack BI Open Source** : Privilégier **Metabase** (simplicité), **Apache Superset** (puissance) ou **Looker Studio** (gratuit/cloud) pour limiter les coûts. Airbyte (synchronisation des flux/interopérabilité)
+* **Approche Low-Code** : Utiliser **KNIME** pour des flux de préparation de données visuels, facilitant la passation entre profils métiers et techniques. Utiliser DBeaver pour l'exploration et le contrôle qualité.
+* **Data-as-Code** : Adopter des outils comme **Evidence.dev** pour générer des rapports en Markdown, liant directement SQL et narration technique. Intégrer dbt (data build tool) pour transformer les données en SQL tout en générant automatiquement le lignage (lineage) et la documentation technique.
 
+Modern Data Stack (MDS). L'idée clé est la modularité : on sépare l'extraction (Airbyte), la transformation (dbt) et l'exposition (Superset/Evidence).
 
 ---
 
