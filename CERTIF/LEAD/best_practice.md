@@ -2,7 +2,8 @@
 
 *Documentation vivante* : Mise à jour trimestrielle pour intégrer les retours terrain et les évolutions technologiques. (**Office Viewer**)
 
-> Note : Il ne s’agit pas d’un guide à appliquer à la lettre mais d’une base méthodologique. Tout dépend fortement du contexte.
+> Note : Il ne s’agit pas d’un guide à appliquer à la lettre mais d’une base méthodologique. Tout dépend fortement du contexte. Ce document va etre séparer pour bien identifier les outils opensources necessaire pour chaque partie.
+
 
 ---
 
