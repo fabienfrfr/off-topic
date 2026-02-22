@@ -353,6 +353,25 @@ Leadership situationnel
 
 ---
 
+## Gestion de Projet
+
+La gestion de projet est necessaire pour transformer une vision stratégique en livrables en maîtrisant les délais, les coûts et les risques.
+
+| Outil | Agile / Kanban | Gantt / Cycle en V | "As Code" / API | Description brève |
+| --- | --- | --- | --- | --- |
+| **GitLab** | Excellent | Via Mermaid/Premium | **Total** | Forge logicielle intégrant le suivi de projet par ticket. |
+| **Leantime** | Très bon | Natif | Élevé | Hybride idéal pour lier stratégie, roadmap et exécution. |
+| **OpenProject** | Bon | Très complet | Moyen | Le standard open source pour la gestion de projet classique. |
+| **Plane** | Excellent | Natif | Élevé | L'alternative moderne et open source à Jira. |
+| **Taiga** | Excellent | Limité (Timeline) | Élevé | Épuré, focalisé sur la simplicité et la méthode agile. |
+| **Vikunja** | Simple | Natif | **Total** | Ultra-léger, pilotable entièrement en ligne de commande. |
+| **Planka** | Basique | Non | Faible | Kanban minimaliste et visuel (type Trello). |
+| **NocoDB** | Tableur | Plugin Gantt | **Total** | **L'alternative open source à Airtable** (base de données/tableur). |
+| **Redmine** | Correct | Excellent | Faible | Solution historique, robuste et hautement personnalisable. |
+
+
+---
+
 ## Annexes
 
 - **Template ADR (Architecture Decision Record)**
