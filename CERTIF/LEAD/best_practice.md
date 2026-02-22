@@ -370,6 +370,13 @@ La gestion de projet est necessaire pour transformer une vision stratégique en 
 | **NocoDB** | Tableur | Plugin Gantt | **Total** | **L'alternative open source à Airtable** (base de données/tableur). |
 | **Redmine** | Correct | Excellent | Faible | Solution historique, robuste et hautement personnalisable. |
 
+Quelque soit les approche (cycle en V avec Jalon, ou Agile avec Feature), les projets de dev doivnt suivre une logique :
+
+Spec (le pourquoi) -> Test / Notebook (Comment ca doit se comporter) -> Code (le Quoi) -> Doc (conclusion)
+
+* **Cycle en V :** Flux linéaire sécurisant. La **Spec** verrouille le jalon, le **Notebook** sert de recette avant le **Code**. *Risque :* Manque de souplesse face aux imprévus de l'IA.
+* **Agile :** Boucle itérative rapide. La **Spec** est une *User Story*, le **Notebook** est un PoC. *Risque :* La **Doc** est souvent sacrifiée au profit de la vitesse.
+
 
 ---
 
