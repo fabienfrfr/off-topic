@@ -1,16 +1,16 @@
 # English interview 2026 (Lead Tech & Architect IA)
 
-I am Fabien, and I have roles as an AI Tech Lead or AI Solutions Architect. Depending of project client phase (scoping or dev).
+I am Fabien, and I am AI Tech Lead or AI Solutions Architect. Depending of project client phase (scoping or dev).
 
 My work consists of understanding the client's needs, identifying the value / operational problematics, and translating it into an AI solution, and also making the links between organizational teams and technical teams.
 
-To talk about my background, I have a PhD in Physics, but as a consultant, I have intervened/work for clients in Automotive, Defense with THALES, and Aerospace with Safran.
+To talk about my background, I have a PhD in Physics, but as a consultant, I have work for clients in Automotive, Defense with THALES, and Aerospace with Safran.
 
-I had the opportunity to manage a team of 10 researchers for 2 years, where I handled reporting, the roadmap, and presentations to the funding committee, but also the transverse technical part with architects to build internal solutions that met current client needs, while also anticipating demand by building vehicle data explainability tools using language models to facilitate diagnostics.
+Start, I had the opportunity to manage a team of 10 researchers for 2 years, where I handled reporting, the roadmap, and presentations to the funding committee, but also the transverse technical part with architects to build internal solutions that met current client needs, while also anticipating demand by building vehicle data explainability tools using language models to facilitate diagnostics.
 
-At THALES, I intervened/work as a Senior Data Scientist; I made the link between the client project manager and the technical teams (Soft, DevOps, DE) to build an application to optimize Rafale radar logistics from maintenance sensor data. This solution was presented at the Paris Air Show.
+At THALES, I work as a Lead Data Scientist; I made the link between the client project manager and the technical teams (Soft, DevOps, DE) to build an application to optimize Rafale radar logistics from maintenance sensor data. This solution was presented at the Paris Air Show.
 
-Finally, I intervened/led as an AI Tech Lead in the Safran environment where I managed 2 data scientists to build a proof of concept to detect defects on turbines by performing CAD model registration on images, a project using NVIDIA computer vision technologies and business intelligence. My work involved of ensuring daily follow-ups and coaching through pair programming.
+Finally, I work as an AI Tech Lead in the Safran environment where I managed 2 data scientists to build a proof of concept to detect defects on turbines by performing CAD model registration on images, a project using NVIDIA computer vision technologies and business intelligence. My work involved of ensuring daily follow-ups and coaching through pair programming.
 
 ### More fluid version
 
@@ -20,9 +20,9 @@ My background is originally in **Physics (PhD)**, but I have spent my consulting
 
 Key highlights of my experience include:
 
-* **Team Leadership:** I managed a team of 10 researchers for 2 years, balancing roadmap reporting with hands-on technical architecture. We notably built **explainability tools** using LLMs for vehicle diagnostics.
+* **Team Leadership:** I managed a team of 10 researchers for 2 years, balancing roadmap reporting with hands-on technical architecture. We built **explainability tools** using LLMs for vehicle diagnostics.
 * **Strategic Delivery:** At **Thales**, I acted as Lead Data Scientist for a Rafale radar logistics project. I translated business requirements into a technical solution that was showcased at the **Paris Air Show**.
-* **Hands-on Mentorship:** At **Safran**, I led a team to build a Computer Vision PoC for turbine defect detection using **NVIDIA technologies**. I believe in **pair programming** and daily coaching to ensure code quality.
+* **Hands-on Mentorship:** At **Safran**, I led a team to build a Computer Vision PoC for turbine defect detection using **NVIDIA technologies**. I did **pair programming** and daily coaching to ensure code quality.
 
 My goal is always the same: identifying the operational pain points and translating them into **scalable, high-value AI solutions**."
 
@@ -92,7 +92,7 @@ In railway industry (ferroviaire) :
 
 ## Resume 
 
-It's a good challenge to speak in English ! Learn and Practice. Listen and Repeat ! (humble vs pretentieux)
+It's a good challenge to speak in English ! Learn and Practice. Listen, Note, Repeat and after that.. Respond !
 
 
 **I. Personal Presentation (Le parcours)**
@@ -103,7 +103,7 @@ It's a good challenge to speak in English ! Learn and Practice. Listen and Repea
 2. **Background:** Hold a PhD in Physics with a focus on complex problem-solving.
 3. **Industries:** Contributed to AI projects in Automotive, Defense, and Aerospace.
 3. **Industries:** Proven experience in Automotive, Defense (Thales), and Aerospace (Safran).
-4. **Leadership:** Coordinated a team of 10 researchers on multi-year roadmaps.
+4. **Leadership:** Coordinated a team of 10 researchers, included/ hands-on roadmap definition, and follow-up reporting.
 4. **Leadership:** Managed a team of 10 researchers and led cross-functional squads.
 5. **Scoping:** Work with clients to identify operational gaps before defining AI solutions.
 5. **Scoping:** Identify operational pain points to define high-value AI solutions.
