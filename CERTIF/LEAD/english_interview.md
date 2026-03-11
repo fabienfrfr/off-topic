@@ -92,7 +92,7 @@ In railway industry (ferroviaire) :
 
 ## Resume 
 
-It's a good challenge to speak in English ! Learn and Practice. Listen, Note, Repeat and after that.. Respond !
+It's a good challenge to speak in English ! Learn and Practice. Listen, Note, Repeat and after that.. Respond ! (trick)
 
 
 **I. Personal Presentation (Le parcours)**
