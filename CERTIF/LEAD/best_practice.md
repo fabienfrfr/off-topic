@@ -72,6 +72,7 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
 - **Entrevue expert**
   - Envoyer 3 questions à préparer avant l'interview (Besoin, Problématique, Vision) et aussi 3 questions stratégiques spontanée (Durée 30 min / 1h max par personne --> doit etre personnalisé)
   - Objectif : Affiner et garantir la comprehension du besoin.
+  - Méthodo CCPS : Concis, Clair, Precis, Structuré
 
 - **Astuces** :
 
