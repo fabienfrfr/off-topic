@@ -79,8 +79,9 @@ Le rôle de **lead architecte IA/Data** est central pour transformer les enjeux 
   - Faire une lexique des acronymes et termes techniques avec leurs définitions pour éviter les confusions. Ex : CRM = "Customer relationship management" en gestion, mais aussi CRM = "coefficient de réduction-majoration" dans les assurances.
 
   Lexique du consultant : 
-  - AT : Assistance Technique
-  - Catalogue : 
+  - AT : Assistance Technique (Régie) : Mise à disposition d'un expert facturé au temps passé, où le client garde la direction opérationnelle et assume la responsabilité du pilotage.
+  - Forfait : Engagement du prestataire sur un résultat précis et un calendrier fixe pour un prix global, assumant seul la gestion des ressources et les risques de dépassement.
+  - Catalogue : Référentiel listant soit des profils (TJM en régie), soit des prestations types (Unités d'œuvre au forfait), permettant de commander rapidement sans renégociation.
   - CdC : Cahier des Charges
   - UO : Unité d'oeuvre
   - EDM : Engagement delivery management
