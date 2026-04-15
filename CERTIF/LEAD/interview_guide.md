@@ -15,7 +15,7 @@ Je suis **Lead Data & AI Engineer**, spécialisé à l’interface entre **reche
 Docteur en physique avec une spécialisation en **computer vision/statistiques**, j’ai débuté en **recherche appliquée** (algorithmes d’optimisation à l’INSEP/CNAM), puis évolué vers l’industrie (opportunité plusieurs domaines et techno) :
 
 - **Coordination R&D** chez Capgemini (10 docteurs, energie et automobile). Mes rôles :
-  - Participation au cadrage technique avec les architectes, analyse des cahiers des charges pour identifier les profils nécessaires et développer des assets internes afin de faire monter l’équipe en compétence
+  - Participation au cadrage technique avec les architectes, analyse des cahiers des charges pour identifier les profils nécessaires et développer des assets internes afin de faire monter l’équipe en compétence et developper des solutions clé en main pour les clients (humain ou démo)
   - Anticipation de la demande : lors de l’émergence des LLM, développement d’un outil de diagnostic assisté
 - **Senior Data Scientist** chez Thales sur la maintenance prédictive et la logistique radar (Salon du Bourget)
   - Cadrage, création de valeur, architecture, développement agile (Compétence software)
@@ -24,6 +24,8 @@ Docteur en physique avec une spécialisation en **computer vision/statistiques**
   - Pilotage d’un projet de recalage 2D–3D en contexte de production
 
 **Mon approche :** Toujours partir du problème métier avant la solution technique. Actuellement, je recherche des rôles de Lead Data Scientist avec des perspectives vers l’architecture de solutions.
+
+**Remarques :** Pour des postes stratégiques, comme responsable de programme, la vision "résultat / ROI" est un point important. Expliquer la vision Renards plutot que Herisson, pour ne pas confondre "doute/incertitude" avec "manque de confiance" (cf. Tedlock/Berlin & Dunning Krugger).
 
 *Phrase de conclusion suggérée (qualités en filigrane, pas de justification directe) : Adaptabilité et rigueur — savoir changer de focale entre recherche, produit et client.*
 
@@ -125,6 +127,38 @@ Exprimer d’abord ce que tu as compris des enjeux (“Vous avez surtout des mis
 - **Comment s’organise la collaboration entre consultants et équipes internes ?***(Répartition du travail, intégration au quotidien, accès aux outils/ressources, opportunités de formation ou d’évolution)*
 - **Comment évaluez-vous la réussite d'une prise de poste sur les 6 premiers mois ?**
   *(Indicateurs concrèts de réussite, attentes clés, intégration, dispositifs de feedback)*
+
+
+---
+
+### 🏗️ Pilotage de Programme & Stratégie (Focus Business)
+
+| **Levier** | **Approche Stratégique** |
+| :--- | :--- |
+| **Business Canvas** | Cadrage systématique : valider la proposition de valeur et le **ROI cible** (gain de temps, réduction de coûts, nouveau revenu) avant le premier commit. |
+| **Crédibilité Terrain** | Pas de "PowerPoint vide" : ma vision stratégique s'appuie sur la réalité technique. Je détecte les impasses avant qu'elles ne coûtent cher. |
+| **Renard vs Hérisson** | Lucidité du **Renard** pour cartographier les risques (données, infra) et détermination du **Hérisson** pour ne viser que l'impact métier final. |
+| **Rationalisation** | Ne pas multiplier les gadgets. Mon rôle est de transformer l'IA en **assets industriels** réutilisables pour optimiser l'investissement. |
+
+
+**Mises en situation (Posture de Direction)**
+
+* **Arbitrage Budget/ROI :** "Si le coût d'industrialisation d'une IA dépasse le gain métier estimé par le Business Canvas, je préconise un pivot vers une solution plus simple (ex: heuristique) pour sécuriser la rentabilité."
+* **Gestion de l'Incertitude :** "Face à un flux de données instable, je n'attends pas l'échec du projet. J'alerte le métier et j'ajuste la roadmap pour assainir le socle avant d'engager les dépenses de modélisation."
+* **Vente de la Vision :** "Passer du 'Comment ça marche' au 'Ce que ça rapporte'. Mon rôle est de traduire les verrous techniques en risques financiers pour permettre une prise de décision éclairée."
+
+**Questions Stratégiques**
+
+1.  **KPI de Succès :** "Quel est le seuil de **ROI** minimum pour valider le passage d'un PoC à l'industrialisation ?"
+2.  **Maturité :** "Le budget actuel couvre-t-il uniquement l'expérimentation ou intègre-t-il les coûts de run et de maintenance ?"
+3.  **Adoption :** "L'utilisateur final est-il impliqué dans la définition du besoin ou est-ce une initiative purement top-down ?"
+4.  **Data :** "Avons-nous la pleine propriété des données nécessaires ou dépendons-nous de fournisseurs tiers ?"
+5.  **Priorité :** "S'il ne fallait retenir qu'un seul projet pour prouver la valeur de l'IA à la Direction cette année, lequel serait-ce ?"
+
+
+Vision sur 5 ans ? 10 ans ? Objectifs SMART.
+
+**L'essentiel :** Maîtriser la complexité technique pour ne livrer que de la **certitude business**. (resultats)
 
 ---
 
