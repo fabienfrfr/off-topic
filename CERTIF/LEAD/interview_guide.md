@@ -6,6 +6,11 @@
 
 ---
 
+## Avant l'entretien
+
+Power posing: Brief nonverbal displays affect neuroendocrine levels and risk tolerance. (30 secondes)
+-> confiance, calme, bonne hummeur et sourir
+
 ## Présentation (Pitch 30s–2min) — Méthode STAR
 
 *(Situation, Tâche, Action, Résultat)*
@@ -30,6 +35,8 @@ Docteur en physique avec une spécialisation en **computer vision/statistiques**
 *Phrase de conclusion suggérée (qualités en filigrane, pas de justification directe) : Adaptabilité et rigueur — savoir changer de focale entre recherche, produit et client.*
 
 **Bonus** : Activité de recherche comme TPTT.
+
+**Tips**: - N’hésite pas à reformuler les questions et demander des précision/clarification.
 
 ---
 
