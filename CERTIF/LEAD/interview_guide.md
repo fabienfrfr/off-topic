@@ -15,7 +15,11 @@ Power posing: Brief nonverbal displays affect neuroendocrine levels and risk tol
 
 *(Situation, Tâche, Action, Résultat)*
 
-Je suis **Lead Data & AI Engineer**, spécialisé à l’interface entre **recherche appliquée, industrialisation des solutions IA** et **compréhension des besoins métiers**.
+### Tour de table (exemple)
+
+Je suis **Lead Data & AI Engineer**, spécialisé à l’interface entre **recherche appliquée, industrialisation des solutions IA** et **compréhension des besoins métiers**. (+ "pourquoi je suis là" : synthétiser le besoin client/interviewer)
+
+### Présentation détaillé
 
 Docteur en physique avec une spécialisation en **computer vision/statistiques**, j’ai débuté en **recherche appliquée** (algorithmes d’optimisation à l’INSEP/CNAM), puis évolué vers l’industrie (opportunité plusieurs domaines et techno) :
 
@@ -30,7 +34,7 @@ Docteur en physique avec une spécialisation en **computer vision/statistiques**
 
 **Mon approche :** Toujours partir du problème métier avant la solution technique. Actuellement, je recherche des rôles de Lead Data Scientist avec des perspectives vers l’architecture de solutions.
 
-**Remarques :** Pour des postes stratégiques, comme responsable de programme, la vision "résultat / ROI" est un point important. Expliquer la vision Renards plutot que Herisson, pour ne pas confondre "doute/incertitude" avec "manque de confiance" (cf. Tedlock/Berlin & Dunning Krugger).
+**Remarques :** Pour des postes stratégiques, comme responsable de programme (ou direction), la vision "résultat / ROI" est un point important. Expliquer la vision Renards plutot que Herisson, pour ne pas confondre "doute/incertitude" avec "manque de confiance" (cf. Tedlock/Berlin & Dunning Krugger).
 
 *Phrase de conclusion suggérée (qualités en filigrane, pas de justification directe) : Adaptabilité et rigueur — savoir changer de focale entre recherche, produit et client.*
 
