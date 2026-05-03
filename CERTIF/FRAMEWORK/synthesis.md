@@ -2,7 +2,7 @@
 
 L'objectif de ce framework est de briser le paradigme des projets industriels qui échouent en oscillant entre un **Agile déguisé** (manque de vision) et un **Cycle en V déguisé** (manque de réactivité). L'idée est d'imposer une **rigueur "as-code"** où la documentation et la structure deviennent des composants actifs du cycle de vie de développement.
 
-L'absence de solution universelle exige un arbitrage strict. En gestion de données, la prolifération des technologies est souvent un piège d'ingénierie ; le choix entre Data Warehouse et Data Lake doit se fonder sur le besoin réel plutôt que sur la tendance.
+L'absence de solution universelle exige un arbitrage strict. Par exemple, en gestion de données, la prolifération des technologies est souvent un piège d'ingénierie ; le choix entre Data Warehouse et Data Lake doit se fonder sur le besoin réel plutôt que sur la tendance.
 *   **Référence** : *An Overview of Data Warehouse and Data Lake in Modern Enterprise Data Management*.
 *   **DOI** : [10.54045/ijim.v6i2.298](https://doi.org/10.54045/ijim.v6i2.298).
 
@@ -14,7 +14,9 @@ Ce travail est un guide pour les projets mêlant **logiciel** (itération rapide
 
 **Conseil :** Pour naviguer entre les dogmes logiciels, adoptez une **posture bayesienne** — capable de mobiliser des connaissances multidisciplinaires pour gérer l'incertitude — plutôt qu'une **posture axiomatique**, prisonnier d'une seule idée fixe. Cette approche s'appuie sur une intuition inductivo-deductive qui consiste à trouver l'équilibre entre la précision théorique et la robustesse pragmatique. Pour convaincre et stabiliser les parties prenantes, il est necessaire d'afficher une **posture de confiance** lors de vos interventions, car l'assurance projette la compétence nécessaire pour convaincre. Cependant, cette confiance doit rester un outil de communication masquant un **doute méthodique interne** : face aux affirmations péremptoires des défenseurs de standards, exigez systématiquement des clarifications ou des preuves factuelles, car l'évolution du management prouve qu'aucune méthode n'est une recette miracle. En combinant cette assurance de façade avec une analyse rigoureuse des risques, vous transformez l'incertitude en un levier de décision industriel. Source : Expert Political Judgment: How Good Is It? How Can We Know? ; Taleb, The Black Swan; The Confidence Heuristic, Price & Stone (2004). DOI : 10.1037/0022-3514.87.1.58.
 
-## Principe (Le BMAD-vcycle)
+## Principe (Le Human BMAD-vcycle)
+
+### L'aspect méthodologique : 
 
 
 ```text
@@ -45,6 +47,15 @@ Vision (EcoPol 5-10 ans) Interviews & Stratégie (ROI & TOGAF, R&O ISO9001)
 | **Monte-Carlo** | $\text{Simulation stochastique } P(X \leq t)$ | Calculer la probabilité de succès d'une deadline pour corriger le biais d'optimisme. |
 
 *Attention :* Lorsqu'une metrique devient un objectif, celle-ci devient une mauvaise metrique (Loi de Godhart).
+
+
+### Aspect humain
+
+Leadership situationnel et transformationnel --> mettre matrice, et critique.
+Ajouter l'aspect "Empathie" et "Ecoute"
+
+Enfin, mettre en avant le JIT (Lean management), mais aussi montrer les limites pour l'impact sur le stress
+
 
 ## Experience personnelle
 
