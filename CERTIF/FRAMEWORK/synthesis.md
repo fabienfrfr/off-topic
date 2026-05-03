@@ -16,13 +16,14 @@ Ce travail est un guide pour les projets mêlant **logiciel** (itération rapide
 
 ## Principe (Le BMAD-vcycle)
 
+
 ```text
 Vision (EcoPol 5-10 ans) Interviews & Stratégie (ROI & TOGAF, R&O ISO9001)
    |
    v
 [Analyse Besoin] ----> SMART, Exigence (MosCoW), Lexique, Bête à corne
    |
-   |-- [Identifier Valeur] ----> VRIO / TRL -> EDA, KPI, QCDP et SLA (MTTR)
+   |-- [Identifier Valeur] ----> VRIO / TRL -> EDA, ROM, KPI, QCDP et SLA (MTTR)
    |
    |-- [Concevoir Solution] ---> BPMN / IDE0F / UML / Gherkin (Le contrat DoD)
    |
