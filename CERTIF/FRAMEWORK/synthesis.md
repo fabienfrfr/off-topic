@@ -1,5 +1,5 @@
 
-# Framework de Pilotage Industriel V-Agile
+# Framework V-Agile
 
 L'objectif de ce framework est de briser le paradigme des projets industriels qui échouent en oscillant entre un **Agile déguisé** (manque de vision) et un **Cycle en V déguisé** (manque de réactivité). L'idée est d'imposer une **rigueur "as-code"** où la documentation et la structure deviennent des composants actifs du cycle de vie de développement.
 
@@ -11,27 +11,28 @@ Sur le plan du pilotage, l'évolution historique du leadership démontre qu'aucu
 *   **Référence** : *Leadership: Past, Present, and Future: An Evolution of an Idea*.
 *   **DOI** : [10.1177/2158244015571637](https://doi.org/10.1177/2158244015571637).
 
-Ce travail est un guide pour les projets mêlant **logiciel** (itération rapide) et **hardware** (certification contraignante, impossibilité d'itérer). Il est le fruit d'une expérience concrète dans ces deux environnements.
+Ce travail est un guide pour les projets mêlant **logiciel** (itération rapide, BMAD) et **hardware** (certification contraignante, impossibilité d'itérer). Il est le fruit d'une expérience concrète dans ces deux environnements.
 
+**Conseil :** Pour naviguer entre les dogmes logiciels, adoptez une **posture bayesienne** — capable de mobiliser des connaissances multidisciplinaires pour gérer l'incertitude — plutôt qu'une **posture axiomatique**, prisonnier d'une seule idée fixe. Cette approche s'appuie sur une intuition inductivo-deductive qui consiste à trouver l'équilibre entre la précision théorique et la robustesse pragmatique. Pour convaincre et stabiliser les parties prenantes, il est necessaire d'afficher une **posture de confiance** lors de vos interventions, car l'assurance projette la compétence nécessaire pour convaincre. Cependant, cette confiance doit rester un outil de communication masquant un **doute méthodique interne** : face aux affirmations péremptoires des défenseurs de standards, exigez systématiquement des clarifications ou des preuves factuelles, car l'évolution du management prouve qu'aucune méthode n'est une recette miracle. En combinant cette assurance de façade avec une analyse rigoureuse des risques, vous transformez l'incertitude en un levier de décision industriel. Source : Expert Political Judgment: How Good Is It? How Can We Know? ; Taleb, The Black Swan; The Confidence Heuristic, Price & Stone (2004). DOI : 10.1037/0022-3514.87.1.58.
 
-## Principe
+## Principe (Le BMAD-vcycle)
 
 ```text
-Vision (5-10 ans) Interviews & Stratégie (ROI & R&O)
+Vision (5-10 ans) Interviews & Stratégie (ROI & TOGAF, R&O ISO9001)
    |
    v
 [Analyse Besoin] ----> SMART, Exigence (MosCoW), Lexique, Bête à corne
    |
    |-- [Identifier Valeur] ----> VRIO / TRL -> KPI, QCDP et SLA (MTTR)
    |
-   |-- [Concevoir Solution] ---> BPMN / SADT / Gherkin (Le contrat DoD)
+   |-- [Concevoir Solution] ---> BPMN / IDE0F / UML / Gherkin (Le contrat DoD)
    |
    v
-[Développement] ----> TDD / ADR / OBS <--> Pilotage Risque (PERT - Monte-Carlo)
+[Développement] ----> TDD / ADR / OBS <--> Pilotage Risque (PERT - IPR - Monte-Carlo)
    |
    +--> Code [Doc + Test + Code] -> Update Velocité (Complexité Sprint)
-   +--> Ops [CI/CD & Observabilité] -> couverture et 
-   +--> Validation & Qualité (Type & Flux & SHAP) -> impact temps & coût
+   +--> Déploiement & Maintenance [CI/CD & Observabilité] -> Couverture et Gateway (LiteLLM)
+   +--> Validation & Qualité (Lint, Type & Flux & SHAP) -> impact temps & coût
 
 
 ```
@@ -42,9 +43,10 @@ Vision (5-10 ans) Interviews & Stratégie (ROI & R&O)
 | **Vélocité** | $\sum \text{Complexité points} / \text{Sprint}$ | Mesurer la capacité réelle de livraison de l'équipe pour ajuster la planification en continu. |
 | **MTTR** (Mean Time To Repair) | $\frac{\sum \text{Temps de maintenance}}{\text{Nombre de réparations}}$ | Mesurer la réactivité opérationnelle et le respect des engagements de service (SLA). |
 | **ROI** (Retour sur Investissement) | $\frac{\text{Gains} - \text{Coûts}}{\text{Coûts}}$ | Valider la rentabilité stratégique (moyenne de 3,5$ de gain pour 1$ investi en IA). |
+| **IPR** | $IPR = G . O. D$ | Gravité, Occurence, Détection : AMDEC. |
 | **Monte-Carlo** | $\text{Simulation stochastique } P(X \leq t)$ | Calculer la probabilité de succès d'une deadline pour corriger le biais d'optimisme. |
 
-
+*Attention :* Lorsqu'une metrique devient un objectif, celle-ci devient une mauvaise metrique (Loi de Godhart).
 
 ## Experience personnelle
 
@@ -122,3 +124,6 @@ Le conseil : Si une question devient trop théorique, utilise l'analogie du chan
 | **Productivité IA** | MIT & BCG (2023) | [Lien: Experimental Evidence](https://www.bcg.com/publications/2023/experimental-evidence-on-the-productivity-effects-of-generative-ai) | Gain de productivité de 25% avec l'IA générative. |
 | **Robustesse Data** | Makridakis et al. (2018) | [DOI: 10.1016/j.ijforecast.2018.05.013](https://doi.org/10.1016/j.ijforecast.2018.05.013) | Supériorité des stats classiques sur le Deep Learning en robustesse. |
 | **Biais Cognitif** | Flyvbjerg (2008) | [DOI: 10.1080/01944360802293012](https://www.tandfonline.com/doi/abs/10.1080/01944360802293012) | Nécessité du Monte-Carlo pour corriger le biais d'optimisme. |
+
+## Pitch
+
