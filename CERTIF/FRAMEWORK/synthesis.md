@@ -1,4 +1,3 @@
-
 # Framework V-Agile
 
 L'objectif de ce framework est de briser le paradigme des projets industriels qui échouent en oscillant entre un **Agile déguisé** (manque de vision) et un **Cycle en V déguisé** (manque de réactivité). L'idée est d'imposer une **rigueur "as-code"** où la documentation et la structure deviennent des composants actifs du cycle de vie de développement.
@@ -18,23 +17,21 @@ Ce travail est un guide pour les projets mêlant **logiciel** (itération rapide
 ## Principe (Le BMAD-vcycle)
 
 ```text
-Vision (5-10 ans) Interviews & Stratégie (ROI & TOGAF, R&O ISO9001)
+Vision (EcoPol 5-10 ans) Interviews & Stratégie (ROI & TOGAF, R&O ISO9001)
    |
    v
 [Analyse Besoin] ----> SMART, Exigence (MosCoW), Lexique, Bête à corne
    |
-   |-- [Identifier Valeur] ----> VRIO / TRL -> KPI, QCDP et SLA (MTTR)
+   |-- [Identifier Valeur] ----> VRIO / TRL -> EDA, KPI, QCDP et SLA (MTTR)
    |
    |-- [Concevoir Solution] ---> BPMN / IDE0F / UML / Gherkin (Le contrat DoD)
    |
    v
 [Développement] ----> TDD / ADR / OBS <--> Pilotage Risque (PERT - IPR - Monte-Carlo)
    |
-   +--> Code [Doc + Test + Code] -> Update Velocité (Complexité Sprint)
-   +--> Déploiement & Maintenance [CI/CD & Observabilité] -> Couverture et Gateway (LiteLLM)
-   +--> Validation & Qualité (Lint, Type & Flux & SHAP) -> impact temps & coût
-
-
+   +--> Code [Doc + Test + Code] -> Update Velocité (Complexité Sprint) -> DeepEval (similarity "Golden Dataset")
+   +--> Déploiement & Maintenance [CI/CD & Observabilité] -> Couverture, Tracking (Phoenix) et Gateway (LiteLLM)
+   +--> Validation & Qualité (Lint, Type & Flux & SHAP) -> Impact temps & coût
 ```
 
 | Indicateur | Formule / Modèle Mathématique | Objectif de Pilotage |
@@ -71,46 +68,6 @@ Vision (5-10 ans) Interviews & Stratégie (ROI & TOGAF, R&O ISO9001)
     * **Impact :** Mise en service de la *Graph factory*, automatisation du calcul des "delta" et réduction de 20% du temps d'analyse d'impact.
 
 
-## Question d'inteview
-
-Le conseil : Si une question devient trop théorique, utilise l'analogie du chantier : "On ne valide pas les finitions d'un bâtiment si les fondations ne correspondent pas au plan de l'architecte."
-
-### 10 Questions qu'on peut te poser
-
-1.  **"Comment gérez-vous le conflit entre la rapidité de l'Agile et la rigueur d'un cycle industriel contraignant ?"**
-    *   *Réponse courte :* Les Sprints servent à construire les briques de manière itérative, tandis que les jalons du cycle maître garantissent que l'assemblage final respecte le plan homologué.
-2.  **"Sur quoi vous basez-vous pour affirmer qu'une deadline est réaliste ?"**
-    *   *Réponse courte :* Sur la vélocité historique de l'équipe et une simulation de **Monte-Carlo** intégrant les variables de risques techniques.
-3.  **"Comment garantissez-vous que l'IA ne va pas halluciner des données sensibles ?"**
-    *   *Réponse courte :* Par la mise en place d'un **RAG** avec sources vérifiées et une surveillance étroite via des outils d'observabilité comme **Arize Phoenix**.
-4.  **"C'est quoi pour vous une tâche réellement 'finie' (Definition of Done) ?"**
-    *   *Réponse courte :* Le code est revu, les tests **Gherkin** sont au vert, la documentation technique est à jour et les métriques de validation sont générées.
-5.  **"Si un projet prend du retard, quelle est votre stratégie de rattrapage ?"**
-    *   *Réponse courte :* Analyse du chemin critique et arbitrage sur le périmètre (MVP) pour protéger le jalon de livraison majeur.
-6.  **"Comment assurez-vous la traçabilité des exigences (V&V) ?"**
-    *   *Réponse courte :* Via une matrice de traçabilité liant chaque besoin utilisateur à son scénario **Gherkin** et son test de validation final.
-7.  **"Comment gérez-vous la dette technique au sein de votre équipe ?"**
-    *   *Réponse courte :* En intégrant des barrières de qualité automatisées et en réservant une partie de la capacité de l'équipe à la refactorisation et à la documentation **ADR**.
-8.  **"Comment intégrez-vous la sécurité dès la conception (Security by Design) ?"**
-    *   *Réponse courte :* En validant l'architecture avec les experts sécurité avant tout développement et en privilégiant des solutions souveraines ou locales quand c'est nécessaire.
-9.  **"Pourquoi utiliser Gherkin pour un projet IA ?"**
-    *   *Réponse courte :* Pour aligner les attentes métier et les tests techniques dans un langage commun, auditable et sans ambiguïté.
-10. **"Comment mesurez-vous le succès d'un projet IA au-delà de la performance technique ?"**
-    *   *Réponse courte :* Par le calcul du **ROI** métier, l'adoption par les utilisateurs finaux et la réduction mesurable de la complexité opérationnelle.
-
-### 10 Questions à poser (Challenge le client)
-
-1.  **"Quels sont les critères de succès spécifiques pour le passage des prochains jalons majeurs du projet ?"**
-2.  **"Existe-t-il déjà un référentiel de tests standardisé pour les solutions à base d'IA dans l'entreprise ?"**
-3.  **"Quelle est la disponibilité réelle des environnements et des données pour ne pas bloquer le démarrage des développements ?"**
-4.  **"Comment est structurée l'équipe technique que je vais devoir accompagner ?"**
-5.  **"Quels sont les plus gros risques identifiés qui pourraient impacter le chemin critique actuellement ?"**
-6.  **"Le Product Owner est-il familier avec le découpage en User Stories et la validation par scénarios ?"**
-7.  **"Quelle est la politique de l'entreprise concernant l'utilisation de modèles Open Source ou de solutions sur étagère ?"**
-8.  **"Comment sont gérés les retours utilisateurs une fois la solution mise en service ?"**
-9.  **"Quels outils d'observabilité et de monitoring sont déjà standardisés dans votre stack ?"**
-10. **"Qui est l'interlocuteur final pour la validation du Dossier d'Architecture Technique (DAT) ?"**
-
 ## Preuve
 | Domaine | Étude / Référence | Lien / DOI (ou source officielle) | Impact Clé |
 | :--- | :--- | :--- | :--- |
@@ -124,6 +81,3 @@ Le conseil : Si une question devient trop théorique, utilise l'analogie du chan
 | **Productivité IA** | MIT & BCG (2023) | [Lien: Experimental Evidence](https://www.bcg.com/publications/2023/experimental-evidence-on-the-productivity-effects-of-generative-ai) | Gain de productivité de 25% avec l'IA générative. |
 | **Robustesse Data** | Makridakis et al. (2018) | [DOI: 10.1016/j.ijforecast.2018.05.013](https://doi.org/10.1016/j.ijforecast.2018.05.013) | Supériorité des stats classiques sur le Deep Learning en robustesse. |
 | **Biais Cognitif** | Flyvbjerg (2008) | [DOI: 10.1080/01944360802293012](https://www.tandfonline.com/doi/abs/10.1080/01944360802293012) | Nécessité du Monte-Carlo pour corriger le biais d'optimisme. |
-
-## Pitch
-
