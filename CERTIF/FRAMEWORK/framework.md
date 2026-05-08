@@ -20,20 +20,22 @@ Ce travail est un guide pour les projets mêlant **logiciel** (itération rapide
 
 S'inspirer de la méthodes de redaction d'article **IMRAD** pour mettre en place la documentation. Chaque affirmation doit etre sourcé, tout comme pour toute proposition technologique.
 
+"Un bon croquis vaut mieux qu'un long discours, néanmoins, mais un test c'est mieux!"
+
 ### L'aspect méthodologique
 
 ```text
-Vision (EcoPol 5-10 ans) Interviews & Stratégie (ROI & TOGAF/IAF/SAFe, R&O ISO9001)
+Vision (EcoPol 5-10 ans) Interviews & Stratégie (ROI & TOGAF/IAF/SAFe/Arcadia, R&O ISO9001)
    |
    v
 [Analyse Besoin] ----> SMART, Exigence (MosCoW), Lexique, Bête à corne
    |
    |-- [Identifier Valeur] ----> VRIO / TRL -> EDA, ROM, KPI, QCDP et SLA (MTTR)
    |
-   |-- [Concevoir Solution] ---> BPMN / IDE0F / UML / Gherkin (Le contrat DoD)
+   |-- [Concevoir Solution] ---> BPMN / IDE0F / UML-C4 / Gherkin (Le contrat DoD)
    |
    v
-[Développement] ----> TDD / ADR / OBS <--> Pilotage Risque (PERT - IPR - Monte-Carlo)
+[Développement / Ops] ----> TDD / ADR / OBS <--> Pilotage Risque (PERT - IPR - Monte-Carlo)
    |
    +--> Code [Doc + Test + Code] -> Update Velocité (Complexité Sprint) -> DeepEval (similarity "Golden Dataset")
    +--> Déploiement & Maintenance [CI/CD & Observabilité] -> Couverture, Tracking (Phoenix) et Gateway (LiteLLM)
@@ -49,7 +51,10 @@ Vision (EcoPol 5-10 ans) Interviews & Stratégie (ROI & TOGAF/IAF/SAFe, R&O ISO9
 | **IPR**                             | $IPR = G . O. D$                                                         | Gravité, Occurence, Détection : AMDEC.                                                                                  |
 | **Monte-Carlo**                     | $\text{Simulation stochastique } P(X \leq t)$                            | Calculer la probabilité de succès d'une deadline pour corriger le biais d'optimisme.                                    |
 
-*Attention :* Lorsqu'une metrique devient un objectif, celle-ci devient une mauvaise metrique (Loi de Godhart).
+*Attention :* 
+- Lorsqu'une metrique devient un objectif, celle-ci devient une mauvaise metrique (Loi de Godhart).
+- Ne jamais définir l'opérationnel avant le fonctionnel. On ne s'engage pas tant qu'on a pas compris le besoin !
+- Meme s'il y a des standards de roadmap (audit spec -> poc e2e -> mvp bdd -> indus cyber), ne pas s'avancer. Surtout quand on ne sait pas fonctionneemnt du client (data-centric, infra-centric, value-centric, etc.)
 
 ### L'Aspect Humain : Leadership et Équilibre
 
@@ -66,6 +71,8 @@ Le leadership dans un environnement hybride logicielle/industriel ne peut pas ê
 **L'Empathie et l'Écoute (Le "Feedback Loop" Humain)**
 *   **Posture de confiance vs Doute interne :** C'est l'application de l'*Heuristique de Confiance*. Projeter l'assurance stabilise l'équipe, tandis que le doute interne (votre "méthode bayésienne") garantit la robustesse technique et l'humilité.
 *   **Écoute active :** Essentielle lors des interviews de stratégie pour capturer les besoins non-dits (le "Shadow Business").
+
+*Methode Delphi* est une approche pour optimiser la durée et la qualité des débats pour définir une solution collective.
 
 **Limites du JIT (Just-In-Time) et Stress**
 Le Lean management (JIT) réduit les gaspillages mais supprime les "buffers". 
