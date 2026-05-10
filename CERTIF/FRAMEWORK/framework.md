@@ -115,3 +115,60 @@ Le Lean management (JIT) réduit les gaspillages mais supprime les "buffers".
 | **Productivité IA**    | MIT & BCG (2023)            | [Lien: Experimental Evidence](https://www.bcg.com/publications/2023/experimental-evidence-on-the-productivity-effects-of-generative-ai)                                                           | Gain de productivité de 25% avec l'IA générative.                         |
 | **Robustesse Data**     | Makridakis et al. (2018)    | [DOI: 10.1016/j.ijforecast.2018.05.013](https://doi.org/10.1016/j.ijforecast.2018.05.013)                                                                                                         | Supériorité des stats classiques sur le Deep Learning en robustesse.       |
 | **Biais Cognitif**      | Flyvbjerg (2008)            | [DOI: 10.1080/01944360802293012](https://www.tandfonline.com/doi/abs/10.1080/01944360802293012)                                                                                                   | Nécessité du Monte-Carlo pour corriger le biais d'optimisme.               |
+
+
+
+## Lexique des Acronymes
+
+| Domaine | Acronyme | Signification | Application au Edge / Data Science |
+| --- | --- | --- | --- |
+| **Qualité Code** | **SOLID** | Single resp, Open/Closed, Liskov, Interface, Dependency | Garantit que tes scripts Python restent maintenables quand le projet grossit. |
+| **Philosophie** | **KISS** | Keep It Simple, Stupid | Évite la sur-ingénierie sur des machines à ressources limitées. |
+| **Maintenance** | **DRY** | Don't Repeat Yourself | Centralise la logique (ex: une seule fonction pour valider tes données de capteurs). |
+| **Pragmatisme** | **YAGNI** | You Ain't Gonna Need It | Ne code pas une synchro Cloud complexe si tu n'en as pas encore besoin. |
+| **Données** | **ACID** | Atomicity, Consistency, Isolation, Durability | Indispensable pour **LanceDB/SQLite** afin d'éviter la corruption en cas de coupure. |
+| **Systèmes Dist.** | **BASE** | Basically Available, Soft state, Eventual consistency | Utilisé pour la synchronisation Edge-to-Cloud (la donnée finit par arriver). |
+| **Architecture** | **CAP** | Consistency, Availability, Partition tolerance | Aide à choisir entre "donnée toujours juste" et "système toujours disponible". |
+| **Sécurité** | **CIA** | Confidentiality, Integrity, Availability | Le triangle d'or : tes données doivent être secrètes, exactes et accessibles. |
+| **Performance** | **RT** | Real-Time | Critique pour le Edge (ex: traiter un signal en moins de 10ms). |
+| **Data Management** | **ETL** | Extract, Transform, Load | Le flux classique : lire le capteur, nettoyer le signal, stocker dans LanceDB. |
+| **Méthodologie** | **TDD** | Test-Driven Development | Écrire le test avant le code pour garantir que tes calculs statistiques sont justes. |
+
+
+## TODO
+
+
+### Concept de Gouvernance et Rôles
+
+* **Définition de la Gouvernance** : Système de règles et de pouvoir (le "cadre") vs les acteurs (le "qui").
+* **RACI** : Matrice de répartition des responsabilités (R, A, C, I).
+* **Rôle du "A" (Accountable)** : Seul redevable, pilier de la gouvernance dans le RACI.
+* **Rôle du "R" (Responsible)** : L'exécutant technique (ne porte pas la redevabilité décisionnelle).
+* **Architectes** : Garants de la gouvernance technique et de la vision long terme.
+* **Sponsors** : Moteurs politiques et financiers, souvent le "A" final du projet.
+
+### Méthodologies et Idéologies
+
+* **Cycle en V** : Approche prédictive basée sur le contrôle, le WBS et le RACI.
+* **Agile** : Approche empirique basée sur l'auto-organisation et la valeur (souvent incompatible avec le RACI rigide).
+* **WBS (Work Breakdown Structure)** : Décomposition statique du travail, typique du Cycle en V.
+* **Backlog** : Liste dynamique et priorisée (DEEP) des besoins (User Stories).
+* **Conflit Idéologique** : Opposition entre le dogme du "Contrôle & Commande" et celui de la "Liberté/Anarchie".
+
+### Framework "V-Agile"
+
+* **Hybridation** : Concilier la rigueur industrielle (Hardware/Normes) et la réactivité logicielle.
+* **Structure IMRAD** : Application des standards de publication scientifique à la documentation projet.
+* **Posture Bayésienne** : Gestion de l'incertitude par la mise à jour des connaissances (vs Posture Axiomatique).
+* **Heuristique de Confiance** : Assurance extérieure pour stabiliser, doute méthodique interne pour la robustesse.
+* **Outils de Pilotage Mathématiques** : PERT, Monte-Carlo (risque), ROI, IPR (AMDEC), MTTR.
+* **Leadership Situationnel** : Adaptation du style (Directif à Délégatif) selon la maturité de l'équipe (Hersey-Blanchard).
+* **Outils de Conception** : BPMN, UML-C4, Gherkin (contrat de test), TDD, ADR.
+
+### Concepts de Management & Limites
+
+* **DP (Delegation Poker)** : Alternative au RACI pour graduer la délégation de décision.
+* **Loi de Godhart** : Quand une mesure devient un objectif, elle perd sa valeur d'indicateur.
+* **Loi de Kingman (VUT)** : Impact de la saturation des ressources sur les délais (nécessité de buffers).
+* **Biais d'Optimisme** : Tendance à sous-estimer les risques, corrigée par les simulations stochastiques.
+* **Just-In-Time (JIT)** : Risques de stress et de dette technique par suppression des marges.
