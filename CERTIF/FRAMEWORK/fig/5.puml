@@ -1,0 +1,57 @@
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam roundcorner 10
+
+' Style des composants (Signature visuelle conservée)
+skinparam package {
+    BackgroundColor #F4F7F6
+    BorderColor #2C3E50
+}
+
+skinparam component {
+    BackgroundColor #0078D4
+    BorderColor #0078D4
+    FontColor white
+}
+
+skinparam database {
+    BackgroundColor #2C3E50
+    FontColor white
+}
+
+skinparam artifact {
+    BackgroundColor #E67E22
+    BorderColor #E67E22
+    FontColor white
+}
+
+' --- Diagramme ---
+
+package "Industrial Data" {
+    artifact "xBOM Raw Data\n(Relational / Files)" as raw
+}
+
+package "Graph Engineering Pipeline" {
+    component "Polars ETL\n(Parallel Ingestion)" as polars
+    
+    database "ArangoDB\n(Graph Model)" as graph
+    
+    component "AQL Engine\n(Recursive Traversal)" as aql
+}
+
+package "Service Layer" {
+    component "FastAPI Backend" as api
+    artifact "Impact Analysis\nReport" as report
+}
+
+' Flux
+raw -[#0078D4]-> polars : High-speed Stream
+polars -[#0078D4]-> graph : 10M+ Nodes/Edges
+
+graph <-> aql : Pattern Matching
+aql -[#0078D4]-> api : Ripple Effect Data
+
+api -[#E67E22,bold]-> report : Delta Calculation
+@enduml

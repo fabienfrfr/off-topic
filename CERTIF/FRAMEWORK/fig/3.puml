@@ -1,0 +1,60 @@
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam roundcorner 10
+
+' Style des composants (Signature visuelle conservée)
+skinparam package {
+    BackgroundColor #F4F7F6
+    BorderColor #2C3E50
+}
+
+skinparam component {
+    BackgroundColor #0078D4
+    BorderColor #0078D4
+    FontColor white
+}
+
+skinparam database {
+    BackgroundColor #2C3E50
+    FontColor white
+}
+
+skinparam artifact {
+    BackgroundColor #E67E22
+    BorderColor #E67E22
+    FontColor white
+}
+
+' --- Diagramme ---
+
+package "Input Data" {
+    artifact "Boroscopic\nRGB-D Stream" as rgbd
+    database "3D CAD Mesh\n(Engine Ref.)" as cad
+}
+
+package "Inspection Pipeline (WP-based)" {
+    component "WP1: Pre-processing\n(Filtering & Norm.)" as wp1
+    
+    component "WP2: 6D Pose Est.\n(ICP+PnP / FoundationPose)" as wp2
+    
+    component "WP3: 3D Mapping\n(2D-to-3D Projection)" as wp3
+    
+    component "WP4: MAPIE\n(Uncertainty Scoring)" as wp4
+}
+
+package "Inspection Output" {
+    artifact "Deterministic\n3D Spatial Data" as output
+}
+
+' Flux
+rgbd -[#0078D4]-> wp1
+wp1 -[#0078D4]-> wp2
+cad -[#0078D4]up-> wp2 : Mesh Ref.
+
+wp2 -[#0078D4]-> wp3
+wp3 -[#0078D4]-> wp4
+
+wp4 -[#E67E22,bold]-> output : Validated Loc.
+@enduml

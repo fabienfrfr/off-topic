@@ -1,0 +1,57 @@
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam roundcorner 10
+
+' Style des composants (Signature visuelle conservée)
+skinparam package {
+    BackgroundColor #F4F7F6
+    BorderColor #2C3E50
+}
+
+skinparam component {
+    BackgroundColor #0078D4
+    BorderColor #0078D4
+    FontColor white
+}
+
+skinparam database {
+    BackgroundColor #2C3E50
+    FontColor white
+}
+
+skinparam artifact {
+    BackgroundColor #E67E22
+    BorderColor #E67E22
+    FontColor white
+}
+
+' --- Diagramme ---
+
+package "Financial & Ops Sources" {
+    database "Heterogeneous\nData (Excel/SQL)" as sources
+}
+
+package "Automated Governance Pipeline" {
+    component "Mage-ai\n(Orchestration)" as mage
+    
+    database "DuckDB\n(Analytical Engine)" as duck
+    
+    component "PydanticAI\n(Validation Agents)" as agents
+}
+
+package "Strategic Dashboarding" {
+    component "Datasette\n(Instant API/UI)" as datasette
+    artifact "Real-time ROI\n& KPIs" as kpi
+}
+
+' Flux
+sources -[#0078D4]-> mage : Data Ingestion
+mage -[#0078D4]-> duck : High-velocity Load
+
+duck <-> agents : Integrity Checks\n& Anomaly Detection
+agents -[#0078D4]-> datasette : Structured KPIs
+
+datasette -[#E67E22,bold]-> kpi : Executive Steering
+@enduml

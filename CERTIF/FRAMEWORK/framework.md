@@ -28,9 +28,9 @@ S'inspirer de la méthodes de redaction d'article **IMRAD** pour mettre en place
 Vision (EcoPol 5-10 ans) Interviews & Stratégie (ROI & TOGAF/IAF/SAFe/Arcadia, R&O ISO9001)
    |
    v
-[Analyse Besoin] ----> SMART, Exigence (MosCoW), Lexique, Bête à corne
+[Analyse Besoin] ----> SMART, Exigence (MosCoW), Lexique, Bête à corne, 5Why
    |
-   |-- [Identifier Valeur] ----> VRIO / TRL -> EDA, ROM, KPI, QCDP et SLA (MTTR)
+   |-- [Identifier Valeur] ----> VRIO / TRL -> EDA, ROM, KPI, QCDP et SLA (MTTR) & Hypothèse
    |
    |-- [Concevoir Solution] ---> BPMN / IDE0F / UML-C4 / Gherkin (Le contrat DoD)
    |

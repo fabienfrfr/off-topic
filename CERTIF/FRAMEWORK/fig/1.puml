@@ -1,0 +1,55 @@
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam roundcorner 10
+
+' Style des composants
+skinparam package {
+    BackgroundColor #F4F7F6
+    BorderColor #2C3E50
+}
+
+skinparam component {
+    BackgroundColor #0078D4
+    BorderColor #0078D4
+    FontColor white
+}
+
+skinparam database {
+    BackgroundColor #2C3E50
+    FontColor white
+}
+
+skinparam artifact {
+    BackgroundColor #E67E22
+    BorderColor #E67E22
+    FontColor white
+}
+
+' --- Diagramme ---
+
+cloud "Satellite Feed\n(Raw Telemetry)" as sat
+
+package "Vision Analysis Layer" {
+    component "ViT Encoder" as vit
+    database "Vector DB" as vdb
+}
+
+package "Cognitive Orchestrator (ReAct)" {
+    component "LangChain Agent" as agent
+    component "LLM (GPT-4V / OS)" as llm
+}
+
+package "Decision Center" {
+    artifact "ISR Report" as report
+}
+
+' Flux
+sat -[#0078D4]-> vit : Raw Flux
+vit -[#0078D4]-> vdb : Vector Persistence
+vdb <-> agent : RAG Retrieval
+agent <-> llm : Reasoning Loop
+agent -[#E67E22,bold]-> report : Synthesis
+
+@enduml

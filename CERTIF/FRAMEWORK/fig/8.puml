@@ -1,0 +1,60 @@
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam roundcorner 10
+
+' Style (Signature visuelle conservée)
+skinparam package {
+    BackgroundColor #F4F7F6
+    BorderColor #2C3E50
+}
+
+skinparam component {
+    BackgroundColor #0078D4
+    BorderColor #0078D4
+    FontColor white
+}
+
+skinparam node {
+    BackgroundColor #F8F9FA
+    BorderColor #2C3E50
+}
+
+skinparam artifact {
+    BackgroundColor #E67E22
+    BorderColor #E67E22
+    FontColor white
+}
+
+' --- Diagramme ---
+
+package "Inputs" {
+    [Natural Language] as cmd
+    [Sensor Feedback] as sensors
+}
+
+package "Orchestration (dora-rs)" #D1F2EB {
+    component "VLA-Brain\n(SmolVLA)" as vla
+    
+    node "Simulation & Validation" {
+        component "Genesis\n(Physics Engine)" as physics
+    }
+}
+
+package "Physical Actuators" {
+    component "Robot Middleware\n(Hardware Bridge)" as hw
+    artifact "Real-world\nAction" as action
+}
+
+' Flux
+cmd --> vla
+sensors --> vla
+
+' Boucle de validation (Sim)
+vla <-> physics
+
+' Commande réelle (Real)
+vla -[#0078D4]-> hw : Action Tokens
+hw -[#E67E22,bold]-> action : Motor Control
+@enduml

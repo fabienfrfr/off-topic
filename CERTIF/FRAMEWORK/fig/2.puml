@@ -1,0 +1,56 @@
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam roundcorner 10
+
+' Style des composants (Identique Slide 1)
+skinparam package {
+    BackgroundColor #F4F7F6
+    BorderColor #2C3E50
+}
+
+skinparam component {
+    BackgroundColor #0078D4
+    BorderColor #0078D4
+    FontColor white
+}
+
+skinparam database {
+    BackgroundColor #2C3E50
+    FontColor white
+}
+
+skinparam artifact {
+    BackgroundColor #E67E22
+    BorderColor #E67E22
+    FontColor white
+}
+
+' --- Diagramme ---
+
+package "Operational Data Sources" {
+    database "Fleet Telemetry\n& Maint. Logs" as logs
+    database "Mission\nConstraints" as rules
+}
+
+package "Hybrid Decision Engine" {
+    component "LightGBM\n(Predictive Health)" as ml
+    component "Symbolic AI\n(Asset Ranking)" as symbolic
+    component "OR-Tools Solver\n(Constraint Solver)" as solver
+}
+
+package "Industrial Cloud (TrustNest)" {
+    node "EKS / Azure" {
+        artifact "Optimized\nDeployment Plan" as plan
+    }
+}
+
+' Flux
+logs -[#0078D4]-> ml : RAW Data
+ml -[#0078D4]-> symbolic : Failure Proba
+symbolic -[#0078D4]-> solver : Scored Assets
+rules -[#0078D4]-> solver : Hard Constraints
+
+solver -[#E67E22,bold]-> plan : Allocation Logic
+@enduml

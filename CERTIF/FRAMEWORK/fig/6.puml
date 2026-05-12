@@ -1,0 +1,60 @@
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam roundcorner 10
+
+' Style des composants (Signature visuelle conservée)
+skinparam package {
+    BackgroundColor #F4F7F6
+    BorderColor #2C3E50
+}
+
+skinparam component {
+    BackgroundColor #0078D4
+    BorderColor #0078D4
+    FontColor white
+}
+
+skinparam node {
+    BackgroundColor #F8F9FA
+    BorderColor #2C3E50
+}
+
+skinparam artifact {
+    BackgroundColor #E67E22
+    BorderColor #E67E22
+    FontColor white
+}
+
+' --- Diagramme ---
+
+package "CI/CD Pipeline" {
+    [GitLab CI\n(Auditable Lifecycle)] as ci
+}
+
+package "Agentic DevOps & Logic" #EBF5FB {
+    node "Docker Sandbox" {
+        component "OpenHands\n(Auto-DevOps)" as hands
+        component "PydanticAI\n(Type-Safe Logic)" as pydantic
+    }
+}
+
+package "Industrial Inference" {
+    node "Kubernetes (K8s)" {
+        component "vLLM Engine\n(High-Perf Serving)" as vllm
+    }
+}
+
+package "Observability & Quality" {
+    component "Arize Phoenix / DeepEval\n(Alignment & Monitoring)" as eval
+}
+
+' Flux
+ci -[#0078D4]-> hands : Trigger Task
+hands -[#0078D4]-> pydantic : Schema Enforcement
+pydantic -[#0078D4]-> vllm : Validated Request
+
+vllm -[#0078D4]-> eval : Inference Logs
+eval -[#E67E22,bold]up-> ci : Feedback Loop / Audit
+@enduml

@@ -1,0 +1,48 @@
+@startuml
+skinparam backgroundColor white
+skinparam roundcorner 20
+skinparam arrowColor #2C3E50
+
+' Style des étapes
+skinparam activity {
+    BackgroundColor #0078D4
+    BorderColor #005A9E
+    FontColor white
+    FontSize 13
+}
+
+partition "1. Vision & Strategy" #D6EAF8 {
+    :Interviews & Strategic Alignment\n(ROI, TOGAF, ISO9001);
+}
+
+partition "2. Requirements & Value" #D5F5E3 {
+    :Need Analysis (SMART, IDEF0, 5Why);
+    :Value Identification (EDA, TRL, SLA);
+}
+
+partition "3. Design" #FCF3CF {
+    :Solution Architecture\n(BPMN, UML-C4, Gherkin);
+}
+
+partition "4. Industrialization Engine" #FADBD8 {
+    fork
+        :Development (TDD, ADR, OBS);
+    fork again
+        :Risk Management\n(PERT, Monte-Carlo, IPR);
+    end fork
+
+    :Quality & Alignment (DeepEval, SHAP);
+    :Deployment & Observability (CI/CD);
+}
+
+' Boucle de Feedback
+if (ROI ?) then (Yes)
+    :Update Strategic Roadmap;
+    detach
+else (No)
+    -[#red]->
+    :Bayesian Adjustment;
+    stop
+endif
+
+@enduml

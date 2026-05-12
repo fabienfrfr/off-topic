@@ -1,0 +1,55 @@
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam roundcorner 10
+
+' Style des composants (Signature visuelle conservée)
+skinparam package {
+    BackgroundColor #F4F7F6
+    BorderColor #2C3E50
+}
+
+skinparam component {
+    BackgroundColor #0078D4
+    BorderColor #0078D4
+    FontColor white
+}
+
+skinparam database {
+    BackgroundColor #2C3E50
+    FontColor white
+}
+
+skinparam artifact {
+    BackgroundColor #E67E22
+    BorderColor #E67E22
+    FontColor white
+}
+
+' --- Diagramme ---
+
+package "Vehicle Interface" {
+    [CAN Bus / OBD-II\n(Hex Frames)] as raw
+}
+
+package "Sovereign Edge Layer (Air-gapped)" #FADBD8 {
+    component "Python-CAN / OBD\n(Decoder)" as parser
+    
+    database "ChromaDB\n(Local RAG)" as vector
+    
+    component "Ollama Inference\n(Phi-3 LLM)" as llm
+}
+
+package "Diagnostic Output" {
+    artifact "Secure\nMaintenance Insight" as report
+}
+
+' Flux
+raw -[#0078D4]-> parser : Raw Telemetry
+parser -[#0078D4]-> vector : Semantic Tokens
+vector <-> llm : Local Retrieval
+llm <-> parser : Reasoning Context
+
+llm -[#E67E22,bold]-> report : 100% On-Premise
+@enduml
