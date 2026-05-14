@@ -24,14 +24,14 @@ partition "3. Design" #FCF3CF {
     :Solution Architecture\n(BPMN, UML-C4, Gherkin);
 }
 
-partition "4. Industrialization Engine" #FADBD8 {
+partition "4. Industrialization Engine (Loop)" #FADBD8 {
     fork
         :Development (TDD, ADR, OBS);
     fork again
         :Risk Management\n(PERT, Monte-Carlo, IPR);
     end fork
 
-    :Quality & Alignment (DeepEval, SHAP);
+    :Quality & Alignment (KPI, DeepEval, SHAP);
     :Deployment & Observability (CI/CD);
 }
 
