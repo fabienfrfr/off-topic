@@ -1,0 +1,117 @@
+@startuml
+skinparam theme plain
+skinparam backgroundColor #fdfbf7
+skinparam ActivityBackgroundColor #ffffff
+skinparam ActivityBorderColor #4a5568
+skinparam ArrowColor #4a5568
+skinparam DiamondBackgroundColor #edf2f7
+skinparam DiamondBorderColor #4a5568
+
+title Pipeline Machine Learning Optimisé
+
+|Phase 1: Cadrage & Préparation|
+start
+:Besoin métier:
+- Prédiction-Modèle
+- Décision-Recherche
+- Segmentation-Detection;
+
+:Proposer des problématiques mesurables;
+
+if (Les données existent ? (samples > 50)) then (Non)
+  :Générer des données:
+  - WebScraping (BeautifulSoup)
+  - Expérimentations / Sondages;
+else (Oui)
+endif
+
+:Établir l'état des connaissances
+(Ordre de grandeur, objectif concret);
+
+:Lister et typer les variables
+(Qualitative, Quantitative);
+
+:Importer les données
+(pandas, sqlalchemy, spark);
+
+:Statistiques de base & Filtrage
+(df.describe(), drop, variance nulle);
+
+:Regrouper les dataframes
+(pd.merge, concat);
+
+|Phase 2: Split & Analyse (Anti-Data Leakage)|
+:Préparation du dataset
+(Split: Train, Test, Validation);
+
+partition "Sur le Train Set uniquement" {
+  :Définir les Targets & Hypothèses;
+  
+  if (Type de donnée ?) then (Donnée catégorie)
+    :Relation Feature/Target (distplot)
+    & Mesure de contingence (crosstab);
+    :Corrélations: Cramer (khi2 norm);
+  else (Donnée quantitative)
+    :Relation Feature/Target (scatter)
+    & Analyse de séries temporelles;
+    :Corrélations: Pearson, ETA-square;
+  endif
+
+  :Analyse bivariée par paire (pairplot);
+  :Mesure des Outliers (IQR) & Valeurs Manquantes;
+
+  if (Distribution séparable ?) then (Oui)
+    :Classification;
+  else (Non)
+    if (Observe-t-on des modes/phases ?) then (Oui)
+      :Partitionnement (Non supervisé);
+    else (Non)
+      if (Relation linéaire / polynomiale ?) then (Oui)
+        :Régression;
+      else (Non)
+        :Structure dimensionnalité (PCA)
+        & Mesure Normalité (QQplot);
+      endif
+    endif
+  endif
+  
+  :Statistique des Hypothèses
+  (Test Student H0 / ttest_ind);
+}
+
+|Phase 3: Feature Engineering & Modélisation|
+partition "Pipeline de Traitement" {
+  :Feature Imputation (Valeurs manquantes);
+  :Data Encoding (Catégoriel -> Numérique);
+  :Standardisation / Normalisation des données;
+  :Feature Reduction & Engineering;
+  :Feature Selection;
+  :Sampling (SMOTE, Transform Space);
+}
+
+:Pipeline Preprocessing & Model Fitting
+(CrossValidation, SGD, MSE/Crossentropy);
+
+:Modèles d'ensemble / Blending / Transfer Learning;
+:Tuning du Modèle: Hyperparamètres (GridSearch);
+:Modification Seuils (Courbe ROC / PRC);
+:Modélisation finale & Calibration;
+
+:Prédiction & Interprétabilité
+(LIME & SHAP);
+
+:Évaluer performance
+(Confusion Matrix, R2, V-measure);
+
+if (Metric proche de l'objectif ?) then (Non)
+  :Ajuster Hyperparamètres / Feature Engineering
+  (Processus Itératif Manuel);
+else (Oui)
+endif
+
+|Phase 4: Restitution Métier & Observabilité|
+:Visualisation complète (Dashboard) & MLOps Observabilité;
+:Réponse à la problématique business
+& Ouverture à de nouvelles perspectives;
+stop
+@endum

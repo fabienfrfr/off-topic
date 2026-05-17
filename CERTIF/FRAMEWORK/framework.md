@@ -138,6 +138,10 @@ Le Lean management (JIT) réduit les gaspillages mais supprime les "buffers".
 ## TODO
 
 
+### EDA : Exploratory Data Analysis
+
+Correlation, Test, Echantillons, Etc.
+
 ### Concept de Gouvernance et Rôles
 
 * **Définition de la Gouvernance** : Système de règles et de pouvoir (le "cadre") vs les acteurs (le "qui").
