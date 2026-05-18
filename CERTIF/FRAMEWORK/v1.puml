@@ -1,0 +1,86 @@
+@startuml
+skinparam backgroundColor white
+skinparam roundcorner 10
+skinparam arrowColor #2C3E50
+skinparam Shadowing false
+
+' Définition des styles de boîtes
+skinparam activity {
+    BackgroundColor #0078D4
+    BorderColor #005A9E
+    FontColor white
+    FontSize 12
+    FontStyle bold
+}
+
+' Styles des conteneurs
+skinparam partition {
+    BorderColor #34495E
+    FontColor #2C3E50
+    FontSize 13
+    FontStyle bold
+}
+
+' --- BRANCHE DESCENDANTE (CONTRAT & SPÉCIFICATIONS) ---
+
+partition "1. Avant-Projet & FinOps (Amont)" #EBF5FB {
+    :Request for Proposal (RFP) Issued\n& Analyse EcoPol;
+    :Project Contract Awarded\nTarget Cost (Pain/Gain Share);
+    :Arbitrage Budgétaire\nCAPEX (Hard) vs OPEX (Soft/IA);
+}
+
+partition "2. Spécification Système & Valeur" #E8F8F5 {
+    :Analyse Besoin\n(SMART, MoSCoW, 5Why);
+    :Identification Valeur\n(TRL Initial, VRIO, Initialisation EVM);
+}
+
+partition "3. Conception High-Level & Interfaces" #FEF9E7 {
+    :Architecture Solution\n(BPMN, UML-C4);
+    :Contrat DoD de Découplage Hard/Soft\n(Spécifications Gherkin);
+}
+
+' --- LE CŒUR DU ENGINE (LOGIQUE / MATÉRIEL) ---
+
+partition "4. Industrialization Engine (Dev/Ops)" #FDEDEC {
+    note right
+        **Gouvernance de Flux & Risques**
+        * Modèle stochastique Monte-Carlo
+        * Calcul PERT (Chemin critique)
+        * Buffer anti-stress (Loi de Kingman VUT)
+    end note
+
+    fork
+        :Software Track\nIterations Agiles (TDD, ADR);
+    fork again
+        :Hardware Track\nContraintes Physiques & ISO;
+    end fork
+
+    :Validation Intégration\nBancs de Tests HIL & SHAP;
+    :Déploiement & Observability\n(CI/CD, Phoenix, Gateway LiteLLM);
+}
+
+' --- PONT D'ITÉRATION CENTRAL (V-MODELL XT) ---
+
+if (Validation Technique OK ?\n(DeepEval, KPI, Seuil Kingman)) then (Oui)
+    :Extraction Metrics\nUpdate Vélocité & TRL;
+else (Non)
+    -[#red]->
+    :Doute Méthodique Interne\nAjustement Bayésien (Architecture / Scope);
+    -[#red]->
+    stop
+endif
+
+' --- BRANCHE MONTANTE (INTÉGRATION, VALEUR & RECOUVREMENT) ---
+
+partition "5. Intégration Haute & Livraison" #F5EEF8 {
+    :System Integrated\nAssemblage Final Hard + Soft;
+    :Delivery Completed\nDocumentation As-Code (IMRAD);
+}
+
+partition "6. Recette Légale & Clôture (Aval)" #EAFAF1 {
+    :Acceptance Completed\nValidation Contrat / MoSCoW Initial;
+    :Bilan FinOps Global\nCalcul Final EVM (CPI / SPI);
+    :Project Closed\nRetex / Archivage Base de Connaissances;
+}
+
+@enduml
