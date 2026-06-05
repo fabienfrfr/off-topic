@@ -145,7 +145,7 @@ Slide COMEX → décisions (constat → décisions → cible → impact)
 
 
 
-
+```
 [START]
 
       ↓
@@ -224,8 +224,6 @@ Construire roadmap
 + définir gouvernance (qui décide / qui porte / qui run)
 
 
-
-
 → PPM science :
 - Sélection = cœur de la performance stratégique
 - Objectif = alignement portfolio ↔ stratégie[8](https://aaltodoc.aalto.fi/server/api/core/bitstreams/6c8853a1-fcf5-43f2-80df-1d185cd0d8a8/content)
@@ -300,7 +298,7 @@ Slide COMEX → décisions (constat → décisions → cible → impact)
 [8](https://aaltodoc.aalto.fi/server/api/core/bitstreams/6c8853a1-fcf5-43f2-80df-1d185cd0d8a8/content)
 
 [END]
-
+```
 
 👉 PPM = Project Portfolio Management
 = gestion d’un ensemble de projets
