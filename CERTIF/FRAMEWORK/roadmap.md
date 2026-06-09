@@ -68,6 +68,7 @@ Gouvernance : Clarifier les rôles et modalités de collaboration pour structure
 * ton rôle = forcer des choix
 
 
+
 ```
 [START]
 
@@ -76,6 +77,11 @@ Gouvernance : Clarifier les rôles et modalités de collaboration pour structure
 -------------------------------------------------
 Un projet = hypothèse de valeur
 Audit = tester ces hypothèses
+→ Base PPM :
+  - Les projets sont en compétition pour des ressources limitées
+  - Nécessité de sélection + priorisation multi-critères (ROI, risque, alignement)
+  [1](https://arxiv.org/pdf/1503.05366)
+  [2](https://digitalcommons.harrisburgu.edu/dandt/23/)
 
       ↓
 ⚙️ PHASE 1 — AUDIT PORTEFEUILLE 80/20 (COMPRENDRE)
@@ -84,104 +90,33 @@ Lister
   → tous les projets → sociologie légère (vision de chaque CdP)
       ↓
 Standardiser
-  → fiches identiques
+  → fiches identiques (valeur, coût, data, TRL macro, criticité, dépendances light)
       ↓
 Scorer
-  → ROI / risque
+  → ROI / risque / TRL / criticité / dépendances
       ↓
 Regrouper
   → clusters (doublons / synergies)
       ↓
 ➡️ OUTPUT : DIAGNOSTIC
-"voici ce qui existe + valeur estimée"
-      ↓
-🔻 RÉDUCTION DU SCOPE
--------------------------------------------------
-Audit portefeuille
-→ éliminer / filtrer les projets
-→ garder seulement les plus pertinents
-      ↓
-🎯 PHASE 2 — THÈSE (DÉCIDER)
--------------------------------------------------
-Analyser portefeuille
-  → comparer scores + clusters
-      ↓
-Couper / Arbitrer
-  → Kill / Merge / Scale
-      ↓
-Définir cible
-  → plateforme + focus métier
-      ↓
-Construire roadmap
-  → 0–3 / 6–12 / 12+
-      ↓
-➡️ OUTPUT : DÉCISION
-"voici ce qu’on fait"
-      ↓
-🧱 AUDIT ARCHITECTE (OPTIONNEL / CIBLÉ)
--------------------------------------------------
-→ deep dive technique sur projets retenus
-→ data, pipeline, infra, MLOps
-      ↓
-🔺 SÉCURISATION DU SCOPE
--------------------------------------------------
-Audit archi
-→ fiabiliser ce que tu gardes
-→ garantir scalabilité / robustesse
-      ↓
-🧾 LIVRABLE FINAL
--------------------------------------------------
-Fiche projet → base d’analyse / résumé standard (valeur, coût, data, score, décision)
-Excel scoring → priorisation
-Slide COMEX → décisions (constat → décisions → cible → impact)
-      ↓
-✅ IMPACT
--------------------------------------------------
-- moins de projets
-- plus de focus
-- plus de valeur
-[END]
-```
-
-
-
-```
-[START]
-
-      ↓
-🧠 CONCEPT
--------------------------------------------------
-Un projet = hypothèse de valeur
-Audit = tester ces hypothèses
-
-→ Base PPM :
-- Les projets sont en compétition pour des ressources limitées
-- Nécessité de sélection + priorisation multi-critères (ROI, risque, alignement)
-(Portfolio Management literature) [1](https://arxiv.org/pdf/1503.05366)[2](https://digitalcommons.harrisburgu.edu/dandt/23/)
-
-      ↓
-⚙️ PHASE 1 — AUDIT PORTEFEUILLE 80/20 (COMPRENDRE)
--------------------------------------------------
-Lister
-  → tous les projets
-
-Standardiser
-  → fiches identiques
-
-Scorer
-  → ROI / risque
-
-Regrouper
-  → clusters (doublons / synergies)
+"voici ce qui existe + valeur estimée + vision RÉELLE (métier + orga + valeur)"
 
 → Complexité scientifique :
-- Explosion combinatoire quand nb projets ↑
-- Interdépendances rendent l’analyse exhaustive impraticable
-[3](http://www.ieomsociety.org/ieom2020/papers/808.pdf)
+  - Explosion combinatoire quand nb projets ↑
+  - Interdépendances rendent l’analyse exhaustive impraticable
+  [3](http://www.ieomsociety.org/ieom2020/papers/808.pdf)
 
-      ↓
-➡️ OUTPUT : DIAGNOSTIC
-"voici ce qui existe + valeur estimée"
+→ Effets connus :
+  - Trop d’options → decision paralysis / abandon décision
+    [4](https://www.researchgate.net/publication/357695637_An_Analysis_on_the_Impact_of_Choice_Overload_to_Consumer_Decision_Paralysis)
+    [5](https://en.wikipedia.org/wiki/Analysis_paralysis)
+  - Temps d’analyse ↑ → qualité ↑ → puis ↓ (rendement décroissant)
+    [6](https://developmenteconomicsx.com/wp-content/uploads/2025/01/PM31.pdf)
+    [7](https://www.pnas.org/doi/pdf/10.1073/pnas.1703440114)
+
+→ NUANCE :
+  - NON critique (IT / produit / IA exploratoire) → filtrage rapide recommandé
+  - CRITIQUE (défense / système industriel) → filtrage prudent (éviter faux négatifs)
 
       ↓
 🔻 RÉDUCTION DU SCOPE
@@ -190,54 +125,34 @@ Audit portefeuille
 → éliminer / filtrer les projets
 → garder seulement les plus pertinents
 
-→ Justification scientifique :
-- Trop d’options → decision paralysis / abandon décision
-[4](https://www.researchgate.net/publication/357695637_An_Analysis_on_the_Impact_of_Choice_Overload_to_Consumer_Decision_Paralysis/fulltext/63c5918ed9fb5967c2e02a47/An-Analysis-on-the-Impact-of-Choice-Overload-to-Consumer-Decision-Paralysis.pdf)[5](https://en.wikipedia.org/wiki/Analysis_paralysis)
-
-- Relation non linéaire :
-  temps d’analyse ↑ → qualité ↑ → puis ↓ (rendement décroissant)
-[6](https://developmenteconomicsx.com/wp-content/uploads/2025/01/PM31.pdf)[7](https://www.pnas.org/doi/pdf/10.1073/pnas.1703440114)
-
-→ NUANCE :
-- NON critique (IT / produit / IA exploratoire)
-  → filtrage rapide recommandé
-
-- CRITIQUE (défense / système industriel)
-  → filtrage doit rester prudent
-  → éviter faux négatifs (projets clés éliminés)
-
       ↓
 🎯 PHASE 2 — THÈSE (DÉCIDER)
 -------------------------------------------------
 Analyser portefeuille
   → comparer scores + clusters
-
+      ↓
 Couper / Arbitrer
   → Kill / Merge / Scale
-
+      ↓
 Définir cible
   → plateforme + focus métier
-
+      ↓
 Construire roadmap
   → 0–3 / 6–12 / 12+
-
+      ↓
 + définir gouvernance (qui décide / qui porte / qui run)
 
-
 → PPM science :
-- Sélection = cœur de la performance stratégique
-- Objectif = alignement portfolio ↔ stratégie[8](https://aaltodoc.aalto.fi/server/api/core/bitstreams/6c8853a1-fcf5-43f2-80df-1d185cd0d8a8/content)
+  - Sélection = cœur de la performance stratégique
+  - Objectif = alignement portfolio ↔ stratégie
+  [8](https://aaltodoc.aalto.fi/server/api/core/bitstreams/6c8853a1-fcf5-43f2-80df-1d185cd0d8a8/content)
 
 → NUANCE :
-- NON critique :
-  décision rapide → avantage économique (time-to-value)
+  - NON critique → décision rapide = avantage économique (time-to-value)
+  - CRITIQUE →
+    - validation multi-acteurs
+    - analyse des dépendances systèmes
 
-- CRITIQUE :
-  décision plus lente
-  + validation multi-acteurs
-  + analyse des dépendances systèmes
-
-      ↓
 ➡️ OUTPUT : DÉCISION
 "voici ce qu’on fait"
 
@@ -248,24 +163,19 @@ Construire roadmap
 → data, pipeline, infra, MLOps
 
 → Ingénierie système :
-- coût de correction augmente fortement dans le temps
-(Boehm – cost of change)
-[9](https://www.pmi.org/disciplined-agile/agile/costofchange)[10](https://agilemodeling.com/essays/costOfChange.htm)
+  - Coût de correction augmente fortement dans le temps (Boehm – cost of change)
+    [9](https://www.pmi.org/disciplined-agile/agile/costofchange)
+    [10](https://agilemodeling.com/essays/costOfChange.htm)
+  - Ordre de grandeur classique : $1 → $10 → $100 → $1000 → $10000+
 
-→ ordre de grandeur classique :
-$1 → $10 → $100 → $1000 → $10000+
+→ Principe :
+  - fail tôt = peu coûteux, fail tard = très coûteux
+  - Effet cascade des erreurs amont
 
-→ principe :
-fail tôt = peu coûteux, fail tard = très coûteux
-
-→ NUANCE critique majeure :
-- NON critique (SaaS, IT moderne)
-  → coût de changement ↓ (rollback, monitoring)
-[11](https://www.annemariecharrett.com/cost-of-change-in-saas/)
-
-- CRITIQUE (industrie/défense)
-  → coût de changement reste EXPONENTIEL
-  → nécessite analyse rigoureuse amont
+→ NUANCE :
+  - NON critique (SaaS, IT moderne) → coût de changement ↓ (rollback, monitoring)
+    [11](https://www.annemariecharrett.com/cost-of-change-in-saas/)
+  - CRITIQUE (industrie/défense) → coût de changement reste EXPONENTIEL
 
       ↓
 🔺 SÉCURISATION DU SCOPE
@@ -274,14 +184,10 @@ Audit archi
 → fiabiliser ce que tu gardes
 → garantir scalabilité / robustesse
 
-→ Principe scientifique :
-- erreurs amont = amplification downstream (effet cascade)
-[9](https://www.pmi.org/disciplined-agile/agile/costofchange)
-
       ↓
 🧾 LIVRABLE FINAL
 -------------------------------------------------
-Fiche projet → base d’analyse / résumé standard
+Fiche projet → base d’analyse / résumé standard (valeur, coût, data, TRL, score, décision)
 Excel scoring → priorisation multi-critères
 Slide COMEX → décisions (constat → décisions → cible → impact)
 
@@ -293,158 +199,9 @@ Slide COMEX → décisions (constat → décisions → cible → impact)
 - plus de valeur → alignement stratégique
 
 → Limite reconnue :
-- les modèles théoriques PPM ≠ réalité terrain
-- forte influence humaine (politique, biais)
-[8](https://aaltodoc.aalto.fi/server/api/core/bitstreams/6c8853a1-fcf5-43f2-80df-1d185cd0d8a8/content)
-
-[END]
-```
-
-👉 PPM = Project Portfolio Management
-= gestion d’un ensemble de projets
-→ objectif : choisir, prioriser, aligner avec la stratégie
-
-***
-
-```
-[START]
-
-      ↓
-🧠 CONCEPT
--------------------------------------------------
-Un projet = hypothèse de valeur
-Audit = tester ces hypothèses
-
-→ Base PPM :
-- Ressources limitées → projets en compétition
-- Nécessité de sélection multi-critères (ROI, risque, alignement)
-
-      ↓
-⚙️ PHASE 1 — AUDIT PORTEFEUILLE 80/20 (COMPRENDRE)
--------------------------------------------------
-Lister
-  → tous les projets
-
-Standardiser
-  → fiches identiques
-
-Scorer
-  → ROI / risque
-  + TRL (macro : maturité techno)
-  + criticité (mission/safety) 
-  + dépendances (light) → isolé / interconnecté / critique
-
-Regrouper
-  → clusters (doublons / synergies)
-
-→ Réalité :
-- explosion combinatoire
-- analyse exhaustive impossible
-
-      ↓
-➡️ OUTPUT : DIAGNOSTIC
-"voici ce qui existe + valeur estimée"
-
-      ↓
-🔻 RÉDUCTION DU SCOPE
--------------------------------------------------
-Audit portefeuille
-→ éliminer / filtrer les projets
-→ garder seulement les plus pertinents
-
-→ Effets connus :
-- trop d’options → paralysis
-- trop d’analyse → rendement décroissant
-
-→ NUANCE :
-- NON CRITIQUE → filtrage rapide OK
-- CRITIQUE (défense/industrie) → filtrage prudent
-  (éviter faux négatifs)
-
-      ↓
-🎯 PHASE 2 — THÈSE (DÉCIDER)
--------------------------------------------------
-Analyser portefeuille
-  → comparer scores + clusters
-
-Couper / Arbitrer
-  → Kill / Merge / Scale
-
-Définir cible
-  → plateforme + focus métier
-
-Construire roadmap
-  → 0–3 / 6–12 / 12+
-
-→ objectif :
-- alignement stratégique
-- concentration des ressources
-
-→ NUANCE :
-- NON CRITIQUE → décision rapide = avantage
-- CRITIQUE →
-  - validation multi-acteurs
-  - analyse dépendances systèmes
-
-      ↓
-➡️ OUTPUT : DÉCISION
-"voici ce qu’on fait"
-
-      ↓
-🧱 AUDIT ARCHITECTE (CIBLÉ)
--------------------------------------------------
-→ deep dive sur projets retenus
-
-+ TRL détaillé
-+ dépendances complètes (systèmes / chaînes)
-+ contraintes certification (DO-178, ISO…)
-+ contraintes cyber / défense
-+ data / pipeline / MLOps
-
-→ principe :
-- coût de correction ↑ fortement dans le temps
-- effet cascade des erreurs amont
-
-→ ordre de grandeur :
-1 → 10 → 100 → 1000 → 10000
-
-→ NUANCE :
-- NON CRITIQUE → coût de changement ↓ (DevOps)
-- CRITIQUE → coût reste exponentiel
-
-      ↓
-🔺 SÉCURISATION DU SCOPE
--------------------------------------------------
-Audit archi
-→ fiabiliser ce que tu gardes
-→ garantir robustesse + scalabilité
-
-→ logique :
-- réduire risque systémique
-- éviter défauts non détectés
-
-      ↓
-🧾 LIVRABLE FINAL
--------------------------------------------------
-Fiche projet
-→ valeur / coût / data / TRL / score / décision
-
-Excel scoring
-→ priorisation multi-critères
-
-Slide COMEX
-→ constat → décisions → cible → impact
-
-      ↓
-✅ IMPACT
--------------------------------------------------
-- moins de projets → complexité ↓
-- focus → allocation optimale
-- valeur → alignement stratégique
-
-→ LIMITES :
-- modèles ≠ réalité humaine
-- biais politiques / organisationnels
+  - les modèles théoriques PPM ≠ réalité terrain
+  - forte influence humaine (politique, biais)
+  [8](https://aaltodoc.aalto.fi/server/api/core/bitstreams/6c8853a1-fcf5-43f2-80df-1d185cd0d8a8/content)
 
 [END]
 ```
