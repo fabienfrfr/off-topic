@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Anti-Visibility-Override
 // @namespace    http://tampermonkey.net/
-// @version      1.1.0
-// @description  Forces the page to always appear visible to the browser and scripts.
+// @version      1.2.0
+// @description  Forces page visibility. Excludes Teams v2.
 // @author       Collaboration
 // @match        *://*/*
 // @run-at       document-start
@@ -11,6 +11,15 @@
 
 (function() {
     'use strict';
+
+    // Exclusion for Teams V2
+    if (window.location.href.includes('teams.microsoft.com/v2/')) {
+        return;
+    }
+
+    // TODO: Add support for document.onvisibilitychange property overrides
+    // TODO: Add detection/bypass for setInterval-based visibility checks
+    // TODO: Implement passive proxy for performance.now() to mitigate timing analysis
 
     // 1. Lock document visibility properties to 'visible'
     const defineReadOnly = (obj, prop, value) => {
@@ -31,7 +40,7 @@
     EventTarget.prototype.addEventListener = function(type, listener, options) {
         const blockList = ['visibilitychange', 'blur', 'focus', 'webkitvisibilitychange'];
         if (blockList.includes(type)) {
-            return; // Silently drop tracking listeners
+            return;
         }
         return originalAddEventListener.apply(this, arguments);
     };
@@ -39,7 +48,7 @@
     // 3. Fake focus state
     document.hasFocus = () => true;
 
-    // 4. Normalize animation frames to run at 60fps regardless of tab state
+    // 4. Normalize animation frames
     const originalRAF = window.requestAnimationFrame;
     window.requestAnimationFrame = (callback) => {
         return originalRAF(() => {
