@@ -1,4 +1,4 @@
-# Framework V-Agile
+# Framework "Stupidly Safe and Simple Architecture"
 
 L'objectif de ce framework est de briser le paradigme des projets industriels qui échouent en oscillant entre un **Agile déguisé** (manque de vision) et un **Cycle en V déguisé** (manque de réactivité), voir des essaies de méthode hybride (V-Modell XT). L'idée est d'imposer une **rigueur "as-code"** où la documentation et la structure deviennent des composants actifs du cycle de vie de développement. Il ne faut pas voir ce framework comme une suite d'etapes à appliquer à la lettre, mais plutot comme une *toolbox* pour naviguer entre les differentes methodologies de cycle de vie. 
 
@@ -57,7 +57,7 @@ Vision (EcoPol 5-10 ans) Interviews & Stratégie (ROI & TOGAF/IAF/SAFe/Arcadia, 
 - Meme s'il y a des standards de roadmap (audit spec -> poc e2e -> mvp bdd -> indus cyber), ne pas s'avancer. Surtout quand on ne sait pas fonctionneemnt du client (data-centric, infra-centric, value-centric, etc.)
 
 
-Le framework V-Agile n’est pas une armure méthodologique rigide, mais une boîte à outils modulaire et contextuelle : selon une approche bayésienne, le manager sélectionne uniquement les outils nécessaires pour cartographier et mitiger les risques spécifiques du projet (complexité algorithmique, incertitude des données, contraintes hardware ou certification), évitant ainsi toute sur-ingénierie inutile.
+Le framework "Stupidly Safe and Simple Architecture" n’est pas une armure méthodologique rigide, mais une boîte à outils modulaire et contextuelle : selon une approche bayésienne, le manager sélectionne uniquement les outils nécessaires pour cartographier et mitiger les risques spécifiques du projet (complexité algorithmique, incertitude des données, contraintes hardware ou certification), évitant ainsi toute sur-ingénierie inutile.
 
 ### L'Aspect Humain : Leadership et Équilibre
 
@@ -140,7 +140,7 @@ Correlation, Test, Echantillons, Etc.
 * **Backlog** : Liste dynamique et priorisée (DEEP) des besoins (User Stories).
 * **Conflit Idéologique** : Opposition entre le dogme du "Contrôle & Commande" et celui de la "Liberté/Anarchie".
 
-### Framework "V-Agile"
+### Framework ""Stupidly Safe and Simple Architecture""
 
 * **Hybridation** : Concilier la rigueur industrielle (Hardware/Normes) et la réactivité logicielle.
 * **Structure IMRAD** : Application des standards de publication scientifique à la documentation projet.
@@ -257,7 +257,7 @@ L'Indicateur Budgétaire Manquant
 | **CPI (Cost Performance Index)** | $CPI = \frac{VA}{\text{Coût Réel}}$ | Si $CPI < 1$, le projet dépense plus que prévu pour la valeur produite. |
 
 
-Le Schéma V-Agile "XT" (Vue Systémique)
+Le Schéma "Stupidly Safe and Simple Architecture" "XT" (Vue Systémique)
 
 ```text
 [PHASE 1 : AMONT / CONTRACTUEL] 
@@ -309,7 +309,7 @@ FinOps (comme la *FinOps Certified Practitioner*) :
 
 ```text
 ========================================================================================================================
-                                       FRAMEWORK V-AGILE INTEGRATED SYSTEM (V1.0)
+                                       FRAMEWORK "Stupidly Safe and Simple Architecture" INTEGRATED SYSTEM (V1.0)
 ========================================================================================================================
 
 [PHASE 1 : STRATÉGIE, CONTRACTUALISATION & GOUVERNANCE] ◄────────────────────────────────────────────────────────┐
