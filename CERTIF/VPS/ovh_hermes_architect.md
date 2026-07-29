@@ -311,8 +311,10 @@ thearchitect.dev {
 
     reverse_proxy 127.0.0.1:9119 {
         header_up Host 127.0.0.1
+        header_up Origin http://127.0.0.1:9119
+        header_up X-Forwarded-Host {host}
+        header_up X-Forwarded-Proto {scheme}
     }
-
     header {
         Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
         X-Content-Type-Options "nosniff"
