@@ -55,8 +55,11 @@ python3 \
 python3-venv \
 python3-pip \
 caddy \
+openjdk-25-jre-headless3\
 micro
 ```
+
+JAVA is required for some tools, but optional if only Hermes Dashboard.
 
 ### Install uv
 
@@ -105,7 +108,7 @@ docker ps
 
 ---
 
-# 6. Deploy Firecrawl with Docker (Optional and possible wih only npm)
+# 6. Deploy Firecrawl with Docker (Optional and possible wih only npm ? TODO)
 
 ## Create the project directory
 
@@ -178,7 +181,7 @@ Choose:
 
 ---
 
-# 9. Configure Firecrawl in Hermes
+# 9. Configure Firecrawl in Hermes (Optional TODO)
 
 Run:
 
