@@ -4,7 +4,6 @@ This guide walks you through installing a complete **Hermes Agent** stack with:
 
 * ✅ Hermes Agent
 * ✅ Hermes Dashboard
-* ✅ Firecrawl (Docker)
 * ✅ Caddy (automatic HTTPS)
 * ✅ Basic Authentication
 * ✅ OpenRouter integration
@@ -108,47 +107,21 @@ docker ps
 
 ---
 
-# 6. Deploy Firecrawl with Docker (Optional and possible wih only npm ? TODO)
-
-## Create the project directory
+# 7. Install LM Studio CLI (local testing mode)
 
 ```bash
-mkdir -p ~/firecrawl
-cd ~/firecrawl
-micro docker-compose.yml
-```
+sudo apt install curl wget git unzip -y
+mkdir -p ~/tmp
+curl -fsSL https://lmstudio.ai/install.sh -o install.sh
+TMPDIR=$HOME/tmp bash install.sh
+rm -f ~/install.sh
+rm -rf ~/tmp
+sudo rm -rf /tmp/tmp.*
 
-## Create `docker-compose.yml`
+echo 'export PATH="$HOME/.lmstudio/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
 
-```yaml
-services:
-  firecrawl:
-    image: ghcr.io/firecrawl/firecrawl:latest
-    container_name: firecrawl
-    restart: always
-    ports:
-      - "3002:3002"
-    environment:
-      - PORT=3002
-      - LOG_LEVEL=info
-```
-
-Start the container:
-
-```bash
-docker compose up -d
-```
-
-Verify the service:
-
-```bash
-curl http://localhost:3002/health
-```
-
-Expected output:
-
-```json
-{"status":"ok"}
+lms get qwen/qwen3.5-4b
 ```
 
 ---
