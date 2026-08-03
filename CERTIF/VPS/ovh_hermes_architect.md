@@ -107,7 +107,9 @@ docker ps
 
 ---
 
-# 7. Install LM Studio CLI (local testing mode)
+# 7. Install & Configure LM Studio CLI (local testing mode)
+
+https://hermes-agent.nousresearch.com/docs/integrations/providers#lm-studio--desktop-app-with-local-models
 
 ```bash
 sudo apt install curl wget git unzip -y
@@ -121,9 +123,64 @@ sudo rm -rf /tmp/tmp.*
 echo 'export PATH="$HOME/.lmstudio/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
-lms get qwen/qwen3.5-4b
+micro /home/ubuntu/start-lmstudio.sh
 ```
 
+'''bash
+#!/bin/bash
+
+/home/ubuntu/.lmstudio/bin/lms server start \
+  --port 1234 \
+  --bind 127.0.0.1
+
+sleep 5
+
+/home/ubuntu/.lmstudio/bin/lms load qwen/qwen3.5-4b \
+  --context-length 65536
+'''
+
+
+```bash
+chmod +x /home/ubuntu/start-lmstudio.sh
+sudo micro /etc/systemd/system/lmstudio.service
+```
+
+
+
+
+```ini
+[Unit]
+Description=LM Studio Server
+After=network.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+Environment=HOME=/home/ubuntu
+
+ExecStart=/home/ubuntu/start-lmstudio.sh
+
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```
+sudo systemctl daemon-reload
+sudo systemctl enable lmstudio
+sudo systemctl start lmstudio
+sudo systemctl status lmstudio
+```
+
+high charge (pic rescue)
+```
+sudo fallocate -l 4G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+```
 ---
 
 # 7. Install Hermes Agent
@@ -150,36 +207,25 @@ Choose:
 
 * **Provider:** OpenRouter
 * **API Key:** Your OpenRouter API key
-* **Model:** `openrouter/anthropic/claude-3.5-sonnet`
+* **Model:** `openrouter/nvidia/nemotron-3-super-120b-a12b:free`
+
+* **Provider:** LMStudio
+* **Model:** `qwen/qwen3.5-4b`
+
 
 ---
 
-# 9. Configure Firecrawl in Hermes (Optional TODO)
+# 9. Configure tools (Optional TODO)
 
-Run:
-
-```bash
-hermes setup tools
+```
+VERSION=$(curl -Ls -o /dev/null -w %{url_effective} \
+  https://github.com/AsamK/signal-cli/releases/latest | sed 's/^.*\/v//')
+curl -L -O "https://github.com/AsamK/signal-cli/releases/download/v${VERSION}/signal-cli-${VERSION}.tar.gz"
+sudo tar xf "signal-cli-${VERSION}.tar.gz" -C /opt
+sudo ln -sf "/opt/signal-cli-${VERSION}/bin/signal-cli" /usr/local/bin/
 ```
 
-Select:
-
-* **Firecrawl (paid · optional gateway)**
-
-Configuration:
-
-* **API URL:** `http://localhost:3002`
-* **API Key:** *(leave empty)*
-
-Hermes will generate a configuration similar to:
-
-```yaml
-web:
-  provider: firecrawl
-  firecrawl:
-    api_url: "http://localhost:3002"
-    api_key: ""
-```
+https://hermes-agent.nousresearch.com/docs/user-guide/messaging/signal
 
 ---
 
