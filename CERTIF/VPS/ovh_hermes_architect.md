@@ -1,4 +1,4 @@
-# 🚀 Complete Installation Guide — Hermes + Firecrawl + Caddy (HTTPS + Authentication)
+# 🚀 Complete Installation Guide — Hermes + Caddy (HTTPS + Authentication)
 
 This guide walks you through installing a complete **Hermes Agent** stack with:
 
@@ -11,6 +11,61 @@ This guide walks you through installing a complete **Hermes Agent** stack with:
 * ✅ Fix for the **"Invalid Host header"** error
 
 ---
+## Prerequisite: Configure DNS Records for LLM UI
+
+Before configuring Caddy, create the required DNS records for your domain.
+
+If your server IP is:
+
+```text
+51.254.138.196
+```
+
+Create the following A records in your DNS provider (OVH, Cloudflare, Gandi, etc.):
+
+```text
+Type    Name      Value
+A       @         51.254.138.196 --> by default
+A       llm       51.254.138.196
+```
+
+This creates:
+
+```text
+https://thearchitect.dev --> hermes
+https://llm.thearchitect.dev
+```
+
+### OVH Example
+
+1. Log in to OVH Manager
+2. Open **Web Cloud**
+3. Select your domain
+4. Open **DNS Zone**
+5. Click **Add an entry**
+6. Select **A Record**
+7. Create:
+
+```text
+Name: llm
+Target: 51.254.138.196
+```
+
+and:
+
+```text
+Name: hermes
+Target: 51.254.138.196
+```
+
+## *Bonus : Swap for llm in VPS*
+
+```
+sudo fallocate -l 4G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+```
 
 # 1. Connect via SSH (after a server reboot)
 
@@ -54,7 +109,7 @@ python3 \
 python3-venv \
 python3-pip \
 caddy \
-openjdk-25-jre-headless3\
+openjdk-25-jre-headless \
 micro
 ```
 
@@ -107,80 +162,105 @@ docker ps
 
 ---
 
-# 7. Install & Configure LM Studio CLI (local testing mode)
-
-https://hermes-agent.nousresearch.com/docs/integrations/providers#lm-studio--desktop-app-with-local-models
+# 7. Install llama.cpp
 
 ```bash
-sudo apt install curl wget git unzip -y
-mkdir -p ~/tmp
-curl -fsSL https://lmstudio.ai/install.sh -o install.sh
-TMPDIR=$HOME/tmp bash install.sh
-rm -f ~/install.sh
-rm -rf ~/tmp
-sudo rm -rf /tmp/tmp.*
+sudo apt update
+sudo apt install -y curl jq tar
 
-echo 'export PATH="$HOME/.lmstudio/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
+for TAG in $(curl -s https://api.github.com/repos/ggml-org/llama.cpp/releases \
+  | jq -r '.[0:20][] | .tag_name'); do
 
-micro /home/ubuntu/start-lmstudio.sh
+  URL="https://github.com/ggml-org/llama.cpp/releases/download/${TAG}/llama-${TAG}-bin-ubuntu-x64.tar.gz"
+
+  echo "Trying $TAG"
+
+  if curl -fsL "$URL" -o llama.tar.gz; then
+    if tar -tzf llama.tar.gz >/dev/null 2>&1; then
+      echo "Using $TAG"
+
+      sudo tar -xzf llama.tar.gz \
+        -C /usr/local/bin \
+        --strip-components=1
+
+      rm -f llama.tar.gz
+      break
+    fi
+  fi
+
+  rm -f llama.tar.gz
+done
 ```
 
-'''bash
+Verify:
+
+```bash
+llama-server --version
+```
+
+Create the startup script:
+
+```bash
+micro ~/start-llama.sh
+```
+
+```bash
 #!/bin/bash
 
-/home/ubuntu/.lmstudio/bin/lms server start \
+llama-server \
+  -hf unsloth/gemma-4-E2B-it-GGUF:Q4_K_M \
+  --host 127.0.0.1 \
   --port 1234 \
-  --bind 127.0.0.1
-
-sleep 5
-
-/home/ubuntu/.lmstudio/bin/lms load qwen/qwen3.5-4b \
-  --context-length 65536
-'''
-
-
-```bash
-chmod +x /home/ubuntu/start-lmstudio.sh
-sudo micro /etc/systemd/system/lmstudio.service
+  --context-shift \
+  --swa-full \
+  --jinja
 ```
 
+```bash
+chmod +x ~/start-llama.sh
+```
 
+Create the service:
 
+```bash
+sudo micro /etc/systemd/system/llama-server.service
+```
 
 ```ini
 [Unit]
-Description=LM Studio Server
-After=network.target
+Description=llama.cpp Server
 
 [Service]
-Type=oneshot
 User=ubuntu
-WorkingDirectory=/home/ubuntu
-Environment=HOME=/home/ubuntu
-
-ExecStart=/home/ubuntu/start-lmstudio.sh
-
-RemainAfterExit=yes
+ExecStart=/home/ubuntu/start-llama.sh
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
 ```
 
-```
+Start it:
+
+```bash
 sudo systemctl daemon-reload
-sudo systemctl enable lmstudio
-sudo systemctl start lmstudio
-sudo systemctl status lmstudio
+sudo systemctl enable --now llama-server
+sudo systemctl status llama-server
 ```
 
-high charge (pic rescue)
+Test:
+
+```bash
+curl http://127.0.0.1:1234/v1/models
 ```
-sudo fallocate -l 4G /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
+
+Hermes:
+
+```text
+Provider: OpenAI Compatible
+Base URL: http://127.0.0.1:1234/v1
 ```
+
+
 ---
 
 # 7. Install Hermes Agent
@@ -337,12 +417,23 @@ thearchitect.dev {
         header_up X-Forwarded-Host {host}
         header_up X-Forwarded-Proto {scheme}
     }
+
     header {
         Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
         X-Content-Type-Options "nosniff"
         X-Frame-Options "SAMEORIGIN"
         Referrer-Policy "no-referrer"
     }
+}
+
+llm.thearchitect.dev {
+    encode gzip
+
+    basicauth {
+        fabien YOUR_BCRYPT_HASH
+    }
+
+    reverse_proxy 127.0.0.1:1234
 }
 ```
 
@@ -379,23 +470,6 @@ sudo ufw --force enable
 
 ---
 
-# 16. Final Verification
-
-## Firecrawl
-
-```bash
-docker ps
-curl http://localhost:3002/health
-```
-
-Expected response:
-
-```json
-{"status":"ok"}
-```
-
----
-
 ## Hermes Dashboard
 
 ```bash
@@ -427,26 +501,10 @@ You should see:
 * Hermes Dashboard
 * Automatic HTTPS (Let's Encrypt)
 * No **"Invalid Host header"** error
-* Firecrawl fully integrated and operational
 
 ---
 
 # Troubleshooting
-
-## Firecrawl is not responding
-
-Check the container status:
-
-```bash
-docker ps
-docker logs firecrawl
-```
-
-Restart if necessary:
-
-```bash
-docker compose restart
-```
 
 ---
 
@@ -499,23 +557,29 @@ This directive is required for the Hermes Dashboard to accept proxied requests.
 # Architecture Overview
 
 ```
-Internet
-     │
-     ▼
-HTTPS (443)
-     │
-     ▼
-Caddy
-     │
-     ▼
-Hermes Dashboard (127.0.0.1:9119)
-     │
-     ├──────────────► OpenRouter
-     │
-     └──────────────► Firecrawl (Docker)
+                     Internet
                          │
                          ▼
-                 localhost:3002
+                  ┌────────────┐
+                  │    Caddy    │
+                  │  HTTPS 443  │
+                  └────────────┘
+                         │
+                         ▼
+              Reverse Proxy + Auth
+                         │
+                         ▼
+        ┌────────────────────────────────┐
+        │   Hermes Dashboard (localhost) │
+        │        127.0.0.1:9119          │
+        └────────────────────────────────┘
+                         │
+         ┌───────────────┴────────────────┐
+         │                                  │
+         ▼                                  ▼
+   OpenRouter API                    LM Studio (local)
+ (external provider)                 127.0.0.1:1234
+
 ```
 
 The resulting deployment provides a secure, production-ready AI agent environment with automatic HTTPS, authentication, a web dashboard, integrated web crawling, and a clean reverse proxy configuration.
