@@ -297,15 +297,36 @@ Choose:
 
 # 9. Configure tools (Optional TODO)
 
-```
-VERSION=$(curl -Ls -o /dev/null -w %{url_effective} \
-  https://github.com/AsamK/signal-cli/releases/latest | sed 's/^.*\/v//')
-curl -L -O "https://github.com/AsamK/signal-cli/releases/download/v${VERSION}/signal-cli-${VERSION}.tar.gz"
-sudo tar xf "signal-cli-${VERSION}.tar.gz" -C /opt
-sudo ln -sf "/opt/signal-cli-${VERSION}/bin/signal-cli" /usr/local/bin/
-```
 
 https://hermes-agent.nousresearch.com/docs/user-guide/messaging/signal
+
+
+```bash
+sudo micro /etc/systemd/system/signal-cli.service
+```
+
+```ini
+[Unit]
+Description=Signal-CLI Daemon Service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+ExecStart=/usr/local/bin/signal-cli --account +1234567890 daemon --http 127.0.0.1:8080
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl start signal-cli
+sudo systemctl enable signal-cli
+```
+
 
 ---
 
