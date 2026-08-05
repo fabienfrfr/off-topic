@@ -25,7 +25,7 @@ Create the following A records in your DNS provider (OVH, Cloudflare, Gandi, etc
 
 ```text
 Type    Name      Value
-A       @         51.254.138.196 --> by default
+A       @         51.254.138.196 --> by default --> hermes
 A       llm       51.254.138.196
 ```
 
@@ -289,8 +289,8 @@ Choose:
 * **API Key:** Your OpenRouter API key
 * **Model:** `openrouter/nvidia/nemotron-3-super-120b-a12b:free`
 
-* **Provider:** LMStudio
-* **Model:** `qwen/qwen3.5-4b`
+* **Provider:** custom
+* **Model:** `qwen/qwen3.5-4b` 
 
 
 ---
@@ -313,6 +313,7 @@ https://hermes-agent.nousresearch.com/docs/user-guide/messaging/signal
 
 ```bash
 cd ~/.hermes/hermes-agent
+uv sync
 uv pip install -e ".[web,pty]"
 ```
 
@@ -356,11 +357,7 @@ User=ubuntu
 WorkingDirectory=/home/ubuntu
 Environment=HOME=/home/ubuntu
 
-ExecStart=/home/ubuntu/.local/bin/hermes dashboard \
-    --host 127.0.0.1 \
-    --port 9119 \
-    --tui \
-    --no-open
+ExecStart=/bin/bash -lc '/home/ubuntu/.local/bin/hermes dashboard --host 127.0.0.1 --port 9119 --tui --no-open'
 
 Restart=always
 RestartSec=5
