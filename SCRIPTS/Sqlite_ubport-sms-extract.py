@@ -9,7 +9,7 @@ import sqlite3
 import pandas as pd
 
 # open database and select
-db = sqlite3.connect('history.sqlite')
+db = sqlite3.connect("history.sqlite")
 cursor = db.cursor()
 
 # excute list table (SQL query)
@@ -22,6 +22,6 @@ for table_name in tables:
     table_name = table_name[0]
     table_list += [pd.read_sql_query("SELECT * from %s" % table_name, db)]
 
-# close 
+# close
 cursor.close()
 db.close()

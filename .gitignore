@@ -6,6 +6,10 @@ __pycache__/
 .ipynb_checkpoints/
 .coverage
 
+uv.lock
+.ruff_cache
+.venv
+
 *.log
 *.out
 *.fls
