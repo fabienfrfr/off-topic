@@ -356,6 +356,94 @@ Verify that the following directory exists:
 hermes_cli/web_dist/
 ```
 
+Dashboard Light Theme : 
+
+```
+mkdir -p ~/.hermes/dashboard-themes
+micro ~/.hermes/dashboard-themes/light.yaml
+```
+
+
+```yml
+name: light
+label: Light
+description: Clean light theme with white background and blue accents
+
+palette:
+  background:
+    hex: "#f8fafc"
+    alpha: 1.0
+
+  midground:
+    hex: "#1e293b"
+    alpha: 1.0
+
+  foreground:
+    hex: "#ffffff"
+    alpha: 1.0
+
+  warmGlow: "rgba(59, 130, 246, 0.08)"
+  noiseOpacity: 0.0
+
+typography:
+  fontSans: "Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+  fontMono: "JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
+  fontDisplay: "Inter, system-ui, sans-serif"
+  baseSize: "15px"
+  lineHeight: "1.5"
+  letterSpacing: "0"
+
+layout:
+  radius: "0.5rem"
+  density: comfortable
+
+layoutVariant: standard
+
+colorOverrides:
+  background: "#f8fafc"
+  card: "#ffffff"
+  cardForeground: "#0f172a"
+  popover: "#ffffff"
+  popoverForeground: "#0f172a"
+
+  primary: "#2563eb"
+  primaryForeground: "#ffffff"
+
+  secondary: "#e2e8f0"
+  secondaryForeground: "#0f172a"
+
+  muted: "#f1f5f9"
+  mutedForeground: "#64748b"
+
+  accent: "#dbeafe"
+  accentForeground: "#1e40af"
+
+  destructive: "#dc2626"
+  destructiveForeground: "#ffffff"
+
+  success: "#16a34a"
+  warning: "#d97706"
+
+  border: "#cbd5e1"
+  input: "#cbd5e1"
+  ring: "#2563eb"
+
+customCSS: |
+  body {
+    background: #f8fafc !important;
+    color: #0f172a !important;
+  }
+
+  * {
+    scrollbar-color: #cbd5e1 #f8fafc;
+  }
+
+  ::selection {
+    background: #bfdbfe;
+    color: #0f172a;
+  }
+```
+
 ---
 
 # 12. Create the Hermes Systemd Service
