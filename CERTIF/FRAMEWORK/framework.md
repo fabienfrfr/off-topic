@@ -382,7 +382,15 @@ Trop toolbox, plutot que framework.
 
 ### Piliers critiques :
 
-Logique SCAN / FOCUS / ACT
+VISION → Stratégie / Adoption / Organisation / Transformation
+
+Framework TOE-DOI pour l'adoption de l'IA : https://www.mdpi.com/2076-3417/15/12/6465
+
+ANALYSE → CRISP-DM https://ieeexplore.ieee.org/abstract/document/8943998 
+
+*Valeur × Faisabilité × Alignement Stratégique*
+
+#### Logique SCAN / FOCUS / ACT
 
 1. Gouvernance & Stratégie
 
