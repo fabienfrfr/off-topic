@@ -12,11 +12,13 @@
 (function() {
     'use strict';
 
-    // Exclusion for Teams V2
-    if (window.location.href.includes('teams.microsoft.com/v2/')) {
+    // Exclusion for Teams V2 + Teams Cloud
+    if (
+        window.location.href.includes('teams.microsoft.com/v2/') ||
+        window.location.href.includes('teams.cloud.microsoft/')
+    ) {
         return;
     }
-
     // TODO: Add support for document.onvisibilitychange property overrides
     // TODO: Add detection/bypass for setInterval-based visibility checks
     // TODO: Implement passive proxy for performance.now() to mitigate timing analysis
