@@ -1,0 +1,7 @@
+# Fichiers PRIVÉS : ne jamais commiter (logos, noms internes, couverture et sommaire)
+config_interne.typ
+front.typ
+assets/
+
+# PDF générés
+*.pdf
