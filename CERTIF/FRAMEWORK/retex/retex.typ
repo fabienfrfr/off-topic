@@ -62,6 +62,7 @@
   lei2025spider2: ("Lei et al., 2025", "https://arxiv.org/abs/2411.07763"),
   sequeda2023kg: ("Sequeda et al., 2023", "https://arxiv.org/abs/2311.07509"),
   yao2023react: ("Yao et al., 2023", "https://arxiv.org/abs/2210.03629"),
+  amini2025agentspec: ("Amini et al., 2025", "https://arxiv.org/abs/2510.04173"),
   hou2025mcp: ("Hou et al., 2025", "https://arxiv.org/abs/2503.23278"),
   lewis2020rag: ("Lewis et al., 2020", "https://arxiv.org/abs/2005.11401"),
   jegou2011pq: ("Jégou et al., 2011", "https://doi.org/10.1109/TPAMI.2010.57"),
@@ -581,36 +582,40 @@
 // =====================================================================
 // 10 · Les briques techniques
 // =====================================================================
-// NOTES : FastAPI encapsulé pour MCP, Sidemantic (couche sémantique), LanceDB (base
-// vectorielle) ; raisonnement assuré par les services IA sécurisés du Groupe.
+// NOTES : WayFlow + PyAgentSpec (agents définis de façon déclarative, portables), FastAPI encapsulé pour MCP,
+// Sidemantic (couche sémantique), LanceDB (base vectorielle) ; raisonnement assuré par les services IA sécurisés du Groupe.
+// Agent Spec (Oracle) : langage déclaratif indépendant du framework ; PyAgentSpec = SDK Python ; WayFlow = runtime de référence.
 #slide("Les briques techniques", "Une architecture légère et modulaire pour le démonstrateur",
   sec: 3,
   message: [Des briques simples et remplaçables : changer de technologie sans reconstruire les usages.],
-  refs: ("hou2025mcp", "sequeda2023kg", "lewis2020rag", "jegou2011pq", "pace2025lance", "nambiar2022dwdl", "makridakis2018stat"),
+  refs: ("amini2025agentspec", "hou2025mcp", "sequeda2023kg", "lewis2020rag", "jegou2011pq", "pace2025lance", "nambiar2022dwdl", "makridakis2018stat"),
 )[
-  #let tool(name, tag, desc, role) = rect(width: 100%, height: 100%, fill: GRAY, radius: 6pt, stroke: none, inset: 14pt)[
-    #text(size: 19pt, weight: "bold", fill: NAVY)[#name]
+  #let tool(name, tag, desc, role) = rect(width: 100%, height: 100%, fill: GRAY, radius: 6pt, stroke: none, inset: 10pt)[
+    #grid(columns: (1fr, auto), align: horizon,
+      text(size: 16pt, weight: "bold", fill: NAVY)[#name],
+      rect(fill: BLUE, radius: 10pt, stroke: none, inset: (x: 9pt, y: 3pt),
+        text(size: 9pt, weight: "bold", fill: white)[#tag]))
     #v(4pt)
-    #rect(fill: BLUE, radius: 10pt, stroke: none, inset: (x: 9pt, y: 3.5pt),
-      text(size: 9pt, weight: "bold", fill: white)[#tag])
-    #v(9pt)
-    #text(size: 12.5pt)[#desc]
-    #v(8pt)
-    #text(size: 12pt)[*#text(fill: NAVY)[Rôle ici :]* #role]
+    #text(size: 11.5pt)[#desc]
+    #v(4pt)
+    #text(size: 10.5pt)[*#text(fill: NAVY)[Rôle ici :]* #role]
   ]
-  #grid(columns: (1fr,) * 3, column-gutter: 0.14in, rows: 2.75in,
+  #grid(columns: (1fr, 1fr), column-gutter: 0.14in, row-gutter: 0.1in, rows: (1.4in, 1.4in),
+    tool("WayFlow + PyAgentSpec", "Agents déclaratifs",
+      [Agent Spec : langage ouvert, indépendant du framework],
+      [PyAgentSpec (SDK Python) définit les agents de façon déclarative ; WayFlow, runtime de référence, les exécute #S("amini2025agentspec")]),
     tool("FastAPI", "API · MCP",
       [Framework Python pour exposer des services],
       [encapsule l'accès aux données et l'expose à l'agent via MCP #S("hou2025mcp")]),
     tool("Sidemantic", "Couche sémantique",
-      [Définit une fois les objets, dimensions et indicateurs métier],
-      [standardise les règles de gestion de l'agent ; gain d'exactitude mesuré avec une représentation sémantique #S("sequeda2023kg")]),
+      [Définit une fois les indicateurs et règles métier],
+      [standardise les règles de gestion ; exactitude améliorée par la sémantique #S("sequeda2023kg")]),
     tool("LanceDB", "Base vectorielle",
       [Stockage et recherche par similarité (embeddings)],
       [recherche sémantique (RAG #S("lewis2020rag")), index par quantification #S("jegou2011pq"), format Lance #S("pace2025lance")]),
   )
-  #v(0.14in)
-  #bullets(size: 11.5pt, gap: 6pt,
+  #v(0.08in)
+  #bullets(size: 10.5pt, gap: 4pt,
     [Raisonnement de l'agent assuré par les services IA sécurisés du Groupe],
     [Choisir la brique selon le besoin plutôt que la tendance : data warehouse ou data lake #S("nambiar2022dwdl"), statistiques classiques ou deep learning #S("makridakis2018stat")],
   )
