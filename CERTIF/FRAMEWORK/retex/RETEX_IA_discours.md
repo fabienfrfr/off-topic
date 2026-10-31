@@ -1,6 +1,6 @@
 # Discours de la présentation : retour d'expérience « Mission IA »
 
-**Durée visée : 30 minutes** (environ 3 600 mots à un rythme posé de 120 mots par minute).
+**Durée visée : 30 minutes** (environ 3 800 mots à un rythme posé de 125 mots par minute).
 **Termes :** ceux du PDF public (entité de service et centre de compétence, base de données SI, gconf, HUMS). Le texte est donc partageable tel quel.
 **Numérotation :** celle du PDF interne (1 = couverture, 2 = sommaire). Dans le PDF public, retire 2 à chaque numéro.
 
@@ -35,17 +35,17 @@
 | 4 | Le constat initial | 2:00 | 5:00 |
 | 5 | Roadmap de l'IA | 2:30 | 7:30 |
 | 6 | Partir du besoin métier | 2:00 | 9:30 |
-| 7 | Ma méthode : un gabarit unique | 3:00 | 12:30 |
-| 8 | Qualifier et prioriser | 3:00 | 15:30 |
-| 9 | Un portefeuille de cas d'usage | 1:00 | 16:30 |
-| 10 | Le SI conversationnel | 2:00 | 18:30 |
-| 11 | Du concept au démonstrateur | 2:30 | 21:00 |
-| 12 | Les briques techniques | 3:00 | 24:00 |
-| 13 | Le verrou : la donnée | 2:30 | 26:30 |
-| 14 | Les enseignements | 1:00 | 27:30 |
-| 15 | Bilan et prochaines étapes | 1:30 | 29:00 |
+| 7 | Ma méthode : un gabarit unique | 3:30 | 13:00 |
+| 8 | Qualifier et prioriser | 3:00 | 16:00 |
+| 9 | Un portefeuille de cas d'usage | 1:00 | 17:00 |
+| 10 | Le SI conversationnel | 2:00 | 19:00 |
+| 11 | Du concept au démonstrateur | 2:30 | 21:30 |
+| 12 | Les briques techniques | 3:00 | 24:30 |
+| 13 | Le verrou : la donnée | 2:30 | 27:00 |
+| 14 | Les enseignements | 1:00 | 28:00 |
+| 15 | Bilan et prochaines étapes | 1:30 | 29:30 |
 
-Il reste une minute de marge. Si tu es en retard, voir la section « Si le temps manque » à la fin.
+Il reste une demi-minute de marge. Si tu es en retard, voir la section « Si le temps manque » à la fin.
 
 ---
 
@@ -143,7 +143,7 @@ Cela rejoint la méthode de référence en science des données, CRISP-DM, qui p
 
 ---
 
-## Slide 7 : Ma méthode, un gabarit unique (3:00)
+## Slide 7 : Ma méthode, un gabarit unique (3:30)
 
 **Message clé** : un langage commun entre métiers, data et IT, dans un seul document.
 
@@ -160,6 +160,10 @@ Colonne du milieu : le **scénario**. Il se formule en quatre mots : « Étant d
 Colonne de droite : **sorties, moyens, mesure**. Les données de sortie, les sources de données, les capacités nécessaires, comme les connecteurs, et enfin les **indicateurs de succès** : temps gagné, qualité, réduction du risque.
 
 Pour illustrer, prenez notre cas d'usage. Fonctionnalité : analyser l'impact de l'obsolescence d'un composant sur le parc. Afin de réduire le temps d'analyse, en tant que responsable de parc, je souhaite connaître les équipements concernés. Étant donné un composant déclaré obsolète, quand je pose la question, alors j'obtiens la liste des équipements, avec leur criticité. L'indicateur : le temps d'analyse. *(C'est un exemple pour t'aider à l'expliquer ; il reprend le cas d'usage de la suite.)*
+
+**D'où vient ce gabarit ?** C'est le fruit de mon expérience dans le monde du **cycle en V** et dans celui des **méthodes agiles**. Du côté du cycle en V, je reprends l'**IDEF0** : on décrit une fonction par ses entrées, ses sorties, ses contraintes et ses moyens. C'est la raison des champs « données d'entrée », « contexte », « données de sortie » et « sources et capacités ». Pour définir le besoin, je m'appuie sur la **bête à cornes** : à qui le produit rend-il service, sur quoi agit-il, dans quel but ? Ces trois questions se retrouvent dans « En tant que, Je souhaite, Afin de ». Du côté agile, le gabarit contient aussi, de façon implicite, la **Definition of Ready**, qui dit quand un besoin est assez clair pour démarrer, et la **Definition of Done**, qui dit quand c'est terminé. Le contexte et les entrées disent si c'est « prêt » ; le scénario et les indicateurs disent si c'est « terminé ». L'idée, c'est **un seul gabarit qui unifie simplement les deux mondes**. Et les études sur les pratiques réelles montrent que ces approches hybrides, un cadre classique dans lequel on insère des pratiques agiles, sont devenues courantes.
+
+*(Les références sont en bas du slide, avec chaque inspiration nommée devant son lien : IDEF0, bête à cornes, DoR, DoD, cycle en V et agile.)*
 
 Pourquoi ce format ? Trois raisons, appuyées sur des études. D'abord, c'est un **langage commun** : les scénarios « Étant donné, Quand, Alors » sont compréhensibles par tous. Ensuite, le besoin est **clarifié et testé** : des expériences montrent que les tests d'acceptation lèvent les ambiguïtés sur les exigences, et qu'écrire le test d'abord réduit les défauts de 40 à 90 %, au prix d'un temps de développement plus long, de l'ordre de 15 à 35 %. Enfin, c'est **mesurable** : les indicateurs de succès alimentent directement la priorisation, que je vous montre maintenant.
 
@@ -370,6 +374,9 @@ Elle est prévue dès le cadrage. Le raisonnement s'appuie sur les services IA s
 
 **« Pourquoi autant de briques, ce n'est pas trop complexe ? »**
 Chaque brique a un rôle unique et reste remplaçable. C'est le principe d'une architecture modulaire. Et on choisit chaque brique selon le besoin, pas selon la mode.
+
+**« D'où vient ce gabarit ? »**
+D'une double expérience : le cycle en V (IDEF0 pour les entrées, sorties, contraintes et moyens ; bête à cornes pour la définition du besoin) et les méthodes agiles (user story, scénario d'acceptation, Definition of Ready et Definition of Done). Une étude sur les pratiques réelles montre que les approches hybrides sont courantes : c'est un cadre classique dans lequel on insère des pratiques agiles. Mon gabarit est simplement une façon de les unifier dans un seul document.
 
 **« Pourquoi un gabarit, plutôt qu'un cahier des charges classique ? »**
 Parce qu'il fait parler tous les métiers le même langage, il reste court, et le scénario sert directement de test d'acceptation. Un cahier des charges classique est plus long et moins partagé.

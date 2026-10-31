@@ -62,6 +62,11 @@
   lei2025spider2: ("Lei et al., 2025", "https://arxiv.org/abs/2411.07763"),
   sequeda2023kg: ("Sequeda et al., 2023", "https://arxiv.org/abs/2311.07509"),
   yao2023react: ("Yao et al., 2023", "https://arxiv.org/abs/2210.03629"),
+  ross1977sa: ("Ross, 1977", "https://doi.org/10.1109/TSE.1977.229900"),
+  afnorbete: ("NF X50-150", "https://elearning.univ-bejaia.dz/mod/resource/view.php?id=376222"),
+  vanriesen2024dor: ("van Riesen & Wagenaar, 2024", "https://ceur-ws.org/Vol-3672/AgileRE-paper1.pdf"),
+  schwaber2020scrum: ("Schwaber & Sutherland, 2020", "https://scrumguides.org/scrum-guide.html"),
+  kuhrmann2017hybrid: ("Kuhrmann et al., 2017", "https://doi.org/10.1145/3084100.3084104"),
   fastmcpdoc: ("FastMCP, doc.", "https://gofastmcp.com/integrations/fastapi"),
   ossiespec: ("Apache Ossie, doc.", "https://ossie.apache.org"),
   sidemanticdoc: ("Sidemantic, doc.", "https://sidequery-web.pages.dev/sidemantic/adapters"),
@@ -87,7 +92,10 @@
 // Citation inline : (Auteur, année) cliquable
 #let S(k) = { let (l, u) = SRC.at(k); link(u, text(size: 0.88em)[(#l)]) }
 // Ligne de sources en pied de slide
-#let srcline(keys) = keys.map(k => { let (l, u) = SRC.at(k); link(u)[#l] }).join([ · ])
+#let srcline(keys) = keys.map(k => {
+  if type(k) == array { let (l, u) = SRC.at(k.at(1)); [#k.at(0) : #link(u)[#l]] }
+  else { let (l, u) = SRC.at(k); link(u)[#l] }
+}).join([ · ])
 
 // ---------- Briques graphiques ----------
 // Flèche horizontale / verticale (polygone, pas de dépendance)
@@ -350,19 +358,21 @@
 // Format Gherkin (Given/When/Then) : scénarios lisibles par les métiers et testables ;
 // "Afin de / En tant que / Je souhaite" = user story ; indicateurs = base de la priorisation OKR.
 // Règle : pas de POC sans pilote métier ni valeur attendue identifiable.
+// Inspirations : IDEF0 (entrées / sorties / contraintes / mécanismes), bête à cornes (à qui, sur quoi, dans quel but = définition du besoin),
+// DoR / DoD implicites ; fruit de l'expérience du cycle en V et des méthodes agiles (approches hybrides : Kuhrmann et al., 2017).
 #slide("Ma méthode : un gabarit unique",
   "Le gabarit que je propose à tous les métiers pour construire ensemble le cas d'usage",
   sec: 2,
   message: [Un langage commun entre métiers, data et IT : le besoin, le scénario et la mesure dans un seul document.],
-  refs: ("binamungu2023bdd", "solis2011bdd", "lucassen2016qus", "ricca2009tests", "nagappan2008tdd"),
+  refs: ("binamungu2023bdd", "solis2011bdd", "lucassen2016qus", "ricca2009tests", "nagappan2008tdd", ("IDEF0", "ross1977sa"), ("bête à cornes", "afnorbete"), ("DoR", "vanriesen2024dor"), ("DoD", "schwaber2020scrum"), ("cycle en V + agile", "kuhrmann2017hybrid")),
 )[
   #let kw(t) = text(weight: "bold", fill: NAVY, t)
   #let st(t) = text(weight: "bold", fill: BLUE, t)
   #let ph(t) = text(style: "italic", fill: rgb("#5B6B7C"), "<" + t + ">")
   #let L(n, ..p) = pad(left: n * 9pt, p.pos().join())
   #let code(h: 100%, ..lines) = rect(width: 100%, height: h, fill: GRAY, radius: 6pt, stroke: none, inset: 9pt,
-    text(font: MONO, size: 8.7pt, stack(spacing: 3pt, ..lines)))
-  #grid(columns: (1fr,) * 3, column-gutter: 0.12in, rows: (auto, 2.5in), row-gutter: 3pt,
+    text(font: MONO, size: 8.3pt, stack(spacing: 3pt, ..lines)))
+  #grid(columns: (1fr,) * 3, column-gutter: 0.12in, rows: (auto, 2.05in), row-gutter: 3pt,
     lbl[Qui · pourquoi · contexte], lbl[Scénario], lbl[Sorties · moyens · mesure],
     code(
       L(0, kw[Fonctionnalité :], " ", ph("Nom du cas d'usage")),
@@ -382,7 +392,7 @@
       L(1, "- ", ph("Entrée 2")),
     ),
     stack(
-      code(h: 1.3in,
+      code(h: 1.0in,
         L(0, kw[Scénario :], " ", ph("Nom du scénario")),
         L(1, st[Étant donné], " ", ph("Contexte métier")),
         L(1, st[Quand], " ", ph("Action utilisateur")),
@@ -390,8 +400,8 @@
         L(1, st[Et], " ", ph("Résultat complémentaire")),
       ),
       v(0.1in),
-      rect(width: 100%, height: 1.1in, fill: TINT, radius: 6pt, stroke: none, inset: 10pt, align(horizon,
-        text(size: 10pt)[*#text(fill: NAVY)[Scénario = critère d'acceptation.]* Le Given / When / Then décrit un exemple concret, testable avec les métiers, en langage semi-structuré.])),
+      rect(width: 100%, height: 0.93in, fill: TINT, radius: 6pt, stroke: none, inset: 9pt, align(horizon,
+        text(size: 9.5pt)[*#text(fill: NAVY)[Scénario = critère d'acceptation.]* Le Given / When / Then décrit un exemple concret, testable avec les métiers, en langage semi-structuré.])),
     ),
     code(
       L(0, kw[Données de sortie :]),
@@ -412,15 +422,18 @@
       L(1, "- Réduction du risque : ", ph("x % ou indicateur")),
     ),
   )
-  #v(0.14in)
-  #grid(columns: (1fr,) * 3, column-gutter: 0.12in, rows: 0.62in,
+  #v(0.07in)
+  #grid(columns: (1fr,) * 3, column-gutter: 0.12in, rows: 0.68in,
     rect(width: 100%, height: 100%, fill: TINT, radius: 6pt, stroke: none, inset: 8pt, align(horizon,
-      text(size: 9.5pt)[*Langage commun* : scénarios Given / When / Then compréhensibles par tous #S("binamungu2023bdd")])),
+      text(size: 9pt)[*Langage commun* : scénarios Given / When / Then compréhensibles par tous #S("binamungu2023bdd")])),
     rect(width: 100%, height: 100%, fill: TINT, radius: 6pt, stroke: none, inset: 8pt, align(horizon,
-      text(size: 9.5pt)[*Besoin clarifié et testé* : les tests d'acceptation lèvent les ambiguïtés #S("ricca2009tests"), le test d'abord réduit les défauts de 40 à 90 % #S("nagappan2008tdd")])),
+      text(size: 9pt)[*Besoin clarifié et testé* : les tests d'acceptation lèvent les ambiguïtés #S("ricca2009tests"), le test d'abord réduit les défauts de 40 à 90 % #S("nagappan2008tdd")])),
     rect(width: 100%, height: 100%, fill: TINT, radius: 6pt, stroke: none, inset: 8pt, align(horizon,
-      text(size: 9.5pt)[*Mesurable* : entrées, sorties, contraintes et indicateurs de succès alimentent la priorisation OKR])),
+      text(size: 9pt)[*Mesurable* : entrées, sorties, contraintes et indicateurs de succès alimentent la priorisation OKR])),
   )
+  #v(0.06in)
+  #rect(width: 100%, height: 0.46in, fill: white, stroke: 0.8pt + TINT2, radius: 6pt, inset: (x: 9pt, y: 4pt), align(horizon,
+    text(size: 9pt)[*#text(fill: NAVY)[Inspirations.]* IDEF0 (entrées, sorties, contraintes, mécanismes) · bête à cornes (à qui, sur quoi, dans quel but : définition du besoin) · DoR / DoD implicites. *Fruit de mon expérience du cycle en V et des méthodes agiles : un gabarit qui unifie simplement les deux.*]))
 ]
 
 // =====================================================================
